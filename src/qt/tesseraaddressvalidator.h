@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TESSERAADDRESSVALIDATOR_H
-#define TESSERA_QT_TESSERAADDRESSVALIDATOR_H
+#ifndef FLOWCOIN_QT_TESSERAADDRESSVALIDATOR_H
+#define FLOWCOIN_QT_TESSERAADDRESSVALIDATOR_H
 
 #include <QValidator>
 
@@ -31,4 +31,4 @@ public:
     State validate(QString &input, int &pos) const override;
 };
 
-#endif // TESSERA_QT_TESSERAADDRESSVALIDATOR_H
+#endif // FLOWCOIN_QT_TESSERAADDRESSVALIDATOR_H

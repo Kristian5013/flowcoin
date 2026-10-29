@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_FASTRANGE_H
-#define TESSERA_UTIL_FASTRANGE_H
+#ifndef FLOWCOIN_UTIL_FASTRANGE_H
+#define FLOWCOIN_UTIL_FASTRANGE_H
 
 #include <cstdint>
 
@@ -47,4 +47,4 @@ static inline uint64_t FastRange64(uint64_t x, uint64_t n)
 #endif
 }
 
-#endif // TESSERA_UTIL_FASTRANGE_H
+#endif // FLOWCOIN_UTIL_FASTRANGE_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_UTIL_H
-#define TESSERA_RPC_UTIL_H
+#ifndef FLOWCOIN_RPC_UTIL_H
+#define FLOWCOIN_RPC_UTIL_H
 
 #include <addresstype.h>
 #include <consensus/amount.h>
@@ -551,4 +551,4 @@ std::vector<RPCResult> ScriptPubKeyDoc();
  */
 uint256 GetTarget(const CBlockIndex& blockindex, uint256 pow_limit);
 
-#endif // TESSERA_RPC_UTIL_H
+#endif // FLOWCOIN_RPC_UTIL_H

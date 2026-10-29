@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file common/types.h is a home for simple enum and struct type definitions
@@ -9,8 +9,8 @@
 //! dependencies. More complicated types should be defined in dedicated header
 //! files.
 
-#ifndef TESSERA_COMMON_TYPES_H
-#define TESSERA_COMMON_TYPES_H
+#ifndef FLOWCOIN_COMMON_TYPES_H
+#define FLOWCOIN_COMMON_TYPES_H
 
 #include <optional>
 
@@ -52,4 +52,4 @@ struct PSBTFillOptions {
 
 } // namespace common
 
-#endif // TESSERA_COMMON_TYPES_H
+#endif // FLOWCOIN_COMMON_TYPES_H

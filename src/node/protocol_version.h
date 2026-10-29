@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_PROTOCOL_VERSION_H
-#define TESSERA_NODE_PROTOCOL_VERSION_H
+#ifndef FLOWCOIN_NODE_PROTOCOL_VERSION_H
+#define FLOWCOIN_NODE_PROTOCOL_VERSION_H
 
 /**
  * network protocol versioning
@@ -37,4 +37,4 @@ static const int WTXID_RELAY_VERSION = 70016;
 //! "feature" message type for feature negotiation starts with this version
 static const int FEATURE_VERSION = 70017;
 
-#endif // TESSERA_NODE_PROTOCOL_VERSION_H
+#endif // FLOWCOIN_NODE_PROTOCOL_VERSION_H

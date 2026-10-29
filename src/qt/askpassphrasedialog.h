@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_ASKPASSPHRASEDIALOG_H
-#define TESSERA_QT_ASKPASSPHRASEDIALOG_H
+#ifndef FLOWCOIN_QT_ASKPASSPHRASEDIALOG_H
+#define FLOWCOIN_QT_ASKPASSPHRASEDIALOG_H
 
 #include <QDialog>
 
@@ -52,4 +52,4 @@ protected:
     bool eventFilter(QObject *object, QEvent *event) override;
 };
 
-#endif // TESSERA_QT_ASKPASSPHRASEDIALOG_H
+#endif // FLOWCOIN_QT_ASKPASSPHRASEDIALOG_H

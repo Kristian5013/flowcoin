@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_BANMAN_H
-#define TESSERA_BANMAN_H
+#ifndef FLOWCOIN_BANMAN_H
+#define FLOWCOIN_BANMAN_H
 
 #include <addrdb.h>
 #include <common/bloom.h>
@@ -96,4 +96,4 @@ private:
     CRollingBloomFilter m_discouraged GUARDED_BY(m_banned_mutex) {50000, 0.000001};
 };
 
-#endif // TESSERA_BANMAN_H
+#endif // FLOWCOIN_BANMAN_H

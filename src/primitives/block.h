@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_PRIMITIVES_BLOCK_H
-#define TESSERA_PRIMITIVES_BLOCK_H
+#ifndef FLOWCOIN_PRIMITIVES_BLOCK_H
+#define FLOWCOIN_PRIMITIVES_BLOCK_H
 
 #include <primitives/transaction.h>
 #include <serialize.h>
@@ -151,4 +151,4 @@ struct CBlockLocator
     }
 };
 
-#endif // TESSERA_PRIMITIVES_BLOCK_H
+#endif // FLOWCOIN_PRIMITIVES_BLOCK_H

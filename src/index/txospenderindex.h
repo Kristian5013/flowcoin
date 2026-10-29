@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_TXOSPENDERINDEX_H
-#define TESSERA_INDEX_TXOSPENDERINDEX_H
+#ifndef FLOWCOIN_INDEX_TXOSPENDERINDEX_H
+#define FLOWCOIN_INDEX_TXOSPENDERINDEX_H
 
 #include <index/base.h>
 #include <interfaces/chain.h>
@@ -71,4 +71,4 @@ public:
 extern std::unique_ptr<TxoSpenderIndex> g_txospenderindex;
 
 
-#endif // TESSERA_INDEX_TXOSPENDERINDEX_H
+#endif // FLOWCOIN_INDEX_TXOSPENDERINDEX_H

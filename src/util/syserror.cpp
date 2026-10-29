@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 #include <tessera-build-config.h> // IWYU pragma: keep

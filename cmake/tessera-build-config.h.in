@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONFIG_H
-#define TESSERA_CONFIG_H
+#ifndef FLOWCOIN_CONFIG_H
+#define FLOWCOIN_CONFIG_H
 
 /* Version Build */
 #define CLIENT_VERSION_BUILD @CLIENT_VERSION_BUILD@
@@ -101,4 +101,4 @@
 /* Define if QR support should be compiled in */
 #cmakedefine USE_QRCODE 1
 
-#endif // TESSERA_CONFIG_H
+#endif // FLOWCOIN_CONFIG_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Private key + signing, modeled on Bitcoin Core's key.h (CKey / CPrivKey).
@@ -24,8 +24,8 @@
 // deterministic keypair-from-seed primitive that the vendored PQClean build does
 // not expose. It is deferred as a design decision rather than invented here.
 
-#ifndef TESSERA_KEY_H
-#define TESSERA_KEY_H
+#ifndef FLOWCOIN_KEY_H
+#define FLOWCOIN_KEY_H
 
 #include <pubkey.h>
 #include <serialize.h>
@@ -267,4 +267,4 @@ struct CExtKey {
     // public key under ML-DSA (no key homomorphism). HD here is hardened-only.
 };
 
-#endif // TESSERA_KEY_H
+#endif // FLOWCOIN_KEY_H

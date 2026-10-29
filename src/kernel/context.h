@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_CONTEXT_H
-#define TESSERA_KERNEL_CONTEXT_H
+#ifndef FLOWCOIN_KERNEL_CONTEXT_H
+#define FLOWCOIN_KERNEL_CONTEXT_H
 
 namespace kernel {
 //! Context struct holding the kernel library's logically global state, and
@@ -17,4 +17,4 @@ struct Context {
 };
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_CONTEXT_H
+#endif // FLOWCOIN_KERNEL_CONTEXT_H

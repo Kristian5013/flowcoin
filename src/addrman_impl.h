@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ADDRMAN_IMPL_H
-#define TESSERA_ADDRMAN_IMPL_H
+#ifndef FLOWCOIN_ADDRMAN_IMPL_H
+#define FLOWCOIN_ADDRMAN_IMPL_H
 
 #include <logging/timer.h>
 #include <netaddress.h>
@@ -291,4 +291,4 @@ private:
     int CheckAddrman() const EXCLUSIVE_LOCKS_REQUIRED(cs);
 };
 
-#endif // TESSERA_ADDRMAN_IMPL_H
+#endif // FLOWCOIN_ADDRMAN_IMPL_H

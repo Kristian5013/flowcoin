@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_ARGS_H
-#define TESSERA_COMMON_ARGS_H
+#ifndef FLOWCOIN_COMMON_ARGS_H
+#define FLOWCOIN_COMMON_ARGS_H
 
 #include <common/settings.h>
 #include <compat/compat.h>
@@ -514,4 +514,4 @@ std::string HelpMessageGroup(const std::string& message);
  */
 std::string HelpMessageOpt(std::string_view option, std::string_view help_param, std::string_view message, bool subopt = false);
 
-#endif // TESSERA_COMMON_ARGS_H
+#endif // FLOWCOIN_COMMON_ARGS_H

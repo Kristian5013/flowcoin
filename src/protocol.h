@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_PROTOCOL_H
-#define TESSERA_PROTOCOL_H
+#ifndef FLOWCOIN_PROTOCOL_H
+#define FLOWCOIN_PROTOCOL_H
 
 #include <kernel/messagestartchars.h> // IWYU pragma: export
 #include <netaddress.h>
@@ -551,4 +551,4 @@ public:
 /** Convert a TX/WITNESS_TX/WTX CInv to a GenTxid. */
 GenTxid ToGenTxid(const CInv& inv);
 
-#endif // TESSERA_PROTOCOL_H
+#endif // FLOWCOIN_PROTOCOL_H

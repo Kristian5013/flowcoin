@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TRANSACTIONVIEW_H
-#define TESSERA_QT_TRANSACTIONVIEW_H
+#ifndef FLOWCOIN_QT_TRANSACTIONVIEW_H
+#define FLOWCOIN_QT_TRANSACTIONVIEW_H
 
 #include <qt/guiutil.h>
 
@@ -125,4 +125,4 @@ public Q_SLOTS:
     void focusTransaction(const Txid& txid);
 };
 
-#endif // TESSERA_QT_TRANSACTIONVIEW_H
+#endif // FLOWCOIN_QT_TRANSACTIONVIEW_H

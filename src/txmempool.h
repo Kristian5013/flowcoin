@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TXMEMPOOL_H
-#define TESSERA_TXMEMPOOL_H
+#ifndef FLOWCOIN_TXMEMPOOL_H
+#define FLOWCOIN_TXMEMPOOL_H
 
 #include <coins.h>
 #include <consensus/amount.h>
@@ -774,4 +774,4 @@ public:
     /** Clear m_temp_added and m_non_base_coins. */
     void Reset();
 };
-#endif // TESSERA_TXMEMPOOL_H
+#endif // FLOWCOIN_TXMEMPOOL_H

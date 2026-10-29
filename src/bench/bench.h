@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_BENCH_BENCH_H
-#define TESSERA_BENCH_BENCH_H
+#ifndef FLOWCOIN_BENCH_BENCH_H
+#define FLOWCOIN_BENCH_BENCH_H
 
 #include <bench/nanobench.h> // IWYU pragma: export
 #include <util/fs.h>
@@ -67,4 +67,4 @@ public:
 #define BENCHMARK(n) \
     benchmark::BenchRunner PASTE2(bench_runner_, n) { STRINGIZE(n), n }
 
-#endif // TESSERA_BENCH_BENCH_H
+#endif // FLOWCOIN_BENCH_BENCH_H

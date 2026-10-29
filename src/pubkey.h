@@ -1,153 +1,144 @@
-// Copyright (c) 2026 tessera core
-// See COPYING for license.
-//
-// Public key + signature verification, modeled on Bitcoin Core's pubkey.h
-// (CKeyID / CPubKey). Tessera is crypto-agile and post-quantum: where Core's
-// CPubKey wraps a secp256k1 point (a header byte then the curve point), ours
-// wraps a one-byte scheme tag then the raw scheme public key — the math is the
-// vendored ML-DSA-44 (PQClean / FIPS 204, the standardized Dilithium2), the
-// analog of Core's secp256k1 subtree. The serialized form a CPubKey stores is
-// exactly the byte string a transaction pushes (scheme byte || key), so its
-// size is recoverable from the first byte just like Core's.
-//
-// Core's secp256k1-only types — XOnlyPubKey (Taproot/Schnorr), EllSwiftPubKey
-// (BIP324 transport), and CExtPubKey (BIP32 HD derivation) — are intentionally
-// not ported: Tessera's design (option A) has no Taproot, and EC-style key
-// tweaking/derivation does not carry over to ML-DSA.
+// Copyright (c) Kristian Pilatovich.
+// Distributed under the MIT software license, see the accompanying
+// file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef TESSERA_PUBKEY_H
-#define TESSERA_PUBKEY_H
+#ifndef FLOWCOIN_PUBKEY_H
+#define FLOWCOIN_PUBKEY_H
 
 #include <hash.h>
 #include <serialize.h>
 #include <span.h>
 #include <uint256.h>
 
-#include <cstdint>
+#include <array>
 #include <cstring>
+#include <span>
 #include <vector>
 
-/** Crypto-agile signature scheme ids. The id is the leading byte of a serialized
- *  public key (and of a transaction input's pushed key); new schemes are a soft
- *  consensus upgrade. */
-enum class SigScheme : uint8_t {
-    ML_DSA_44 = 0x01,
-};
+using KeyFingerprint = std::array<unsigned char, 4>;
 
-[[nodiscard]] bool IsKnownScheme(SigScheme s);
-[[nodiscard]] size_t SchemePublicKeySize(SigScheme s);
-[[nodiscard]] size_t SchemeSignatureSize(SigScheme s);
-[[nodiscard]] size_t SchemeSecretKeySize(SigScheme s);
-
-/** The per-signature verification cost (sig-op weight) of a scheme, used to
- *  bound a block's total PQC-verification work (see MAX_BLOCK_SIGOPS_COST).
- *  ML-DSA-44 is the unit (1); a heavier future scheme would cost proportionally
- *  more; an unknown scheme is 0 (it is rejected without a verify). */
-[[nodiscard]] int64_t SchemeSigOpCost(SigScheme s);
-
-/** A reference to a CPubKey: the Hash160 of its serialized public key. */
+/** A reference to a CKey: the Hash160 of its serialized public key */
 class CKeyID : public uint160
 {
 public:
     CKeyID() : uint160() {}
     explicit CKeyID(const uint160& in) : uint160(in) {}
+    KeyFingerprint fingerprint() const
+    {
+        KeyFingerprint ret;
+        std::copy_n(begin(), ret.size(), ret.begin());
+        return ret;
+    }
 };
 
-/** An encapsulated crypto-agile public key (scheme byte || raw key). */
+/** An encapsulated public key. */
 class CPubKey
 {
 public:
-    //! Maximum serialized size of any supported scheme (scheme byte + key). Sized
-    //! for ML-DSA-44 (1 + 1312); grow as heavier schemes are added.
-    static constexpr unsigned int SIZE = 1 + 1312;
+    /**
+     * SLH-DSA-SHAKE-256s: a 0x01 header byte followed by the 64-byte
+     * FIPS 205 public key (PK.seed || PK.root).
+     */
+    static constexpr unsigned int SIZE                   = 65;
+    static constexpr unsigned int SIGNATURE_SIZE         = 29792;
 
 private:
-    //! The serialized public key: scheme byte at [0], raw key after. Empty == invalid.
-    std::vector<unsigned char> vch;
 
-    //! Length of a serialized pubkey with the given leading (scheme) byte, or 0
-    //! if the scheme is unknown.
-    static unsigned int GetLen(unsigned char chHeader)
+    /**
+     * Just store the serialized data.
+     * Its length can very cheaply be computed from the first byte.
+     */
+    unsigned char vch[SIZE];
+
+    //! Compute the length of a pubkey with a given first byte.
+    unsigned int static GetLen(unsigned char chHeader)
     {
-        const size_t n = SchemePublicKeySize(static_cast<SigScheme>(chHeader));
-        return n == 0 ? 0 : static_cast<unsigned int>(1 + n);
+        if (chHeader == 1)
+            return SIZE;
+        return 0;
     }
 
-    //! Set this key to be invalid.
-    void Invalidate() { vch.clear(); }
+    //! Set this key data to be invalid
+    void Invalidate()
+    {
+        vch[0] = 0xFF;
+    }
 
 public:
-    //! Whether a byte vector is a syntactically valid serialized pubkey.
-    static bool ValidSize(const std::vector<unsigned char>& vch)
-    {
-        return vch.size() > 0 && GetLen(vch[0]) == vch.size();
+
+    bool static ValidSize(const std::vector<unsigned char> &vch) {
+      return vch.size() > 0 && GetLen(vch[0]) == vch.size();
     }
 
     //! Construct an invalid public key.
-    CPubKey() { Invalidate(); }
+    CPubKey()
+    {
+        Invalidate();
+    }
 
-    //! Initialize from begin/end iterators over the serialized (scheme || key) bytes.
+    //! Initialize a public key using begin/end iterators to byte data.
     template <typename T>
     void Set(const T pbegin, const T pend)
     {
-        const int len = pend == pbegin ? 0 : GetLen((unsigned char)pbegin[0]);
+        int len = pend == pbegin ? 0 : GetLen(pbegin[0]);
         if (len && len == (pend - pbegin))
-            vch.assign(pbegin, pend);
+            memcpy(vch, (unsigned char*)&pbegin[0], len);
         else
             Invalidate();
     }
 
-    //! Construct from begin/end iterators over the serialized bytes.
+    //! Construct a public key using begin/end iterators to byte data.
     template <typename T>
-    CPubKey(const T pbegin, const T pend) { Set(pbegin, pend); }
-
-    //! Construct from a serialized (scheme || key) byte span.
-    explicit CPubKey(std::span<const unsigned char> _vch) { Set(_vch.begin(), _vch.end()); }
-
-    //! Convenience: assemble from a scheme tag and the raw key bytes.
-    CPubKey(SigScheme scheme, std::span<const unsigned char> rawkey)
+    CPubKey(const T pbegin, const T pend)
     {
-        std::vector<unsigned char> ser;
-        ser.reserve(1 + rawkey.size());
-        ser.push_back(static_cast<unsigned char>(scheme));
-        ser.insert(ser.end(), rawkey.begin(), rawkey.end());
-        Set(ser.begin(), ser.end());
+        Set(pbegin, pend);
     }
 
-    //! Simple read-only vector-like interface to the serialized data.
-    unsigned int size() const { return static_cast<unsigned int>(vch.size()); }
-    const unsigned char* data() const { return vch.data(); }
-    const unsigned char* begin() const { return vch.data(); }
-    const unsigned char* end() const { return vch.data() + vch.size(); }
+    //! Construct a public key from a byte vector.
+    explicit CPubKey(std::span<const uint8_t> _vch)
+    {
+        Set(_vch.begin(), _vch.end());
+    }
+
+    //! Simple read-only vector-like interface to the pubkey data.
+    unsigned int size() const { return GetLen(vch[0]); }
+    const unsigned char* data() const { return vch; }
+    const unsigned char* begin() const { return vch; }
+    const unsigned char* end() const { return vch + size(); }
     const unsigned char& operator[](unsigned int pos) const { return vch[pos]; }
 
-    //! The scheme tag (leading byte). Meaningful only for a valid key.
-    SigScheme GetScheme() const { return static_cast<SigScheme>(vch[0]); }
-    //! The raw scheme key (the serialization minus the leading scheme byte).
-    std::span<const unsigned char> RawKey() const { return std::span<const unsigned char>(vch.data() + 1, vch.size() - 1); }
-
-    //! Comparators.
-    friend bool operator==(const CPubKey& a, const CPubKey& b) { return a.vch == b.vch; }
-    friend bool operator!=(const CPubKey& a, const CPubKey& b) { return a.vch != b.vch; }
-    friend bool operator<(const CPubKey& a, const CPubKey& b) { return a.vch < b.vch; }
-    friend bool operator>(const CPubKey& a, const CPubKey& b) { return a.vch > b.vch; }
+    //! Comparator implementation.
+    friend bool operator==(const CPubKey& a, const CPubKey& b)
+    {
+        return a.vch[0] == b.vch[0] &&
+               memcmp(a.vch, b.vch, a.size()) == 0;
+    }
+    friend bool operator<(const CPubKey& a, const CPubKey& b)
+    {
+        return a.vch[0] < b.vch[0] ||
+               (a.vch[0] == b.vch[0] && memcmp(a.vch, b.vch, a.size()) < 0);
+    }
+    friend bool operator>(const CPubKey& a, const CPubKey& b)
+    {
+        return a.vch[0] > b.vch[0] ||
+               (a.vch[0] == b.vch[0] && memcmp(a.vch, b.vch, a.size()) > 0);
+    }
 
     //! Implement serialization, as if this was a byte vector.
     template <typename Stream>
     void Serialize(Stream& s) const
     {
-        const unsigned int len = size();
+        unsigned int len = size();
         ::WriteCompactSize(s, len);
-        s << std::span{vch.data(), len};
+        s << std::span{vch, len};
     }
     template <typename Stream>
     void Unserialize(Stream& s)
     {
         const unsigned int len(::ReadCompactSize(s));
         if (len <= SIZE) {
-            vch.resize(len);
-            if (len) s >> std::span{vch.data(), len};
-            if (!ValidSize(vch)) {
+            s >> std::span{vch, len};
+            if (len != size()) {
                 Invalidate();
             }
         } else {
@@ -157,31 +148,45 @@ public:
         }
     }
 
-    //! Get the KeyID of this public key (Hash160 of its serialization).
+    //! Get the KeyID of this public key (hash of its serialization)
     CKeyID GetID() const
     {
-        return CKeyID(Hash160(std::span{vch.data(), size()}));
+        return CKeyID(Hash160(std::span{vch}.first(size())));
     }
 
-    //! Get the 256-bit hash of this public key's serialization.
+    //! Get the 256-bit hash of this public key.
     uint256 GetHash() const
     {
-        return Hash(std::span{vch.data(), size()});
+        return Hash(std::span{vch}.first(size()));
     }
 
-    /**
+    /*
      * Check syntactic correctness.
      *
-     * Note that this is consensus critical as CheckSig() calls it: an invalid
-     * key (wrong scheme or wrong length) must never verify.
+     * When setting a pubkey (Set()) or deserializing fails (its header bytes
+     * don't match the length of the data), the size is set to 0. Thus,
+     * by checking size, one can observe whether Set() or deserialization has
+     * failed.
+     *
+     * This does not check for more than that. For SLH-DSA there is nothing
+     * more to check: every 64-byte string is a well-formed public key (see
+     * IsFullyValid()).
+     *
+     * Note that this is consensus critical as CheckSig() calls it!
      */
-    bool IsValid() const { return size() > 0; }
+    bool IsValid() const
+    {
+        return size() > 0;
+    }
+
+    //! fully validate whether this is a valid public key (more expensive than IsValid())
+    bool IsFullyValid() const;
 
     /**
-     * Verify `sig` over `hash` (the sighash) under this key. Returns false if
-     * the key is not syntactically valid.
+     * Verify an SLH-DSA-SHAKE-256s signature (SIGNATURE_SIZE bytes).
+     * If this public key is not fully valid, the return value will be false.
      */
-    bool Verify(const uint256& hash, std::span<const unsigned char> sig) const;
+    bool Verify(const uint256& hash, const std::vector<unsigned char>& vchSig) const;
 };
 
-#endif // TESSERA_PUBKEY_H
+#endif // FLOWCOIN_PUBKEY_H

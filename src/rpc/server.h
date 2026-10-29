@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_SERVER_H
-#define TESSERA_RPC_SERVER_H
+#ifndef FLOWCOIN_RPC_SERVER_H
+#define FLOWCOIN_RPC_SERVER_H
 
 #include <rpc/request.h>
 #include <rpc/util.h>
@@ -133,4 +133,4 @@ void InterruptRPC();
 void StopRPC();
 UniValue JSONRPCExec(const JSONRPCRequest& jreq, bool catch_errors);
 
-#endif // TESSERA_RPC_SERVER_H
+#endif // FLOWCOIN_RPC_SERVER_H

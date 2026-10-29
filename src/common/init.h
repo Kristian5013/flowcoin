@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_INIT_H
-#define TESSERA_COMMON_INIT_H
+#ifndef FLOWCOIN_COMMON_INIT_H
+#define FLOWCOIN_COMMON_INIT_H
 
 #include <util/translation.h>
 
@@ -35,4 +35,4 @@ using SettingsAbortFn = std::function<bool(const bilingual_str& message, const s
 std::optional<ConfigError> InitConfig(ArgsManager& args, SettingsAbortFn settings_abort_fn = nullptr);
 } // namespace common
 
-#endif // TESSERA_COMMON_INIT_H
+#endif // FLOWCOIN_COMMON_INIT_H

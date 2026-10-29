@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 /**
  * Money parsing/formatting utilities.
  */
-#ifndef TESSERA_UTIL_MONEYSTR_H
-#define TESSERA_UTIL_MONEYSTR_H
+#ifndef FLOWCOIN_UTIL_MONEYSTR_H
+#define FLOWCOIN_UTIL_MONEYSTR_H
 
 #include <consensus/amount.h>
 
@@ -19,4 +19,4 @@ std::string FormatMoney(CAmount n);
 /** Parse an amount denoted in full coins. E.g. "0.0034" supplied on the command line. **/
 std::optional<CAmount> ParseMoney(const std::string& str);
 
-#endif // TESSERA_UTIL_MONEYSTR_H
+#endif // FLOWCOIN_UTIL_MONEYSTR_H

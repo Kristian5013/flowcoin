@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tests for the crypto-agile CPubKey over the vendored ML-DSA-44: scheme sizes,

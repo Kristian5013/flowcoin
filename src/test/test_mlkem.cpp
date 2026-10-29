@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Correctness test for the vendored ML-KEM-768 (FIPS 203) KEM wrapper: a keypair's

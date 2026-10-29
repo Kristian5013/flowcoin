@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_WALLET_COINSELECTION_H
-#define TESSERA_WALLET_COINSELECTION_H
+#ifndef FLOWCOIN_WALLET_COINSELECTION_H
+#define FLOWCOIN_WALLET_COINSELECTION_H
 
 #include <consensus/amount.h>
 #include <consensus/consensus.h>
@@ -474,4 +474,4 @@ util::Result<SelectionResult> KnapsackSolver(std::vector<OutputGroup>& groups, c
                                              CAmount change_target, FastRandomContext& rng, int max_selection_weight);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_COINSELECTION_H
+#endif // FLOWCOIN_WALLET_COINSELECTION_H

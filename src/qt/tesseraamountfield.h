@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TESSERAAMOUNTFIELD_H
-#define TESSERA_QT_TESSERAAMOUNTFIELD_H
+#ifndef FLOWCOIN_QT_TESSERAAMOUNTFIELD_H
+#define FLOWCOIN_QT_TESSERAAMOUNTFIELD_H
 
 #include <consensus/amount.h>
 #include <qt/tesseraunits.h>
@@ -81,4 +81,4 @@ private Q_SLOTS:
 
 };
 
-#endif // TESSERA_QT_TESSERAAMOUNTFIELD_H
+#endif // FLOWCOIN_QT_TESSERAAMOUNTFIELD_H

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 """Tool to convert a compact-serialized UTXO set to a SQLite3 database.
 

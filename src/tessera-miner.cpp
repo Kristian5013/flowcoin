@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // tessera-miner — a standalone CPU miner. It talks to a running tesserad over

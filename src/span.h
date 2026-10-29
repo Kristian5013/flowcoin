@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SPAN_H
-#define TESSERA_SPAN_H
+#ifndef FLOWCOIN_SPAN_H
+#define FLOWCOIN_SPAN_H
 
 #include <cassert>
 #include <cstddef>
@@ -110,4 +110,4 @@ template <typename T, size_t N> constexpr auto UCharSpanCast(std::span<T, N> s) 
 template <typename V> constexpr auto MakeUCharSpan(const V& v) -> decltype(UCharSpanCast(std::span{v})) { return UCharSpanCast(std::span{v}); }
 template <typename V> constexpr auto MakeWritableUCharSpan(V&& v) -> decltype(UCharSpanCast(std::span{std::forward<V>(v)})) { return UCharSpanCast(std::span{std::forward<V>(v)}); }
 
-#endif // TESSERA_SPAN_H
+#endif // FLOWCOIN_SPAN_H

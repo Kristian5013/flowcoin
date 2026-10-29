@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NET_H
-#define TESSERA_NET_H
+#ifndef FLOWCOIN_NET_H
+#define FLOWCOIN_NET_H
 
 #include <v2cipher.h>
 #include <chainparams.h>
@@ -1904,4 +1904,4 @@ extern std::function<void(const CAddress& addr,
                           bool is_incoming)>
     CaptureMessage;
 
-#endif // TESSERA_NET_H
+#endif // FLOWCOIN_NET_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_COINSTATS_H
-#define TESSERA_KERNEL_COINSTATS_H
+#ifndef FLOWCOIN_KERNEL_COINSTATS_H
+#define FLOWCOIN_KERNEL_COINSTATS_H
 
 #include <arith_uint256.h>
 #include <consensus/amount.h>
@@ -79,4 +79,4 @@ void RemoveCoinHash(MuHash3072& muhash, const COutPoint& outpoint, const Coin& c
 std::optional<CCoinsStats> ComputeUTXOStats(CoinStatsHashType hash_type, CCoinsView* view, node::BlockManager& blockman, const std::function<void()>& interruption_point = {});
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_COINSTATS_H
+#endif // FLOWCOIN_KERNEL_COINSTATS_H

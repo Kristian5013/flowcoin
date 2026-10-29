@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_TXINDEX_H
-#define TESSERA_INDEX_TXINDEX_H
+#ifndef FLOWCOIN_INDEX_TXINDEX_H
+#define FLOWCOIN_INDEX_TXINDEX_H
 
 #include <index/base.h>
 #include <primitives/transaction.h>
@@ -56,4 +56,4 @@ public:
 /// The global transaction index, used in GetTransaction. May be null.
 extern std::unique_ptr<TxIndex> g_txindex;
 
-#endif // TESSERA_INDEX_TXINDEX_H
+#endif // FLOWCOIN_INDEX_TXINDEX_H

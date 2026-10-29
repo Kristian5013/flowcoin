@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_NET_H
-#define TESSERA_TEST_UTIL_NET_H
+#ifndef FLOWCOIN_TEST_UTIL_NET_H
+#define FLOWCOIN_TEST_UTIL_NET_H
 
 #include <attributes.h>
 #include <compat/compat.h>
@@ -392,4 +392,4 @@ void DynSock::Pipe::PushNetMsg(const std::string& type, Args&&... payload)
 
 std::vector<NodeEvictionCandidate> GetRandomNodeEvictionCandidates(int n_candidates, FastRandomContext& random_context);
 
-#endif // TESSERA_TEST_UTIL_NET_H
+#endif // FLOWCOIN_TEST_UTIL_NET_H

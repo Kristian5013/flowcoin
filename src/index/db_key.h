@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_DB_KEY_H
-#define TESSERA_INDEX_DB_KEY_H
+#ifndef FLOWCOIN_INDEX_DB_KEY_H
+#define FLOWCOIN_INDEX_DB_KEY_H
 
 #include <dbwrapper.h>
 #include <interfaces/types.h>
@@ -112,4 +112,4 @@ static bool LookUpOne(const CDBWrapper& db, const interfaces::BlockRef& block, D
 }
 } // namespace index_util
 
-#endif // TESSERA_INDEX_DB_KEY_H
+#endif // FLOWCOIN_INDEX_DB_KEY_H

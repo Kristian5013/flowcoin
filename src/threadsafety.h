@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_THREADSAFETY_H
-#define TESSERA_THREADSAFETY_H
+#ifndef FLOWCOIN_THREADSAFETY_H
+#define FLOWCOIN_THREADSAFETY_H
 
 #ifdef __clang__
 // TL;DR Add GUARDED_BY(mutex) to member variables. The others are
@@ -50,4 +50,4 @@
 #define ASSERT_EXCLUSIVE_LOCK(...)
 #endif // __GNUC__
 
-#endif // TESSERA_THREADSAFETY_H
+#endif // FLOWCOIN_THREADSAFETY_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_WALLETMODEL_H
-#define TESSERA_QT_WALLETMODEL_H
+#ifndef FLOWCOIN_QT_WALLETMODEL_H
+#define FLOWCOIN_QT_WALLETMODEL_H
 
 #include <key.h>
 
@@ -230,4 +230,4 @@ public Q_SLOTS:
     void pollBalanceChanged();
 };
 
-#endif // TESSERA_QT_WALLETMODEL_H
+#endif // FLOWCOIN_QT_WALLETMODEL_H

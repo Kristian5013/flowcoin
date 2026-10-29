@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_MINER_H
-#define TESSERA_NODE_MINER_H
+#ifndef FLOWCOIN_NODE_MINER_H
+#define FLOWCOIN_NODE_MINER_H
 
 #include <consensus/amount.h>
 #include <node/mining_types.h>
@@ -177,4 +177,4 @@ std::optional<BlockRef> WaitTipChanged(ChainstateManager& chainman, KernelNotifi
 bool CooldownIfHeadersAhead(ChainstateManager& chainman, KernelNotifications& kernel_notifications, const BlockRef& last_tip, bool& interrupt_mining);
 } // namespace node
 
-#endif // TESSERA_NODE_MINER_H
+#endif // FLOWCOIN_NODE_MINER_H

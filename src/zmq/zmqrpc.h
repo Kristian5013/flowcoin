@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ZMQ_ZMQRPC_H
-#define TESSERA_ZMQ_ZMQRPC_H
+#ifndef FLOWCOIN_ZMQ_ZMQRPC_H
+#define FLOWCOIN_ZMQ_ZMQRPC_H
 
 class CRPCTable;
 
 void RegisterZMQRPCCommands(CRPCTable& t);
 
-#endif // TESSERA_ZMQ_ZMQRPC_H
+#endif // FLOWCOIN_ZMQ_ZMQRPC_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Multiprocess integration smoke: spawn the tessera-node binary as an IPC

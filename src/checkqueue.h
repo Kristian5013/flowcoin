@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CHECKQUEUE_H
-#define TESSERA_CHECKQUEUE_H
+#ifndef FLOWCOIN_CHECKQUEUE_H
+#define FLOWCOIN_CHECKQUEUE_H
 
 #include <sync.h>
 #include <tinyformat.h>
@@ -237,4 +237,4 @@ public:
     }
 };
 
-#endif // TESSERA_CHECKQUEUE_H
+#endif // FLOWCOIN_CHECKQUEUE_H

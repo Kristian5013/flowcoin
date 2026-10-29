@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INIT_H
-#define TESSERA_INIT_H
+#ifndef FLOWCOIN_INIT_H
+#define FLOWCOIN_INIT_H
 
 #include <atomic>
 
@@ -77,4 +77,4 @@ void SetupServerArgs(ArgsManager& argsman, bool can_listen_ipc=false);
 /** Validates requirements to run the indexes and spawns each index initial sync thread */
 bool StartIndexBackgroundSync(node::NodeContext& node);
 
-#endif // TESSERA_INIT_H
+#endif // FLOWCOIN_INIT_H

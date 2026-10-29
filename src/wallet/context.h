@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Ported verbatim from Bitcoin Core's wallet/context.h. WalletContext is just a
@@ -7,8 +7,8 @@
 // even though Tessera hasn't built those subsystems yet -- the fields are simply
 // left null until they exist, exactly as Core intends ("future shared state").
 
-#ifndef TESSERA_WALLET_CONTEXT_H
-#define TESSERA_WALLET_CONTEXT_H
+#ifndef FLOWCOIN_WALLET_CONTEXT_H
+#define FLOWCOIN_WALLET_CONTEXT_H
 
 #include <sync.h>
 
@@ -56,4 +56,4 @@ struct WalletContext {
 };
 } // namespace wallet
 
-#endif // TESSERA_WALLET_CONTEXT_H
+#endif // FLOWCOIN_WALLET_CONTEXT_H

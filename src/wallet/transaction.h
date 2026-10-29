@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // CWalletTx and its TxState, ported from Bitcoin Core's wallet/transaction.h.
@@ -9,8 +9,8 @@
 // clean Tessera fields (no legacy wallet.dat backward-compat dummies / CMerkleTx,
 // since Tessera has no pre-existing wallet files).
 
-#ifndef TESSERA_WALLET_TRANSACTION_H
-#define TESSERA_WALLET_TRANSACTION_H
+#ifndef FLOWCOIN_WALLET_TRANSACTION_H
+#define FLOWCOIN_WALLET_TRANSACTION_H
 
 #include <attributes.h>
 #include <consensus/amount.h>
@@ -273,4 +273,4 @@ public:
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_TRANSACTION_H
+#endif // FLOWCOIN_WALLET_TRANSACTION_H

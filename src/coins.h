@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COINS_H
-#define TESSERA_COINS_H
+#ifndef FLOWCOIN_COINS_H
+#define FLOWCOIN_COINS_H
 
 #include <attributes.h>
 #include <compressor.h>
@@ -783,4 +783,4 @@ private:
 
 };
 
-#endif // TESSERA_COINS_H
+#endif // FLOWCOIN_COINS_H

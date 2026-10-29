@@ -1,12 +1,12 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera computes Merkle roots with SHA3-256 (via Hash()), not Bitcoin's
 // double SHA-256. The tree shape and the CVE-2012-2459 duplicate guard are
 // identical to Core; only the per-pair hash differs.
 
-#ifndef TESSERA_CONSENSUS_MERKLE_H
-#define TESSERA_CONSENSUS_MERKLE_H
+#ifndef FLOWCOIN_CONSENSUS_MERKLE_H
+#define FLOWCOIN_CONSENSUS_MERKLE_H
 
 #include <vector>
 
@@ -36,4 +36,4 @@ uint256 BlockWitnessMerkleRoot(const CBlock& block);
  */
 std::vector<uint256> TransactionMerklePath(const CBlock& block, uint32_t position);
 
-#endif // TESSERA_CONSENSUS_MERKLE_H
+#endif // FLOWCOIN_CONSENSUS_MERKLE_H

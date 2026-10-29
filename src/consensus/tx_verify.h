@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONSENSUS_TX_VERIFY_H
-#define TESSERA_CONSENSUS_TX_VERIFY_H
+#ifndef FLOWCOIN_CONSENSUS_TX_VERIFY_H
+#define FLOWCOIN_CONSENSUS_TX_VERIFY_H
 
 #include <consensus/amount.h>
 #include <script/verify_flags.h>
@@ -75,4 +75,4 @@ bool EvaluateSequenceLocks(const CBlockIndex& block, std::pair<int, int64_t> loc
  */
 bool SequenceLocks(const CTransaction &tx, int flags, std::vector<int>& prevHeights, const CBlockIndex& block);
 
-#endif // TESSERA_CONSENSUS_TX_VERIFY_H
+#endif // FLOWCOIN_CONSENSUS_TX_VERIFY_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_CONNECTION_TYPES_H
-#define TESSERA_NODE_CONNECTION_TYPES_H
+#ifndef FLOWCOIN_NODE_CONNECTION_TYPES_H
+#define FLOWCOIN_NODE_CONNECTION_TYPES_H
 
 #include <cstdint>
 #include <string>
@@ -96,4 +96,4 @@ enum class TransportProtocolType : uint8_t {
 /** Convert TransportProtocolType enum to a string value */
 std::string TransportTypeAsString(TransportProtocolType transport_type);
 
-#endif // TESSERA_NODE_CONNECTION_TYPES_H
+#endif // FLOWCOIN_NODE_CONNECTION_TYPES_H

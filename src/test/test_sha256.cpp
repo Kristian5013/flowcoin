@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Known-answer test for the generic SHA-256 (FIPS 180-4). This primitive is off

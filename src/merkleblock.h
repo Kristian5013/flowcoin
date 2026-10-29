@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_MERKLEBLOCK_H
-#define TESSERA_MERKLEBLOCK_H
+#ifndef FLOWCOIN_MERKLEBLOCK_H
+#define FLOWCOIN_MERKLEBLOCK_H
 
 #include <common/bloom.h>
 #include <primitives/block.h>
@@ -155,4 +155,4 @@ private:
     CMerkleBlock(const CBlock& block, CBloomFilter* filter, const std::set<Txid>* txids);
 };
 
-#endif // TESSERA_MERKLEBLOCK_H
+#endif // FLOWCOIN_MERKLEBLOCK_H

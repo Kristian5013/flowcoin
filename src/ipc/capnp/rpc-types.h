@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_IPC_CAPNP_RPC_TYPES_H
-#define TESSERA_IPC_CAPNP_RPC_TYPES_H
+#ifndef FLOWCOIN_IPC_CAPNP_RPC_TYPES_H
+#define FLOWCOIN_IPC_CAPNP_RPC_TYPES_H
 
 #include <ipc/capnp/common.capnp.proxy-types.h>
 #include <ipc/capnp/common-types.h>
 #include <ipc/capnp/rpc.capnp.proxy.h>
 
-#endif // TESSERA_IPC_CAPNP_RPC_TYPES_H
+#endif // FLOWCOIN_IPC_CAPNP_RPC_TYPES_H

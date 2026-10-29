@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file
 //! @brief Common init functions shared by bitcoin-node, bitcoin-wallet, etc.
 
-#ifndef TESSERA_INIT_COMMON_H
-#define TESSERA_INIT_COMMON_H
+#ifndef FLOWCOIN_INIT_COMMON_H
+#define FLOWCOIN_INIT_COMMON_H
 
 #include <util/result.h>
 
@@ -20,4 +20,4 @@ bool StartLogging(const ArgsManager& args);
 void LogPackageVersion();
 } // namespace init
 
-#endif // TESSERA_INIT_COMMON_H
+#endif // FLOWCOIN_INIT_COMMON_H

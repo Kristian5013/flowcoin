@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TRANSACTIONDESC_H
-#define TESSERA_QT_TRANSACTIONDESC_H
+#ifndef FLOWCOIN_QT_TRANSACTIONDESC_H
+#define FLOWCOIN_QT_TRANSACTIONDESC_H
 
 #include <qt/tesseraunits.h>
 
@@ -33,4 +33,4 @@ private:
     static QString FormatTxStatus(const interfaces::WalletTxStatus& status, bool inMempool);
 };
 
-#endif // TESSERA_QT_TRANSACTIONDESC_H
+#endif // FLOWCOIN_QT_TRANSACTIONDESC_H

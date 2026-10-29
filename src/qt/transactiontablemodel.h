@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TRANSACTIONTABLEMODEL_H
-#define TESSERA_QT_TRANSACTIONTABLEMODEL_H
+#ifndef FLOWCOIN_QT_TRANSACTIONTABLEMODEL_H
+#define FLOWCOIN_QT_TRANSACTIONTABLEMODEL_H
 
 #include <qt/tesseraunits.h>
 
@@ -113,4 +113,4 @@ public Q_SLOTS:
     friend class TransactionTablePriv;
 };
 
-#endif // TESSERA_QT_TRANSACTIONTABLEMODEL_H
+#endif // FLOWCOIN_QT_TRANSACTIONTABLEMODEL_H

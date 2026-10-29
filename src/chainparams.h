@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CHAINPARAMS_H
-#define TESSERA_CHAINPARAMS_H
+#ifndef FLOWCOIN_CHAINPARAMS_H
+#define FLOWCOIN_CHAINPARAMS_H
 
 #include <kernel/chainparams.h> // IWYU pragma: export
 
@@ -26,4 +26,4 @@ const CChainParams &Params();
  */
 void SelectParams(ChainType chain);
 
-#endif // TESSERA_CHAINPARAMS_H
+#endif // FLOWCOIN_CHAINPARAMS_H

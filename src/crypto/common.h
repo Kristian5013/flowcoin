@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera — fixed-width little/big-endian integer load/store over raw byte
 // storage. Byte order itself lives in compat/endian.h.
 
-#ifndef TESSERA_CRYPTO_COMMON_H
-#define TESSERA_CRYPTO_COMMON_H
+#ifndef FLOWCOIN_CRYPTO_COMMON_H
+#define FLOWCOIN_CRYPTO_COMMON_H
 
 #include <compat/endian.h>
 
@@ -107,4 +107,4 @@ inline void WriteBE64(B* ptr, uint64_t x)
     std::memcpy(ptr, &v, 8);
 }
 
-#endif // TESSERA_CRYPTO_COMMON_H
+#endif // FLOWCOIN_CRYPTO_COMMON_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_CSVMODELWRITER_H
-#define TESSERA_QT_CSVMODELWRITER_H
+#ifndef FLOWCOIN_QT_CSVMODELWRITER_H
+#define FLOWCOIN_QT_CSVMODELWRITER_H
 
 #include <QList>
 #include <QObject>
@@ -42,4 +42,4 @@ private:
     QList<Column> columns;
 };
 
-#endif // TESSERA_QT_CSVMODELWRITER_H
+#endif // FLOWCOIN_QT_CSVMODELWRITER_H

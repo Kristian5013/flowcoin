@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // On-chain destination types and the script <-> destination mapping, ported from
@@ -9,8 +9,8 @@
 // witness versions — is kept. Hashing follows Tessera's scheme: a key/script
 // hash is Hash160 = first 20 bytes of SHA3-256, and a v0 script hash is SHA3-256.
 
-#ifndef TESSERA_ADDRESSTYPE_H
-#define TESSERA_ADDRESSTYPE_H
+#ifndef FLOWCOIN_ADDRESSTYPE_H
+#define FLOWCOIN_ADDRESSTYPE_H
 
 #include <attributes.h>
 #include <pubkey.h>
@@ -158,4 +158,4 @@ bool ExtractDestination(const CScript& scriptPubKey, CTxDestination& addressRet)
  */
 CScript GetScriptForDestination(const CTxDestination& dest);
 
-#endif // TESSERA_ADDRESSTYPE_H
+#endif // FLOWCOIN_ADDRESSTYPE_H

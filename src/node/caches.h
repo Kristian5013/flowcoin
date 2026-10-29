@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_CACHES_H
-#define TESSERA_NODE_CACHES_H
+#ifndef FLOWCOIN_NODE_CACHES_H
+#define FLOWCOIN_NODE_CACHES_H
 
 #include <kernel/caches.h>
 #include <util/byte_units.h>
@@ -37,4 +37,4 @@ constexpr bool ShouldWarnOversizedDbCache(uint64_t dbcache, uint64_t total_ram) 
 void LogOversizedDbCache(const ArgsManager& args) noexcept;
 } // namespace node
 
-#endif // TESSERA_NODE_CACHES_H
+#endif // FLOWCOIN_NODE_CACHES_H

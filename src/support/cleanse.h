@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SUPPORT_CLEANSE_H
-#define TESSERA_SUPPORT_CLEANSE_H
+#ifndef FLOWCOIN_SUPPORT_CLEANSE_H
+#define FLOWCOIN_SUPPORT_CLEANSE_H
 
 #include <cstdlib>
 
@@ -10,4 +10,4 @@
  * operation will not be optimized out by the compiler. */
 void memory_cleanse(void *ptr, size_t len);
 
-#endif // TESSERA_SUPPORT_CLEANSE_H
+#endif // FLOWCOIN_SUPPORT_CLEANSE_H

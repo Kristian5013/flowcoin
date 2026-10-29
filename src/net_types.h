@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NET_TYPES_H
-#define TESSERA_NET_TYPES_H
+#ifndef FLOWCOIN_NET_TYPES_H
+#define FLOWCOIN_NET_TYPES_H
 
 #include <cstdint>
 #include <map>
@@ -56,4 +56,4 @@ UniValue BanMapToJson(const banmap_t& bans);
  */
 void BanMapFromJson(const UniValue& bans_json, banmap_t& bans);
 
-#endif // TESSERA_NET_TYPES_H
+#endif // FLOWCOIN_NET_TYPES_H

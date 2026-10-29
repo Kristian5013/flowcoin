@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_TIME_H
-#define TESSERA_TEST_UTIL_TIME_H
+#ifndef FLOWCOIN_TEST_UTIL_TIME_H
+#define FLOWCOIN_TEST_UTIL_TIME_H
 
 #include <util/check.h>
 #include <util/time.h>
@@ -75,4 +75,4 @@ public:
     void operator-=(std::chrono::seconds d) { set(m_t -= d); }
 };
 
-#endif // TESSERA_TEST_UTIL_TIME_H
+#endif // FLOWCOIN_TEST_UTIL_TIME_H

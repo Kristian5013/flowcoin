@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SCRIPT_SCRIPT_H
-#define TESSERA_SCRIPT_SCRIPT_H
+#ifndef FLOWCOIN_SCRIPT_SCRIPT_H
+#define FLOWCOIN_SCRIPT_SCRIPT_H
 
 #include <attributes.h>
 #include <crypto/common.h>
@@ -629,4 +629,4 @@ CScript BuildScript(Ts&&... inputs)
     return ret;
 }
 
-#endif // TESSERA_SCRIPT_SCRIPT_H
+#endif // FLOWCOIN_SCRIPT_SCRIPT_H

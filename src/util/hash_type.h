@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_HASH_TYPE_H
-#define TESSERA_UTIL_HASH_TYPE_H
+#ifndef FLOWCOIN_UTIL_HASH_TYPE_H
+#define FLOWCOIN_UTIL_HASH_TYPE_H
 
 template <typename HashType>
 class BaseHash
@@ -63,4 +63,4 @@ public:
     const unsigned char* data() const { return m_hash.data(); }
 };
 
-#endif // TESSERA_UTIL_HASH_TYPE_H
+#endif // FLOWCOIN_UTIL_HASH_TYPE_H

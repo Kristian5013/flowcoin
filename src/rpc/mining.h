@@ -1,12 +1,12 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_MINING_H
-#define TESSERA_RPC_MINING_H
+#ifndef FLOWCOIN_RPC_MINING_H
+#define FLOWCOIN_RPC_MINING_H
 
 #include <cstdint>
 
 /** Default max iterations to try in RPC generatetodescriptor, generatetoaddress, and generateblock. */
 static const uint64_t DEFAULT_MAX_TRIES{1000000};
 
-#endif // TESSERA_RPC_MINING_H
+#endif // FLOWCOIN_RPC_MINING_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SERIALIZE_H
-#define TESSERA_SERIALIZE_H
+#ifndef FLOWCOIN_SERIALIZE_H
+#define FLOWCOIN_SERIALIZE_H
 
 #include <attributes.h>
 #include <compat/assumptions.h> // IWYU pragma: keep
@@ -1281,4 +1281,4 @@ public:
         return ParamsWrapper{*this, t};                                                  \
     }
 
-#endif // TESSERA_SERIALIZE_H
+#endif // FLOWCOIN_SERIALIZE_H

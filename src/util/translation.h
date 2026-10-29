@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_TRANSLATION_H
-#define TESSERA_UTIL_TRANSLATION_H
+#ifndef FLOWCOIN_UTIL_TRANSLATION_H
+#define FLOWCOIN_UTIL_TRANSLATION_H
 
 #include <tinyformat.h>
 #include <util/check.h>
@@ -118,4 +118,4 @@ bilingual_str format(util::BilingualFmt<sizeof...(Args)> fmt, const Args&... arg
 }
 } // namespace tinyformat
 
-#endif // TESSERA_UTIL_TRANSLATION_H
+#endif // FLOWCOIN_UTIL_TRANSLATION_H

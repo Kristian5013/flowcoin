@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMPAT_STDIN_H
-#define TESSERA_COMPAT_STDIN_H
+#ifndef FLOWCOIN_COMPAT_STDIN_H
+#define FLOWCOIN_COMPAT_STDIN_H
 
 struct NoechoInst {
     NoechoInst();
@@ -14,4 +14,4 @@ struct NoechoInst {
 bool StdinTerminal();
 bool StdinReady();
 
-#endif // TESSERA_COMPAT_STDIN_H
+#endif // FLOWCOIN_COMPAT_STDIN_H

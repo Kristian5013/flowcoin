@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 #
 # Build the Tessera Windows installer (msys2/mingw64).

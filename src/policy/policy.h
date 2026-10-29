@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POLICY_POLICY_H
-#define TESSERA_POLICY_POLICY_H
+#ifndef FLOWCOIN_POLICY_POLICY_H
+#define FLOWCOIN_POLICY_POLICY_H
 
 #include <consensus/amount.h>
 #include <consensus/consensus.h>
@@ -200,4 +200,4 @@ int64_t GetSigOpsAdjustedWeight(int64_t weight, int64_t sigop_cost, unsigned int
 
 static inline FeePerVSize ToFeePerVSize(FeePerWeight feerate) { return {feerate.fee, (feerate.size + WITNESS_SCALE_FACTOR - 1) / WITNESS_SCALE_FACTOR}; }
 
-#endif // TESSERA_POLICY_POLICY_H
+#endif // FLOWCOIN_POLICY_POLICY_H

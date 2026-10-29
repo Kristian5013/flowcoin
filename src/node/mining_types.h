@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file node/mining_types.h is used externally by mining IPC clients, so it should
@@ -7,8 +7,8 @@
 //! Avoid declaring functions or classes with methods here unless they are
 //! header-only or provided by the util library.
 
-#ifndef TESSERA_NODE_MINING_TYPES_H
-#define TESSERA_NODE_MINING_TYPES_H
+#ifndef FLOWCOIN_NODE_MINING_TYPES_H
+#define FLOWCOIN_NODE_MINING_TYPES_H
 
 #include <consensus/amount.h>
 #include <policy/feerate.h>
@@ -174,4 +174,4 @@ struct CoinbaseTx {
 
 } // namespace node
 
-#endif // TESSERA_NODE_MINING_TYPES_H
+#endif // FLOWCOIN_NODE_MINING_TYPES_H

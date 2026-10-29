@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_IPC_TEST_IPC_TEST_H
-#define TESSERA_IPC_TEST_IPC_TEST_H
+#ifndef FLOWCOIN_IPC_TEST_IPC_TEST_H
+#define FLOWCOIN_IPC_TEST_IPC_TEST_H
 
 #include <primitives/transaction.h>
 #include <script/script.h>
@@ -30,4 +30,4 @@ void IpcSocketTest(const fs::path& datadir);
 //! standalone mains, not Boost.Test). Defined in test_ipc.cpp.
 void IpcCheck(const char* name, bool ok);
 
-#endif // TESSERA_IPC_TEST_IPC_TEST_H
+#endif // FLOWCOIN_IPC_TEST_IPC_TEST_H

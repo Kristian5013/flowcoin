@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NETMESSAGEMAKER_H
-#define TESSERA_NETMESSAGEMAKER_H
+#ifndef FLOWCOIN_NETMESSAGEMAKER_H
+#define FLOWCOIN_NETMESSAGEMAKER_H
 
 #include <net.h>
 #include <serialize.h>
@@ -18,4 +18,4 @@ namespace NetMsg {
     }
 } // namespace NetMsg
 
-#endif // TESSERA_NETMESSAGEMAKER_H
+#endif // FLOWCOIN_NETMESSAGEMAKER_H

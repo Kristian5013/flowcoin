@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_SERVER_UTIL_H
-#define TESSERA_RPC_SERVER_UTIL_H
+#ifndef FLOWCOIN_RPC_SERVER_UTIL_H
+#define FLOWCOIN_RPC_SERVER_UTIL_H
 
 #include <any>
 
@@ -44,4 +44,4 @@ AddrMan& EnsureAnyAddrman(const std::any& context);
 /** Return an empty block index on top of the tip, with height, time and nBits set */
 void NextEmptyBlockIndex(CBlockIndex& tip, const Consensus::Params& consensusParams, CBlockIndex& next_index);
 
-#endif // TESSERA_RPC_SERVER_UTIL_H
+#endif // FLOWCOIN_RPC_SERVER_UTIL_H

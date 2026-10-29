@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_FEES_H
-#define TESSERA_UTIL_FEES_H
+#ifndef FLOWCOIN_UTIL_FEES_H
+#define FLOWCOIN_UTIL_FEES_H
 
 /* Used to determine type of fee estimation requested */
 enum class FeeEstimateMode {
@@ -11,4 +11,4 @@ enum class FeeEstimateMode {
     CONSERVATIVE, //!< Force estimateSmartFee to use conservative estimates
 };
 
-#endif // TESSERA_UTIL_FEES_H
+#endif // FLOWCOIN_UTIL_FEES_H

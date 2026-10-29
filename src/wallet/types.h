@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file wallet/types.h is a home for public enum and struct type definitions
@@ -9,8 +9,8 @@
 //! dependencies. More complicated public wallet types like CCoinControl should
 //! be defined in dedicated header files.
 
-#ifndef TESSERA_WALLET_TYPES_H
-#define TESSERA_WALLET_TYPES_H
+#ifndef FLOWCOIN_WALLET_TYPES_H
+#define FLOWCOIN_WALLET_TYPES_H
 
 #include <policy/fees/block_policy_estimator.h>
 
@@ -42,4 +42,4 @@ struct CreatedTransactionResult
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_TYPES_H
+#endif // FLOWCOIN_WALLET_TYPES_H

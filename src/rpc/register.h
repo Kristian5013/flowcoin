@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_REGISTER_H
-#define TESSERA_RPC_REGISTER_H
+#ifndef FLOWCOIN_RPC_REGISTER_H
+#define FLOWCOIN_RPC_REGISTER_H
 
 #include <tessera-build-config.h> // IWYU pragma: keep
 
@@ -38,4 +38,4 @@ static inline void RegisterAllCoreRPCCommands(CRPCTable &t)
     RegisterOutputScriptRPCCommands(t);
 }
 
-#endif // TESSERA_RPC_REGISTER_H
+#endif // FLOWCOIN_RPC_REGISTER_H

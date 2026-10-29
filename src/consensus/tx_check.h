@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONSENSUS_TX_CHECK_H
-#define TESSERA_CONSENSUS_TX_CHECK_H
+#ifndef FLOWCOIN_CONSENSUS_TX_CHECK_H
+#define FLOWCOIN_CONSENSUS_TX_CHECK_H
 
 /**
  * Context-independent transaction checking code that can be called outside the
@@ -16,4 +16,4 @@ class TxValidationState;
 
 bool CheckTransaction(const CTransaction& tx, TxValidationState& state);
 
-#endif // TESSERA_CONSENSUS_TX_CHECK_H
+#endif // FLOWCOIN_CONSENSUS_TX_CHECK_H

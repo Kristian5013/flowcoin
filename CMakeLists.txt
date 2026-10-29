@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 #
 # Tessera node — top-level build. Mirrors Bitcoin Core's modular CMake: this
@@ -8,14 +8,14 @@
 # / common / node / wallet / cli libraries, sharing flags via core_interface).
 #
 # Consensus core in C++20: SHA3-256 hashing, SHA3-256d proof-of-work,
-# vendored ML-DSA-44 signatures (src/ML-DSA-44, PQClean/FIPS 204), and the UTXO +
-# validation stack.
+# vendored SLH-DSA-SHAKE-256s signatures (src/SLH-DSA-SHAKE-256s, PQClean/FIPS 205),
+# and the UTXO + validation stack.
 
 cmake_minimum_required(VERSION 3.20)
 
 project(tessera
     VERSION 0.1.0
-    DESCRIPTION "Tessera — UTXO chain with SHA3-256d PoW and PQC signatures (ML-DSA-44)"
+    DESCRIPTION "Tessera — UTXO chain with SHA3-256d PoW and PQC signatures (SLH-DSA-SHAKE-256s)"
     HOMEPAGE_URL "https://github.com/gettessera-project/tessera"
     LANGUAGES C CXX)
 
@@ -67,8 +67,8 @@ set(CLIENT_VERSION_STRING "${PROJECT_VERSION}")
 set(CLIENT_NAME "Tessera")
 set(CLIENT_BUGREPORT "")
 set(COPYRIGHT_YEAR 2026)
-set(COPYRIGHT_HOLDERS "tessera core")
-set(COPYRIGHT_HOLDERS_FINAL "tessera core")
+set(COPYRIGHT_HOLDERS "Kristian Pilatovich")
+set(COPYRIGHT_HOLDERS_FINAL "Kristian Pilatovich")
 # Compile-time feature detection (HAVE_FDATASYNC, HAVE_GETRANDOM, …) consumed by
 # the template below, via cmake/introspection.cmake (Core's pattern).
 include(introspection)
@@ -105,14 +105,14 @@ include(leveldb)
 include(minisketch)
 
 # Vendored post-quantum crypto, each scheme wired up by its own cmake/ module:
-#   - cmake/ML-DSA-44.cmake -> `mldsa44`  (FIPS 204 signatures; CHECKSIG). This is
-#     Tessera's analog of Bitcoin Core's cmake/secp256k1.cmake — Core links
-#     libsecp256k1 for its EC consensus signatures; Tessera has no curve.
-#   - cmake/ML-KEM-768.cmake -> `mlkem768` (FIPS 203 KEM; P2P v2 transport key
-#     agreement). Links mldsa44 to reuse the shared PQClean fips202/randombytes.
-# mldsa44 must be included first (mlkem768 depends on it).
-include(ML-DSA-44)
-include(ML-KEM-768)
+#   - cmake/SLH-DSA-SHAKE-256s.cmake -> `slhdsa256s` (FIPS 205 signatures;
+#     CHECKSIG). This is Tessera's analog of Bitcoin Core's cmake/secp256k1.cmake —
+#     Core links libsecp256k1 for its EC consensus signatures; Tessera has no curve.
+#   - cmake/ML-KEM-1024.cmake -> `mlkem1024` (FIPS 203 KEM; P2P v2 transport key
+#     agreement). Links slhdsa256s to reuse the shared PQClean fips202/randombytes.
+# slhdsa256s must be included first (mlkem1024 depends on it).
+include(SLH-DSA-SHAKE-256s)
+include(ML-KEM-1024)
 
 # ---------------------------------------------------------------------------
 # System dependencies.
@@ -140,11 +140,10 @@ add_library(core_interface INTERFACE)
 target_include_directories(core_interface INTERFACE
     ${CMAKE_SOURCE_DIR}/src
     ${CMAKE_SOURCE_DIR}/src/univalue/include
-    # ML-DSA-44 / ML-KEM-768 headers (api.h, …) are referenced across consensus,
-    # common, crypto and the tests; the symbols are linked via the mldsa44 target
-    # where used.
-    ${CMAKE_SOURCE_DIR}/src/ML-DSA-44
-    ${CMAKE_SOURCE_DIR}/src/ML-KEM-768
+    # The vendored post-quantum headers are included by path from src/
+    # (<SLH-DSA-SHAKE-256s/api.h>, <ML-KEM-1024/api.h>), so their directories
+    # stay off the shared include path: the SPHINCS+ directory ships a hash.h,
+    # params.h and utils.h that must never shadow Tessera's own headers.
     ${CMAKE_BINARY_DIR})
 # -UNDEBUG keeps assertions on in every build type (util/check.h's Assert()).
 target_compile_options(core_interface INTERFACE -UNDEBUG)

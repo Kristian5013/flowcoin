@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_JSON_H
-#define TESSERA_TEST_UTIL_JSON_H
+#ifndef FLOWCOIN_TEST_UTIL_JSON_H
+#define FLOWCOIN_TEST_UTIL_JSON_H
 
 #include <univalue.h>
 
@@ -10,4 +10,4 @@
 
 UniValue read_json(std::string_view jsondata);
 
-#endif // TESSERA_TEST_UTIL_JSON_H
+#endif // FLOWCOIN_TEST_UTIL_JSON_H

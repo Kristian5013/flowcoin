@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file common/messages.h is a home for simple string functions returning
@@ -6,8 +6,8 @@
 //! messages, and are called in different parts of the codebase across
 //! node/wallet/gui boundaries.
 
-#ifndef TESSERA_COMMON_MESSAGES_H
-#define TESSERA_COMMON_MESSAGES_H
+#ifndef FLOWCOIN_COMMON_MESSAGES_H
+#define FLOWCOIN_COMMON_MESSAGES_H
 
 #include <string>
 #include <string_view>
@@ -36,4 +36,4 @@ bilingual_str AmountHighWarn(const std::string& optname);
 bilingual_str AmountErrMsg(const std::string& optname, const std::string& strValue);
 } // namespace common
 
-#endif // TESSERA_COMMON_MESSAGES_H
+#endif // FLOWCOIN_COMMON_MESSAGES_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // The "common" wallet-database file, mirroring Bitcoin Core's wallet/db.cpp.

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_RBF_H
-#define TESSERA_UTIL_RBF_H
+#ifndef FLOWCOIN_UTIL_RBF_H
+#define FLOWCOIN_UTIL_RBF_H
 
 #include <cstdint>
 
@@ -19,4 +19,4 @@ static constexpr uint32_t MAX_BIP125_RBF_SEQUENCE{0xfffffffd};
 * party to be able to disable replacement by opting out in their own input. */
 bool SignalsOptInRBF(const CTransaction& tx);
 
-#endif // TESSERA_UTIL_RBF_H
+#endif // FLOWCOIN_UTIL_RBF_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_ABORT_H
-#define TESSERA_NODE_ABORT_H
+#ifndef FLOWCOIN_NODE_ABORT_H
+#define FLOWCOIN_NODE_ABORT_H
 
 #include <atomic>
 #include <functional>
@@ -14,4 +14,4 @@ class Warnings;
 void AbortNode(const std::function<bool()>& shutdown_request, std::atomic<int>& exit_status, const bilingual_str& message, node::Warnings* warnings);
 } // namespace node
 
-#endif // TESSERA_NODE_ABORT_H
+#endif // FLOWCOIN_NODE_ABORT_H

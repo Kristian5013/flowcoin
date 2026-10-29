@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_TXRECONCILIATION_H
-#define TESSERA_NODE_TXRECONCILIATION_H
+#ifndef FLOWCOIN_NODE_TXRECONCILIATION_H
+#define FLOWCOIN_NODE_TXRECONCILIATION_H
 
 #include <net.h>
 #include <sync.h>
@@ -85,4 +85,4 @@ public:
     bool IsPeerRegistered(NodeId peer_id) const;
 };
 
-#endif // TESSERA_NODE_TXRECONCILIATION_H
+#endif // FLOWCOIN_NODE_TXRECONCILIATION_H

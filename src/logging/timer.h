@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_LOGGING_TIMER_H
-#define TESSERA_LOGGING_TIMER_H
+#ifndef FLOWCOIN_LOGGING_TIMER_H
+#define FLOWCOIN_LOGGING_TIMER_H
 
 #include <util/log.h>
 #include <util/macros.h>
@@ -106,4 +106,4 @@ private:
     BCLog::Timer<std::chrono::seconds> TESSERA_UNIQUE_NAME(logging_timer)(__func__, end_msg)
 
 
-#endif // TESSERA_LOGGING_TIMER_H
+#endif // FLOWCOIN_LOGGING_TIMER_H

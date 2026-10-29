@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_LOGGING_CATEGORIES_H
-#define TESSERA_LOGGING_CATEGORIES_H
+#ifndef FLOWCOIN_LOGGING_CATEGORIES_H
+#define FLOWCOIN_LOGGING_CATEGORIES_H
 
 #include <cstdint>
 
@@ -49,4 +49,4 @@ enum LogFlags : CategoryMask {
 
 } // namespace BCLog
 
-#endif // TESSERA_LOGGING_CATEGORIES_H
+#endif // FLOWCOIN_LOGGING_CATEGORIES_H

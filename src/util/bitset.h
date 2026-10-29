@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_BITSET_H
-#define TESSERA_UTIL_BITSET_H
+#ifndef FLOWCOIN_UTIL_BITSET_H
+#define FLOWCOIN_UTIL_BITSET_H
 
 #include <util/check.h>
 #include <util/overflow.h>
@@ -524,4 +524,4 @@ using BitSet = std::conditional_t<(BITS <= 32), bitset_detail::IntBitSet<uint32_
                std::conditional_t<(BITS <= std::numeric_limits<size_t>::digits), bitset_detail::IntBitSet<size_t>,
                bitset_detail::MultiIntBitSet<size_t, CeilDiv(BITS, size_t{std::numeric_limits<size_t>::digits})>>>;
 
-#endif // TESSERA_UTIL_BITSET_H
+#endif // FLOWCOIN_UTIL_BITSET_H

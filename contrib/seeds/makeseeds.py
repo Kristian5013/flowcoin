@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 #
 # Generate seeds.txt from Pieter's DNS seeder

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tests for the wallet database (wallet/db.h + the SQLite backend in sqlite.cpp):

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 #include <netaddress.h>
@@ -8,8 +8,8 @@
 #include <type_traits>
 #include <vector>
 
-#ifndef TESSERA_NET_PERMISSIONS_H
-#define TESSERA_NET_PERMISSIONS_H
+#ifndef FLOWCOIN_NET_PERMISSIONS_H
+#define FLOWCOIN_NET_PERMISSIONS_H
 
 struct bilingual_str;
 
@@ -92,4 +92,4 @@ public:
     CSubNet m_subnet;
 };
 
-#endif // TESSERA_NET_PERMISSIONS_H
+#endif // FLOWCOIN_NET_PERMISSIONS_H

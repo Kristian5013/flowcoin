@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 add_library(tessera_crypto STATIC EXCLUDE_FROM_ALL
@@ -22,7 +22,6 @@ target_link_libraries(tessera_crypto
   PRIVATE
     core_interface
   PUBLIC
-    # crypto/mlkem.cpp wraps the vendored ML-KEM-768 (FIPS 203) primitives;
-    # mlkem768 transitively pulls in mldsa44 for the shared fips202/randombytes.
-    mlkem768
+    # crypto/mlkem.cpp wraps the vendored ML-KEM-1024 (FIPS 203) primitives.
+    mlkem1024
 )

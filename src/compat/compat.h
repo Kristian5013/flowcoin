@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMPAT_COMPAT_H
-#define TESSERA_COMPAT_COMPAT_H
+#ifndef FLOWCOIN_COMPAT_COMPAT_H
+#define FLOWCOIN_COMPAT_COMPAT_H
 
 // Windows defines FD_SETSIZE to 64 (see _fd_types.h in mingw-w64),
 // which is too small for our usage, but allows us to redefine it safely.
@@ -113,4 +113,4 @@ typedef SSIZE_T ssize_t;
 #define MSG_DONTWAIT 0
 #endif
 
-#endif // TESSERA_COMPAT_COMPAT_H
+#endif // FLOWCOIN_COMPAT_COMPAT_H

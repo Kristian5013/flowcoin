@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NETADDRESS_H
-#define TESSERA_NETADDRESS_H
+#ifndef FLOWCOIN_NETADDRESS_H
+#define FLOWCOIN_NETADDRESS_H
 
 #include <compat/compat.h>
 #include <crypto/siphash.h>
@@ -592,4 +592,4 @@ private:
     const uint64_t m_salt_k1;
 };
 
-#endif // TESSERA_NETADDRESS_H
+#endif // FLOWCOIN_NETADDRESS_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_MODALOVERLAY_H
-#define TESSERA_QT_MODALOVERLAY_H
+#ifndef FLOWCOIN_QT_MODALOVERLAY_H
+#define FLOWCOIN_QT_MODALOVERLAY_H
 
 #include <QDateTime>
 #include <QPropertyAnimation>
@@ -54,4 +54,4 @@ private:
     void UpdateHeaderPresyncLabel(int height, const QDateTime& blockDate);
 };
 
-#endif // TESSERA_QT_MODALOVERLAY_H
+#endif // FLOWCOIN_QT_MODALOVERLAY_H

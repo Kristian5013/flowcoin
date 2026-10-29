@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ADDRDB_H
-#define TESSERA_ADDRDB_H
+#ifndef FLOWCOIN_ADDRDB_H
+#define FLOWCOIN_ADDRDB_H
 
 #include <net_types.h>
 #include <util/fs.h>
@@ -65,4 +65,4 @@ void DumpAnchors(const fs::path& anchors_db_path, const std::vector<CAddress>& a
  */
 std::vector<CAddress> ReadAnchors(const fs::path& anchors_db_path);
 
-#endif // TESSERA_ADDRDB_H
+#endif // FLOWCOIN_ADDRDB_H

@@ -1,10 +1,10 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // C++ wrapper around ctaes, a constant-time AES implementation
 
-#ifndef TESSERA_CRYPTO_AES_H
-#define TESSERA_CRYPTO_AES_H
+#ifndef FLOWCOIN_CRYPTO_AES_H
+#define FLOWCOIN_CRYPTO_AES_H
 
 #include <support/allocators/secure.h>
 extern "C" {
@@ -68,4 +68,4 @@ private:
     unsigned char *iv;
 };
 
-#endif // TESSERA_CRYPTO_AES_H
+#endif // FLOWCOIN_CRYPTO_AES_H

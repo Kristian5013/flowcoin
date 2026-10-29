@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_VALIDATIONINTERFACE_H
-#define TESSERA_VALIDATIONINTERFACE_H
+#ifndef FLOWCOIN_VALIDATIONINTERFACE_H
+#define FLOWCOIN_VALIDATIONINTERFACE_H
 
 #include <kernel/cs_main.h>
 #include <primitives/transaction.h>
@@ -228,4 +228,4 @@ public:
     void NewPoWValidBlock(const CBlockIndex *, const std::shared_ptr<const CBlock>&);
 };
 
-#endif // TESSERA_VALIDATIONINTERFACE_H
+#endif // FLOWCOIN_VALIDATIONINTERFACE_H

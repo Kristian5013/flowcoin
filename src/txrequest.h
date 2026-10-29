@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TXREQUEST_H
-#define TESSERA_TXREQUEST_H
+#ifndef FLOWCOIN_TXREQUEST_H
+#define FLOWCOIN_TXREQUEST_H
 
 #include <primitives/transaction.h>
 #include <net.h>
@@ -214,4 +214,4 @@ public:
     void PostGetRequestableSanityCheck(std::chrono::microseconds now) const;
 };
 
-#endif // TESSERA_TXREQUEST_H
+#endif // FLOWCOIN_TXREQUEST_H

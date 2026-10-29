@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_MACROS_H
-#define TESSERA_UTIL_MACROS_H
+#ifndef FLOWCOIN_UTIL_MACROS_H
+#define FLOWCOIN_UTIL_MACROS_H
 
 #define PASTE(x, y) x ## y
 #define PASTE2(x, y) PASTE(x, y)
@@ -16,4 +16,4 @@
 #define STRINGIZE(X) DO_STRINGIZE(X)
 #define DO_STRINGIZE(X) #X
 
-#endif // TESSERA_UTIL_MACROS_H
+#endif // FLOWCOIN_UTIL_MACROS_H

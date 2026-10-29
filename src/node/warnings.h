@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_WARNINGS_H
-#define TESSERA_NODE_WARNINGS_H
+#ifndef FLOWCOIN_NODE_WARNINGS_H
+#define FLOWCOIN_NODE_WARNINGS_H
 
 #include <sync.h>
 #include <util/translation.h>
@@ -85,4 +85,4 @@ public:
 UniValue GetWarningsForRpc(const Warnings& warnings, bool use_deprecated);
 } // namespace node
 
-#endif // TESSERA_NODE_WARNINGS_H
+#endif // FLOWCOIN_NODE_WARNINGS_H

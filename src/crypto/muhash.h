@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_MUHASH_H
-#define TESSERA_CRYPTO_MUHASH_H
+#ifndef FLOWCOIN_CRYPTO_MUHASH_H
+#define FLOWCOIN_CRYPTO_MUHASH_H
 
 #include <serialize.h>
 
@@ -135,4 +135,4 @@ public:
     }
 };
 
-#endif // TESSERA_CRYPTO_MUHASH_H
+#endif // FLOWCOIN_CRYPTO_MUHASH_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_VECTOR_H
-#define TESSERA_UTIL_VECTOR_H
+#ifndef FLOWCOIN_UTIL_VECTOR_H
+#define FLOWCOIN_UTIL_VECTOR_H
 
 #include <functional>
 #include <initializer_list>
@@ -79,4 +79,4 @@ inline std::optional<V> FindFirst(const std::vector<V>& vec, const L fnc)
     return std::nullopt;
 }
 
-#endif // TESSERA_UTIL_VECTOR_H
+#endif // FLOWCOIN_UTIL_VECTOR_H

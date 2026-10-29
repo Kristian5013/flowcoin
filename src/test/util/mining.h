@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_MINING_H
-#define TESSERA_TEST_UTIL_MINING_H
+#ifndef FLOWCOIN_TEST_UTIL_MINING_H
+#define FLOWCOIN_TEST_UTIL_MINING_H
 
 #include <cstddef>
 #include <memory>
@@ -42,4 +42,4 @@ std::shared_ptr<CBlock> PrepareBlock(const node::NodeContext& node,
 /** RPC-like helper function, returns the generated coin */
 COutPoint generatetoaddress(const node::NodeContext&, const std::string& address);
 
-#endif // TESSERA_TEST_UTIL_MINING_H
+#endif // FLOWCOIN_TEST_UTIL_MINING_H

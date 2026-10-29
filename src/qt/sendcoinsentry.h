@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_SENDCOINSENTRY_H
-#define TESSERA_QT_SENDCOINSENTRY_H
+#ifndef FLOWCOIN_QT_SENDCOINSENTRY_H
+#define FLOWCOIN_QT_SENDCOINSENTRY_H
 
 #include <qt/sendcoinsrecipient.h>
 
@@ -78,4 +78,4 @@ private:
     bool updateLabel(const QString &address);
 };
 
-#endif // TESSERA_QT_SENDCOINSENTRY_H
+#endif // FLOWCOIN_QT_SENDCOINSENTRY_H

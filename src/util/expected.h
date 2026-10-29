@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_EXPECTED_H
-#define TESSERA_UTIL_EXPECTED_H
+#ifndef FLOWCOIN_UTIL_EXPECTED_H
+#define FLOWCOIN_UTIL_EXPECTED_H
 
 #include <attributes.h>
 #include <util/check.h>
@@ -127,4 +127,4 @@ public:
 
 } // namespace util
 
-#endif // TESSERA_UTIL_EXPECTED_H
+#endif // FLOWCOIN_UTIL_EXPECTED_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_BYTE_UNITS_H
-#define TESSERA_UTIL_BYTE_UNITS_H
+#ifndef FLOWCOIN_UTIL_BYTE_UNITS_H
+#define FLOWCOIN_UTIL_BYTE_UNITS_H
 
 #include <util/overflow.h>
 
@@ -33,4 +33,4 @@ consteval uint64_t operator""_GiB(unsigned long long gibibytes)
     return util::detail::ByteUnitsToBytes<30>(gibibytes);
 }
 
-#endif // TESSERA_UTIL_BYTE_UNITS_H
+#endif // FLOWCOIN_UTIL_BYTE_UNITS_H

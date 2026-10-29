@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_STREAMS_H
-#define TESSERA_STREAMS_H
+#ifndef FLOWCOIN_STREAMS_H
+#define FLOWCOIN_STREAMS_H
 
 #include <serialize.h>
 #include <span.h>
@@ -723,4 +723,4 @@ public:
     }
 };
 
-#endif // TESSERA_STREAMS_H
+#endif // FLOWCOIN_STREAMS_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // arith_uint256 tests: arithmetic invariants + the difficulty "compact" codec

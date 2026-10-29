@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_REST_H
-#define TESSERA_REST_H
+#ifndef FLOWCOIN_REST_H
+#define FLOWCOIN_REST_H
 
 #include <string>
 
@@ -24,4 +24,4 @@ enum class RESTResponseFormat {
  */
 RESTResponseFormat ParseDataFormat(std::string& param, const std::string& strReq);
 
-#endif // TESSERA_REST_H
+#endif // FLOWCOIN_REST_H

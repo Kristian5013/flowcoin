@@ -1,10 +1,10 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 // Compile-time verification of assumptions we make.
 
-#ifndef TESSERA_COMPAT_ASSUMPTIONS_H
-#define TESSERA_COMPAT_ASSUMPTIONS_H
+#ifndef FLOWCOIN_COMPAT_ASSUMPTIONS_H
+#define FLOWCOIN_COMPAT_ASSUMPTIONS_H
 
 #include <cstddef>
 #include <limits>
@@ -39,4 +39,4 @@ static_assert(sizeof(size_t) == sizeof(void*), "Sizes of size_t and void* assume
 // * We are NOT assuming a specific value for std::locale("").name().
 // * We are NOT assuming a specific value for std::numeric_limits<char>::is_signed.
 
-#endif // TESSERA_COMPAT_ASSUMPTIONS_H
+#endif // FLOWCOIN_COMPAT_ASSUMPTIONS_H

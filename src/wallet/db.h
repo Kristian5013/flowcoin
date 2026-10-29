@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // The wallet database abstraction, ported from Bitcoin Core's wallet/db.h. The
@@ -8,8 +8,8 @@
 // but only that one -- Core's legacy BDB backend and its BDB/SQLite format-sniffing
 // don't apply, so MakeDatabase dispatches straight to the SQLite backend (db.cpp).
 
-#ifndef TESSERA_WALLET_DB_H
-#define TESSERA_WALLET_DB_H
+#ifndef FLOWCOIN_WALLET_DB_H
+#define FLOWCOIN_WALLET_DB_H
 
 #include <streams.h>
 #include <support/allocators/secure.h>
@@ -189,4 +189,4 @@ fs::path SQLiteDataFile(const fs::path& path);
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_DB_H
+#endif // FLOWCOIN_WALLET_DB_H

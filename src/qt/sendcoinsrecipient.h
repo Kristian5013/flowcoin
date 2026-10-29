@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_SENDCOINSRECIPIENT_H
-#define TESSERA_QT_SENDCOINSRECIPIENT_H
+#ifndef FLOWCOIN_QT_SENDCOINSRECIPIENT_H
+#define FLOWCOIN_QT_SENDCOINSRECIPIENT_H
 
 #include <consensus/amount.h>
 #include <serialize.h>
@@ -57,4 +57,4 @@ public:
     }
 };
 
-#endif // TESSERA_QT_SENDCOINSRECIPIENT_H
+#endif // FLOWCOIN_QT_SENDCOINSRECIPIENT_H

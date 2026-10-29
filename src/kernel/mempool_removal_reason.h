@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_MEMPOOL_REMOVAL_REASON_H
-#define TESSERA_KERNEL_MEMPOOL_REMOVAL_REASON_H
+#ifndef FLOWCOIN_KERNEL_MEMPOOL_REMOVAL_REASON_H
+#define FLOWCOIN_KERNEL_MEMPOOL_REMOVAL_REASON_H
 
 #include <string>
 
@@ -20,4 +20,4 @@ enum class MemPoolRemovalReason {
 
 std::string RemovalReasonToString(const MemPoolRemovalReason& r) noexcept;
 
-#endif // TESSERA_KERNEL_MEMPOOL_REMOVAL_REASON_H
+#endif // FLOWCOIN_KERNEL_MEMPOOL_REMOVAL_REASON_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_SETUP_COMMON_H
-#define TESSERA_TEST_UTIL_SETUP_COMMON_H
+#ifndef FLOWCOIN_TEST_UTIL_SETUP_COMMON_H
+#define FLOWCOIN_TEST_UTIL_SETUP_COMMON_H
 
 #include <common/args.h> // IWYU pragma: export
 #include <consensus/amount.h>
@@ -246,4 +246,4 @@ std::unique_ptr<T> MakeNoLogFileContext(const ChainType chain_type = ChainType::
 
 CBlock getBlock13b8a();
 
-#endif // TESSERA_TEST_UTIL_SETUP_COMMON_H
+#endif // FLOWCOIN_TEST_UTIL_SETUP_COMMON_H

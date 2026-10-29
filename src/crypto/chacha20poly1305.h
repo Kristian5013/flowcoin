@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_CHACHA20POLY1305_H
-#define TESSERA_CRYPTO_CHACHA20POLY1305_H
+#ifndef FLOWCOIN_CRYPTO_CHACHA20POLY1305_H
+#define FLOWCOIN_CRYPTO_CHACHA20POLY1305_H
 
 #include <cstddef>
 #include <cstdint>
@@ -144,4 +144,4 @@ public:
     bool Decrypt(std::span<const std::byte> cipher, std::span<const std::byte> aad, std::span<std::byte> plain1, std::span<std::byte> plain2) noexcept;
 };
 
-#endif // TESSERA_CRYPTO_CHACHA20POLY1305_H
+#endif // FLOWCOIN_CRYPTO_CHACHA20POLY1305_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_PRIVATE_BROADCAST_H
-#define TESSERA_PRIVATE_BROADCAST_H
+#ifndef FLOWCOIN_PRIVATE_BROADCAST_H
+#define FLOWCOIN_PRIVATE_BROADCAST_H
 
 #include <net.h>
 #include <primitives/transaction.h>
@@ -198,4 +198,4 @@ private:
         m_transactions GUARDED_BY(m_mutex);
 };
 
-#endif // TESSERA_PRIVATE_BROADCAST_H
+#endif // FLOWCOIN_PRIVATE_BROADCAST_H

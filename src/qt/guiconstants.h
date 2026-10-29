@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_GUICONSTANTS_H
-#define TESSERA_QT_GUICONSTANTS_H
+#ifndef FLOWCOIN_QT_GUICONSTANTS_H
+#define FLOWCOIN_QT_GUICONSTANTS_H
 
 #include <chrono>
 #include <cstdint>
@@ -57,4 +57,4 @@ static constexpr uint64_t GB_BYTES{1000000000};
 // Default prune target displayed in GUI.
 static constexpr int DEFAULT_PRUNE_TARGET_GB{2};
 
-#endif // TESSERA_QT_GUICONSTANTS_H
+#endif // FLOWCOIN_QT_GUICONSTANTS_H

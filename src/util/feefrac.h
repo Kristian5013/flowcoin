@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_FEEFRAC_H
-#define TESSERA_UTIL_FEEFRAC_H
+#ifndef FLOWCOIN_UTIL_FEEFRAC_H
+#define FLOWCOIN_UTIL_FEEFRAC_H
 
 #include <util/check.h>
 #include <util/overflow.h>
@@ -310,4 +310,4 @@ public:
     operator const T&() const noexcept { return m_feefrac; }
 };
 
-#endif // TESSERA_UTIL_FEEFRAC_H
+#endif // FLOWCOIN_UTIL_FEEFRAC_H

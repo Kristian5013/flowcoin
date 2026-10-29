@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 @0xcd2c6232cb484a28;

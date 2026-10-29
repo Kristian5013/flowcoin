@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_RECEIVE_H
-#define TESSERA_WALLET_RECEIVE_H
+#ifndef FLOWCOIN_WALLET_RECEIVE_H
+#define FLOWCOIN_WALLET_RECEIVE_H
 
 #include <consensus/amount.h>
 #include <primitives/transaction_identifier.h>
@@ -55,4 +55,4 @@ std::map<CTxDestination, CAmount> GetAddressBalances(const CWallet& wallet);
 std::set<std::set<CTxDestination>> GetAddressGroupings(const CWallet& wallet) EXCLUSIVE_LOCKS_REQUIRED(wallet.cs_wallet);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_RECEIVE_H
+#endif // FLOWCOIN_WALLET_RECEIVE_H

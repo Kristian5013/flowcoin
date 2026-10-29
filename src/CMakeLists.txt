@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 #
 # Library decomposition mirroring Bitcoin Core's src/CMakeLists.txt: the former
@@ -46,8 +46,8 @@ target_link_libraries(tessera_consensus
     core_interface
     tessera_crypto
   PUBLIC
-    # pubkey.cpp verifies ML-DSA-44 (FIPS 204) signatures in CHECKSIG.
-    mldsa44
+    # pubkey.cpp verifies SLH-DSA-SHAKE-256s (FIPS 205) signatures in CHECKSIG.
+    slhdsa256s
 )
 
 if(WITH_ZMQ)

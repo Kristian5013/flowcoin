@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 
-#ifndef TESSERA_QT_WINSHUTDOWNMONITOR_H
-#define TESSERA_QT_WINSHUTDOWNMONITOR_H
+#ifndef FLOWCOIN_QT_WINSHUTDOWNMONITOR_H
+#define FLOWCOIN_QT_WINSHUTDOWNMONITOR_H
 
 #ifdef WIN32
 #include <QByteArray>
@@ -30,4 +30,4 @@ private:
 };
 #endif
 
-#endif // TESSERA_QT_WINSHUTDOWNMONITOR_H
+#endif // FLOWCOIN_QT_WINSHUTDOWNMONITOR_H

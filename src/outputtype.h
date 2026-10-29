@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_OUTPUTTYPE_H
-#define TESSERA_OUTPUTTYPE_H
+#ifndef FLOWCOIN_OUTPUTTYPE_H
+#define FLOWCOIN_OUTPUTTYPE_H
 
 #include <addresstype.h>
 #include <script/signingprovider.h>
@@ -42,4 +42,4 @@ CTxDestination AddAndGetDestinationForScript(FlatSigningProvider& keystore, cons
 /** Get the OutputType for a CTxDestination */
 std::optional<OutputType> OutputTypeFromDestination(const CTxDestination& dest);
 
-#endif // TESSERA_OUTPUTTYPE_H
+#endif // FLOWCOIN_OUTPUTTYPE_H

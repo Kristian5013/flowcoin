@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_THREADINTERRUPT_H
-#define TESSERA_UTIL_THREADINTERRUPT_H
+#ifndef FLOWCOIN_UTIL_THREADINTERRUPT_H
+#define FLOWCOIN_UTIL_THREADINTERRUPT_H
 
 #include <sync.h>
 #include <util/time.h>
@@ -53,4 +53,4 @@ private:
     std::atomic<bool> flag;
 };
 
-#endif // TESSERA_UTIL_THREADINTERRUPT_H
+#endif // FLOWCOIN_UTIL_THREADINTERRUPT_H

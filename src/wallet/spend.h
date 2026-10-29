@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_SPEND_H
-#define TESSERA_WALLET_SPEND_H
+#ifndef FLOWCOIN_WALLET_SPEND_H
+#define FLOWCOIN_WALLET_SPEND_H
 
 #include <consensus/amount.h>
 #include <policy/fees/block_policy_estimator.h>
@@ -205,4 +205,4 @@ util::Result<CreatedTransactionResult> CreateTransaction(CWallet& wallet, const 
 util::Result<CreatedTransactionResult> FundTransaction(CWallet& wallet, const CMutableTransaction& tx, const std::vector<CRecipient>& recipients, std::optional<unsigned int> change_pos, bool lockUnspents, CCoinControl);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_SPEND_H
+#endif // FLOWCOIN_WALLET_SPEND_H

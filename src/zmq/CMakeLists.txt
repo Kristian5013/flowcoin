@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 add_library(tessera_zmq STATIC EXCLUDE_FROM_ALL

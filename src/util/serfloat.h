@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_SERFLOAT_H
-#define TESSERA_UTIL_SERFLOAT_H
+#ifndef FLOWCOIN_UTIL_SERFLOAT_H
+#define FLOWCOIN_UTIL_SERFLOAT_H
 
 #include <cstdint>
 
@@ -12,4 +12,4 @@ uint64_t EncodeDouble(double f) noexcept;
 /* Reverse operation of DecodeDouble. DecodeDouble(EncodeDouble(f))==f unless isnan(f). */
 double DecodeDouble(uint64_t v) noexcept;
 
-#endif // TESSERA_UTIL_SERFLOAT_H
+#endif // FLOWCOIN_UTIL_SERFLOAT_H

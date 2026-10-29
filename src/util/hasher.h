@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_HASHER_H
-#define TESSERA_UTIL_HASHER_H
+#ifndef FLOWCOIN_UTIL_HASHER_H
+#define FLOWCOIN_UTIL_HASHER_H
 
 #include <crypto/common.h>
 #include <crypto/siphash.h>
@@ -115,4 +115,4 @@ public:
     size_t operator()(const std::span<const unsigned char>& script) const;
 };
 
-#endif // TESSERA_UTIL_HASHER_H
+#endif // FLOWCOIN_UTIL_HASHER_H

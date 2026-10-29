@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera's consensus hash is SHA3-256 (FIPS 202), not Bitcoin's double
@@ -7,8 +7,8 @@
 // downstream code (e.g. the Merkle tree) ports unchanged, but computes
 // SHA3-256 underneath.
 
-#ifndef TESSERA_HASH_H
-#define TESSERA_HASH_H
+#ifndef FLOWCOIN_HASH_H
+#define FLOWCOIN_HASH_H
 
 #include <attributes.h>
 #include <crypto/common.h>
@@ -176,4 +176,4 @@ public:
 
 unsigned int MurmurHash3(unsigned int nHashSeed, std::span<const unsigned char> vDataToHash);
 
-#endif // TESSERA_HASH_H
+#endif // FLOWCOIN_HASH_H

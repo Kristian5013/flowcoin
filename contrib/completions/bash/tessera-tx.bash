@@ -1,5 +1,5 @@
 # bash programmable completion for tessera-tx(1)
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 _tessera_tx() {

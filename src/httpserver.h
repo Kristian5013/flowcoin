@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_HTTPSERVER_H
-#define TESSERA_HTTPSERVER_H
+#ifndef FLOWCOIN_HTTPSERVER_H
+#define FLOWCOIN_HTTPSERVER_H
 
 #include <atomic>
 #include <deque>
@@ -571,4 +571,4 @@ void InterruptHTTPServer();
 void StopHTTPServer();
 } // namespace http_tessera
 
-#endif // TESSERA_HTTPSERVER_H
+#endif // FLOWCOIN_HTTPSERVER_H

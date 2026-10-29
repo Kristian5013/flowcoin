@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_URL_H
-#define TESSERA_COMMON_URL_H
+#ifndef FLOWCOIN_COMMON_URL_H
+#define FLOWCOIN_COMMON_URL_H
 
 #include <string>
 #include <string_view>
@@ -16,4 +16,4 @@ std::string UrlDecode(std::string_view url_encoded);
 /* Encode a URL. */
 std::string UrlEncode(std::string_view str);
 
-#endif // TESSERA_COMMON_URL_H
+#endif // FLOWCOIN_COMMON_URL_H

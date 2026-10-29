@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_CHAINPARAMS_H
-#define TESSERA_KERNEL_CHAINPARAMS_H
+#ifndef FLOWCOIN_KERNEL_CHAINPARAMS_H
+#define FLOWCOIN_KERNEL_CHAINPARAMS_H
 
 #include <consensus/params.h>
 #include <kernel/messagestartchars.h>
@@ -202,4 +202,4 @@ protected:
 
 std::optional<ChainType> GetNetworkForMagic(const MessageStartChars& pchMessageStart);
 
-#endif // TESSERA_KERNEL_CHAINPARAMS_H
+#endif // FLOWCOIN_KERNEL_CHAINPARAMS_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_COMMON_H
-#define TESSERA_TEST_UTIL_COMMON_H
+#ifndef FLOWCOIN_TEST_UTIL_COMMON_H
+#define FLOWCOIN_TEST_UTIL_COMMON_H
 
 #include <chrono>
 #include <optional>
@@ -58,4 +58,4 @@ inline std::ostream& operator<<(std::ostream& os, const T& obj)
 
 // @}
 
-#endif // TESSERA_TEST_UTIL_COMMON_H
+#endif // FLOWCOIN_TEST_UTIL_COMMON_H

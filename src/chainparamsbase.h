@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CHAINPARAMSBASE_H
-#define TESSERA_CHAINPARAMSBASE_H
+#ifndef FLOWCOIN_CHAINPARAMSBASE_H
+#define FLOWCOIN_CHAINPARAMSBASE_H
 
 #include <util/chaintype.h>
 
@@ -53,4 +53,4 @@ void SelectBaseParams(ChainType chain);
 /** List of possible chain / network names  */
 #define LIST_CHAIN_NAMES "main, test, regtest"
 
-#endif // TESSERA_CHAINPARAMSBASE_H
+#endif // FLOWCOIN_CHAINPARAMSBASE_H

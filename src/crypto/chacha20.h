@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_CHACHA20_H
-#define TESSERA_CRYPTO_CHACHA20_H
+#ifndef FLOWCOIN_CRYPTO_CHACHA20_H
+#define FLOWCOIN_CRYPTO_CHACHA20_H
 
 #include <array>
 #include <cstddef>
@@ -153,4 +153,4 @@ public:
     void Crypt(std::span<const std::byte> input, std::span<std::byte> output) noexcept;
 };
 
-#endif // TESSERA_CRYPTO_CHACHA20_H
+#endif // FLOWCOIN_CRYPTO_CHACHA20_H

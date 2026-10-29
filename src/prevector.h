@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_PREVECTOR_H
-#define TESSERA_PREVECTOR_H
+#ifndef FLOWCOIN_PREVECTOR_H
+#define FLOWCOIN_PREVECTOR_H
 
 #include <algorithm>
 #include <cassert>
@@ -469,4 +469,4 @@ public:
     }
 };
 
-#endif // TESSERA_PREVECTOR_H
+#endif // FLOWCOIN_PREVECTOR_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_SHA256_H
-#define TESSERA_CRYPTO_SHA256_H
+#ifndef FLOWCOIN_CRYPTO_SHA256_H
+#define FLOWCOIN_CRYPTO_SHA256_H
 
 #include <cstdint>
 #include <cstdlib>
@@ -49,4 +49,4 @@ std::string SHA256AutoDetect(sha256_implementation::UseImplementation use_implem
  */
 void SHA256D64(unsigned char* output, const unsigned char* input, size_t blocks);
 
-#endif // TESSERA_CRYPTO_SHA256_H
+#endif // FLOWCOIN_CRYPTO_SHA256_H

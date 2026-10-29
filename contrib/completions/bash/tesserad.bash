@@ -1,5 +1,5 @@
 # bash programmable completion for tesserad(1) and tessera-qt(1)
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 _tesserad() {

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_ADDRESSTABLEMODEL_H
-#define TESSERA_QT_ADDRESSTABLEMODEL_H
+#ifndef FLOWCOIN_QT_ADDRESSTABLEMODEL_H
+#define FLOWCOIN_QT_ADDRESSTABLEMODEL_H
 
 #include <optional>
 
@@ -108,4 +108,4 @@ public Q_SLOTS:
     friend class AddressTablePriv;
 };
 
-#endif // TESSERA_QT_ADDRESSTABLEMODEL_H
+#endif // FLOWCOIN_QT_ADDRESSTABLEMODEL_H

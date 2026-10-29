@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONSENSUS_AMOUNT_H
-#define TESSERA_CONSENSUS_AMOUNT_H
+#ifndef FLOWCOIN_CONSENSUS_AMOUNT_H
+#define FLOWCOIN_CONSENSUS_AMOUNT_H
 
 #include <cstdint>
 
@@ -24,4 +24,4 @@ static constexpr CAmount COIN = 100000000;
 static constexpr CAmount MAX_MONEY = 21000000 * COIN;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-#endif // TESSERA_CONSENSUS_AMOUNT_H
+#endif // FLOWCOIN_CONSENSUS_AMOUNT_H

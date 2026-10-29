@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # test/util — Core-style test fixtures (TestingSetup / TestChain100Setup, mined

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_QVALIDATEDLINEEDIT_H
-#define TESSERA_QT_QVALIDATEDLINEEDIT_H
+#ifndef FLOWCOIN_QT_QVALIDATEDLINEEDIT_H
+#define FLOWCOIN_QT_QVALIDATEDLINEEDIT_H
 
 #include <QLineEdit>
 
@@ -40,4 +40,4 @@ private Q_SLOTS:
     void checkValidity();
 };
 
-#endif // TESSERA_QT_QVALIDATEDLINEEDIT_H
+#endif // FLOWCOIN_QT_QVALIDATEDLINEEDIT_H

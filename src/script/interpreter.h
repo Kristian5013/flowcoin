@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Script interpreter interface, adapted from Bitcoin Core's script/interpreter.h
@@ -8,8 +8,8 @@
 // ML-DSA). The signature checker exposes a single CheckSig (ML-DSA), not the
 // ECDSA/Schnorr pair. Large ML-DSA sig/pubkey ride in the witness (MAX_WITNESS_ITEM).
 
-#ifndef TESSERA_SCRIPT_INTERPRETER_H
-#define TESSERA_SCRIPT_INTERPRETER_H
+#ifndef FLOWCOIN_SCRIPT_INTERPRETER_H
+#define FLOWCOIN_SCRIPT_INTERPRETER_H
 
 #include <consensus/amount.h>
 #include <primitives/transaction.h>
@@ -222,4 +222,4 @@ size_t CountWitnessSigOps(const CScript& scriptSig, const CScript& scriptPubKey,
 const std::map<std::string, script_verify_flag_name>& ScriptFlagNamesToEnum();
 std::vector<std::string> GetScriptFlagNames(script_verify_flags flags);
 
-#endif  // TESSERA_SCRIPT_INTERPRETER_H
+#endif  // FLOWCOIN_SCRIPT_INTERPRETER_H

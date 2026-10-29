@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_DISKTXPOS_H
-#define TESSERA_INDEX_DISKTXPOS_H
+#ifndef FLOWCOIN_INDEX_DISKTXPOS_H
+#define FLOWCOIN_INDEX_DISKTXPOS_H
 
 #include <flatfile.h>
 #include <serialize.h>
@@ -22,4 +22,4 @@ struct CDiskTxPos : public FlatFilePos
     CDiskTxPos() = default;
 };
 
-#endif // TESSERA_INDEX_DISKTXPOS_H
+#endif // FLOWCOIN_INDEX_DISKTXPOS_H

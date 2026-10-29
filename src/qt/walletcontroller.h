@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 
-#ifndef TESSERA_QT_WALLETCONTROLLER_H
-#define TESSERA_QT_WALLETCONTROLLER_H
+#ifndef FLOWCOIN_QT_WALLETCONTROLLER_H
+#define FLOWCOIN_QT_WALLETCONTROLLER_H
 
 #include <qt/sendcoinsrecipient.h>
 #include <support/allocators/secure.h>
@@ -179,4 +179,4 @@ public:
     void load(bool show_loading_minimized);
 };
 
-#endif // TESSERA_QT_WALLETCONTROLLER_H
+#endif // FLOWCOIN_QT_WALLETCONTROLLER_H

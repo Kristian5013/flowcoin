@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_MEMPOOL_ARGS_H
-#define TESSERA_NODE_MEMPOOL_ARGS_H
+#ifndef FLOWCOIN_NODE_MEMPOOL_ARGS_H
+#define FLOWCOIN_NODE_MEMPOOL_ARGS_H
 
 #include <util/result.h>
 
@@ -23,4 +23,4 @@ struct MemPoolOptions;
 [[nodiscard]] util::Result<void> ApplyArgsManOptions(const ArgsManager& argsman, const CChainParams& chainparams, kernel::MemPoolOptions& mempool_opts);
 
 
-#endif // TESSERA_NODE_MEMPOOL_ARGS_H
+#endif // FLOWCOIN_NODE_MEMPOOL_ARGS_H

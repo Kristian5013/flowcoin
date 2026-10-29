@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SCRIPT_SIGCACHE_H
-#define TESSERA_SCRIPT_SIGCACHE_H
+#ifndef FLOWCOIN_SCRIPT_SIGCACHE_H
+#define FLOWCOIN_SCRIPT_SIGCACHE_H
 
 #include <consensus/amount.h>
 #include <crypto/sha3.h>
@@ -71,4 +71,4 @@ public:
     bool VerifySignature(const std::vector<unsigned char>& vchSig, const CPubKey& vchPubKey, const uint256& sighash) const override;
 };
 
-#endif // TESSERA_SCRIPT_SIGCACHE_H
+#endif // FLOWCOIN_SCRIPT_SIGCACHE_H

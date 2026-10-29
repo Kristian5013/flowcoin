@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 /**
  * Utilities for converting data from/to strings.
  */
-#ifndef TESSERA_UTIL_STRENCODINGS_H
-#define TESSERA_UTIL_STRENCODINGS_H
+#ifndef FLOWCOIN_UTIL_STRENCODINGS_H
+#define FLOWCOIN_UTIL_STRENCODINGS_H
 
 #include <span.h>
 #include <util/string.h>
@@ -405,4 +405,4 @@ inline auto operator""_hex_v_u8() { return std::vector<uint8_t>{UCharCast(str.by
 } // inline namespace hex_literals
 } // namespace util
 
-#endif // TESSERA_UTIL_STRENCODINGS_H
+#endif // FLOWCOIN_UTIL_STRENCODINGS_H

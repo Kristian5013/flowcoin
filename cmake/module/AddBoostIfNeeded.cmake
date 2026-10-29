@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Finds Boost (header-only — multi_index for the mempool, etc.) and makes the

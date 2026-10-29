@@ -1,11 +1,11 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 /**
  * Functionality for communicating with Tor.
  */
-#ifndef TESSERA_TORCONTROL_H
-#define TESSERA_TORCONTROL_H
+#ifndef FLOWCOIN_TORCONTROL_H
+#define FLOWCOIN_TORCONTROL_H
 
 #include <netaddress.h>
 #include <util/fs.h>
@@ -171,4 +171,4 @@ public:
     void disconnected_cb(TorControlConnection& conn);
 };
 
-#endif // TESSERA_TORCONTROL_H
+#endif // FLOWCOIN_TORCONTROL_H

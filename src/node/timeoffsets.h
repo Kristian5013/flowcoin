@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_TIMEOFFSETS_H
-#define TESSERA_NODE_TIMEOFFSETS_H
+#ifndef FLOWCOIN_NODE_TIMEOFFSETS_H
+#define FLOWCOIN_NODE_TIMEOFFSETS_H
 
 #include <sync.h>
 
@@ -45,4 +45,4 @@ public:
     bool WarnIfOutOfSync() const EXCLUSIVE_LOCKS_REQUIRED(!m_mutex);
 };
 
-#endif // TESSERA_NODE_TIMEOFFSETS_H
+#endif // FLOWCOIN_NODE_TIMEOFFSETS_H

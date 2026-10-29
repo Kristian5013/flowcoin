@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POLICY_RBF_H
-#define TESSERA_POLICY_RBF_H
+#ifndef FLOWCOIN_POLICY_RBF_H
+#define FLOWCOIN_POLICY_RBF_H
 
 #include <consensus/amount.h>
 #include <primitives/transaction.h>
@@ -105,4 +105,4 @@ std::optional<std::string> PaysForRBF(CAmount original_fees,
  */
 std::optional<std::pair<DiagramCheckError, std::string>> ImprovesFeerateDiagram(CTxMemPool::ChangeSet& changeset);
 
-#endif // TESSERA_POLICY_RBF_H
+#endif // FLOWCOIN_POLICY_RBF_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_SPLASHSCREEN_H
-#define TESSERA_QT_SPLASHSCREEN_H
+#ifndef FLOWCOIN_QT_SPLASHSCREEN_H
+#define FLOWCOIN_QT_SPLASHSCREEN_H
 
 #include <QWidget>
 
@@ -68,4 +68,4 @@ private:
     std::list<std::unique_ptr<interfaces::Handler>> m_connected_wallet_handlers;
 };
 
-#endif // TESSERA_QT_SPLASHSCREEN_H
+#endif // FLOWCOIN_QT_SPLASHSCREEN_H

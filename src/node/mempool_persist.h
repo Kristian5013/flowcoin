@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_MEMPOOL_PERSIST_H
-#define TESSERA_NODE_MEMPOOL_PERSIST_H
+#ifndef FLOWCOIN_NODE_MEMPOOL_PERSIST_H
+#define FLOWCOIN_NODE_MEMPOOL_PERSIST_H
 
 #include <util/fs.h>
 
@@ -30,4 +30,4 @@ bool LoadMempool(CTxMemPool& pool, const fs::path& load_path,
 } // namespace node
 
 
-#endif // TESSERA_NODE_MEMPOOL_PERSIST_H
+#endif // FLOWCOIN_NODE_MEMPOOL_PERSIST_H

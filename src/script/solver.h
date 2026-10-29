@@ -1,10 +1,10 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 // The Solver functions are used by policy and the wallet, but not consensus.
 
-#ifndef TESSERA_SCRIPT_SOLVER_H
-#define TESSERA_SCRIPT_SOLVER_H
+#ifndef FLOWCOIN_SCRIPT_SOLVER_H
+#define FLOWCOIN_SCRIPT_SOLVER_H
 
 #include <attributes.h>
 #include <script/script.h>
@@ -57,4 +57,4 @@ CScript GetScriptForRawPubKey(const CPubKey& pubkey);
 /** Generate a multisig script. */
 CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey>& keys);
 
-#endif // TESSERA_SCRIPT_SOLVER_H
+#endif // FLOWCOIN_SCRIPT_SOLVER_H

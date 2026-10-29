@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_FEEBUMPER_H
-#define TESSERA_WALLET_FEEBUMPER_H
+#ifndef FLOWCOIN_WALLET_FEEBUMPER_H
+#define FLOWCOIN_WALLET_FEEBUMPER_H
 
 #include <consensus/amount.h>
 #include <primitives/transaction.h>
@@ -76,4 +76,4 @@ Result CommitTransaction(CWallet& wallet,
 } // namespace feebumper
 } // namespace wallet
 
-#endif // TESSERA_WALLET_FEEBUMPER_H
+#endif // FLOWCOIN_WALLET_FEEBUMPER_H

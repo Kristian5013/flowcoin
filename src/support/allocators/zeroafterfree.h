@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
-#define TESSERA_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#ifndef FLOWCOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#define FLOWCOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
 
 #include <support/cleanse.h>
 
@@ -41,4 +41,4 @@ struct zero_after_free_allocator {
 /** Byte-vector that clears its contents before deletion. */
 using SerializeData = std::vector<std::byte, zero_after_free_allocator<std::byte>>;
 
-#endif // TESSERA_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#endif // FLOWCOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H

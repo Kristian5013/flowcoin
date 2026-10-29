@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // interfaces::Chain — the node/wallet boundary, ported from Bitcoin Core's
@@ -14,8 +14,8 @@
 // and context() (no node::NodeContext). MakeChain therefore takes explicit
 // chainstate/mempool/signals references instead of a NodeContext.
 
-#ifndef TESSERA_INTERFACES_CHAIN_H
-#define TESSERA_INTERFACES_CHAIN_H
+#ifndef FLOWCOIN_INTERFACES_CHAIN_H
+#define FLOWCOIN_INTERFACES_CHAIN_H
 
 #include <common/settings.h>
 #include <consensus/amount.h>
@@ -381,4 +381,4 @@ std::unique_ptr<Chain> MakeChain(node::NodeContext& node);
 
 } // namespace interfaces
 
-#endif // TESSERA_INTERFACES_CHAIN_H
+#endif // FLOWCOIN_INTERFACES_CHAIN_H

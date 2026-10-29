@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_COINCONTROLTREEWIDGET_H
-#define TESSERA_QT_COINCONTROLTREEWIDGET_H
+#ifndef FLOWCOIN_QT_COINCONTROLTREEWIDGET_H
+#define FLOWCOIN_QT_COINCONTROLTREEWIDGET_H
 
 #include <QKeyEvent>
 #include <QTreeWidget>
@@ -18,4 +18,4 @@ protected:
     virtual void keyPressEvent(QKeyEvent *event) override;
 };
 
-#endif // TESSERA_QT_COINCONTROLTREEWIDGET_H
+#endif // FLOWCOIN_QT_COINCONTROLTREEWIDGET_H

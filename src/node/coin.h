@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_COIN_H
-#define TESSERA_NODE_COIN_H
+#ifndef FLOWCOIN_NODE_COIN_H
+#define FLOWCOIN_NODE_COIN_H
 
 #include <map>
 
@@ -23,4 +23,4 @@ struct NodeContext;
 void FindCoins(const node::NodeContext& node, std::map<COutPoint, Coin>& coins);
 } // namespace node
 
-#endif // TESSERA_NODE_COIN_H
+#endif // FLOWCOIN_NODE_COIN_H

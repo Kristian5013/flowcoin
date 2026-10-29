@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INTERFACES_ECHO_H
-#define TESSERA_INTERFACES_ECHO_H
+#ifndef FLOWCOIN_INTERFACES_ECHO_H
+#define FLOWCOIN_INTERFACES_ECHO_H
 
 #include <memory>
 #include <string>
@@ -22,4 +22,4 @@ public:
 std::unique_ptr<Echo> MakeEcho();
 } // namespace interfaces
 
-#endif // TESSERA_INTERFACES_ECHO_H
+#endif // FLOWCOIN_INTERFACES_ECHO_H

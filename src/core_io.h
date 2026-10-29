@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CORE_IO_H
-#define TESSERA_CORE_IO_H
+#ifndef FLOWCOIN_CORE_IO_H
+#define FLOWCOIN_CORE_IO_H
 
 #include <consensus/amount.h>
 #include <util/result.h>
@@ -45,4 +45,4 @@ std::string SighashToStr(unsigned char sighash_type);
 void ScriptToUniv(const CScript& script, UniValue& out, bool include_hex = true, bool include_address = false, const SigningProvider* provider = nullptr);
 void TxToUniv(const CTransaction& tx, const uint256& block_hash, UniValue& entry, bool include_hex = true, const CTxUndo* txundo = nullptr, TxVerbosity verbosity = TxVerbosity::SHOW_DETAILS, std::function<bool(const CTxOut&)> is_change_func = {});
 
-#endif // TESSERA_CORE_IO_H
+#endif // FLOWCOIN_CORE_IO_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_CLUSTER_LINEARIZE_H
-#define TESSERA_TEST_UTIL_CLUSTER_LINEARIZE_H
+#ifndef FLOWCOIN_TEST_UTIL_CLUSTER_LINEARIZE_H
+#define FLOWCOIN_TEST_UTIL_CLUSTER_LINEARIZE_H
 
 #include <cluster_linearize.h>
 #include <serialize.h>
@@ -417,4 +417,4 @@ inline uint64_t MaxOptimalLinearizationCost(DepGraphIndex cluster_count)
 
 } // namespace
 
-#endif // TESSERA_TEST_UTIL_CLUSTER_LINEARIZE_H
+#endif // FLOWCOIN_TEST_UTIL_CLUSTER_LINEARIZE_H

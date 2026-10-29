@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // The wallet's persistence layer, written in the style of Bitcoin Core's
@@ -16,8 +16,8 @@
 // flags, and the version. Private keys are NOT stored per-key -- the whole key tree
 // re-derives from the seed on load.
 
-#ifndef TESSERA_WALLET_WALLETDB_H
-#define TESSERA_WALLET_WALLETDB_H
+#ifndef FLOWCOIN_WALLET_WALLETDB_H
+#define FLOWCOIN_WALLET_WALLETDB_H
 
 #include <clientversion.h>
 #include <key.h>
@@ -202,4 +202,4 @@ bool RunWithinTxn(WalletDatabase& database, std::string_view process_desc, const
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_WALLETDB_H
+#endif // FLOWCOIN_WALLET_WALLETDB_H

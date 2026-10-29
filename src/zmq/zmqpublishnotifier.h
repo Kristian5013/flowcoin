@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ZMQ_ZMQPUBLISHNOTIFIER_H
-#define TESSERA_ZMQ_ZMQPUBLISHNOTIFIER_H
+#ifndef FLOWCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#define FLOWCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
 
 #include <zmq/zmqabstractnotifier.h>
 
@@ -71,4 +71,4 @@ public:
     bool NotifyTransactionRemoval(const CTransaction &transaction, uint64_t mempool_sequence) override;
 };
 
-#endif // TESSERA_ZMQ_ZMQPUBLISHNOTIFIER_H
+#endif // FLOWCOIN_ZMQ_ZMQPUBLISHNOTIFIER_H

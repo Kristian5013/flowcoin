@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SCHEDULER_H
-#define TESSERA_SCHEDULER_H
+#ifndef FLOWCOIN_SCHEDULER_H
+#define FLOWCOIN_SCHEDULER_H
 
 #include <attributes.h>
 #include <sync.h>
@@ -156,4 +156,4 @@ public:
     size_t size() override EXCLUSIVE_LOCKS_REQUIRED(!m_callbacks_mutex);
 };
 
-#endif // TESSERA_SCHEDULER_H
+#endif // FLOWCOIN_SCHEDULER_H

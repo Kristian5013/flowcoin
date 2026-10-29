@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_SENDCOINSDIALOG_H
-#define TESSERA_QT_SENDCOINSDIALOG_H
+#ifndef FLOWCOIN_QT_SENDCOINSDIALOG_H
+#define FLOWCOIN_QT_SENDCOINSDIALOG_H
 
 #include <primitives/transaction_identifier.h>
 #include <qt/clientmodel.h>
@@ -150,4 +150,4 @@ private:
     QString m_psbt_button_text{tr("Create Unsigned")};
 };
 
-#endif // TESSERA_QT_SENDCOINSDIALOG_H
+#endif // FLOWCOIN_QT_SENDCOINSDIALOG_H

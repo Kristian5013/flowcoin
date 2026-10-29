@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_MEMPOOL_ENTRY_H
-#define TESSERA_KERNEL_MEMPOOL_ENTRY_H
+#ifndef FLOWCOIN_KERNEL_MEMPOOL_ENTRY_H
+#define FLOWCOIN_KERNEL_MEMPOOL_ENTRY_H
 
 #include <consensus/amount.h>
 #include <consensus/validation.h>
@@ -198,4 +198,4 @@ struct NewMempoolTransactionInfo {
           m_has_no_mempool_parents{has_no_mempool_parents} {}
 };
 
-#endif // TESSERA_KERNEL_MEMPOOL_ENTRY_H
+#endif // FLOWCOIN_KERNEL_MEMPOOL_ENTRY_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 #include <compare>
@@ -11,8 +11,8 @@
 
 #include <util/feefrac.h>
 
-#ifndef TESSERA_TXGRAPH_H
-#define TESSERA_TXGRAPH_H
+#ifndef FLOWCOIN_TXGRAPH_H
+#define FLOWCOIN_TXGRAPH_H
 
 static constexpr unsigned MAX_CLUSTER_COUNT_LIMIT{64};
 
@@ -269,4 +269,4 @@ std::unique_ptr<TxGraph> MakeTxGraph(
     const std::function<std::strong_ordering(const TxGraph::Ref&, const TxGraph::Ref&)>& fallback_order
 ) noexcept;
 
-#endif // TESSERA_TXGRAPH_H
+#endif // FLOWCOIN_TXGRAPH_H

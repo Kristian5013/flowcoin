@@ -1,10 +1,10 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera — byte-swap primitives.
 
-#ifndef TESSERA_COMPAT_BYTESWAP_H
-#define TESSERA_COMPAT_BYTESWAP_H
+#ifndef FLOWCOIN_COMPAT_BYTESWAP_H
+#define FLOWCOIN_COMPAT_BYTESWAP_H
 
 #include <cstdint>
 #ifdef _MSC_VER
@@ -77,4 +77,4 @@ inline BSWAP_CONSTEXPR uint64_t internal_bswap_64(uint64_t x)
 #endif
 }
 
-#endif // TESSERA_COMPAT_BYTESWAP_H
+#endif // FLOWCOIN_COMPAT_BYTESWAP_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_SCRIPT_H
-#define TESSERA_TEST_UTIL_SCRIPT_H
+#ifndef FLOWCOIN_TEST_UTIL_SCRIPT_H
+#define FLOWCOIN_TEST_UTIL_SCRIPT_H
 
 #include <crypto/sha3.h>
 #include <script/script.h>
@@ -33,4 +33,4 @@ static const std::vector<std::vector<uint8_t>> P2WSH_EMPTY_TWO_STACK{{static_cas
 /** Flags that are not forbidden by an assert in script validation */
 bool IsValidFlagCombination(script_verify_flags flags);
 
-#endif // TESSERA_TEST_UTIL_SCRIPT_H
+#endif // FLOWCOIN_TEST_UTIL_SCRIPT_H

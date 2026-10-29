@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_WARNING_H
-#define TESSERA_KERNEL_WARNING_H
+#ifndef FLOWCOIN_KERNEL_WARNING_H
+#define FLOWCOIN_KERNEL_WARNING_H
 
 namespace kernel {
 enum class Warning {
@@ -10,4 +10,4 @@ enum class Warning {
     LARGE_WORK_INVALID_CHAIN,
 };
 } // namespace kernel
-#endif // TESSERA_KERNEL_WARNING_H
+#endif // FLOWCOIN_KERNEL_WARNING_H

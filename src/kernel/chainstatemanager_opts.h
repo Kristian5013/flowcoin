@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_CHAINSTATEMANAGER_OPTS_H
-#define TESSERA_KERNEL_CHAINSTATEMANAGER_OPTS_H
+#ifndef FLOWCOIN_KERNEL_CHAINSTATEMANAGER_OPTS_H
+#define FLOWCOIN_KERNEL_CHAINSTATEMANAGER_OPTS_H
 
 #include <kernel/notifications_interface.h>
 
@@ -54,4 +54,4 @@ struct ChainstateManagerOpts {
 
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_CHAINSTATEMANAGER_OPTS_H
+#endif // FLOWCOIN_KERNEL_CHAINSTATEMANAGER_OPTS_H

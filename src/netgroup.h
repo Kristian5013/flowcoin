@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NETGROUP_H
-#define TESSERA_NETGROUP_H
+#ifndef FLOWCOIN_NETGROUP_H
+#define FLOWCOIN_NETGROUP_H
 
 #include <netaddress.h>
 #include <uint256.h>
@@ -100,4 +100,4 @@ private:
     }
 };
 
-#endif // TESSERA_NETGROUP_H
+#endif // FLOWCOIN_NETGROUP_H

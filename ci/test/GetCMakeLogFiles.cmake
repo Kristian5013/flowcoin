@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.26)

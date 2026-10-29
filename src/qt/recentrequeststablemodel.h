@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_RECENTREQUESTSTABLEMODEL_H
-#define TESSERA_QT_RECENTREQUESTSTABLEMODEL_H
+#ifndef FLOWCOIN_QT_RECENTREQUESTSTABLEMODEL_H
+#define FLOWCOIN_QT_RECENTREQUESTSTABLEMODEL_H
 
 #include <qt/sendcoinsrecipient.h>
 
@@ -97,4 +97,4 @@ private:
     QString getAmountTitle();
 };
 
-#endif // TESSERA_QT_RECENTREQUESTSTABLEMODEL_H
+#endif // FLOWCOIN_QT_RECENTREQUESTSTABLEMODEL_H

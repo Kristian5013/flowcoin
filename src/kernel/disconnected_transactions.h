@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_DISCONNECTED_TRANSACTIONS_H
-#define TESSERA_KERNEL_DISCONNECTED_TRANSACTIONS_H
+#ifndef FLOWCOIN_KERNEL_DISCONNECTED_TRANSACTIONS_H
+#define FLOWCOIN_KERNEL_DISCONNECTED_TRANSACTIONS_H
 
 #include <primitives/transaction.h>
 #include <util/hasher.h>
@@ -74,4 +74,4 @@ public:
     /** Clear all data structures and return the list of transactions. */
     std::list<CTransactionRef> take();
 };
-#endif // TESSERA_KERNEL_DISCONNECTED_TRANSACTIONS_H
+#endif // FLOWCOIN_KERNEL_DISCONNECTED_TRANSACTIONS_H

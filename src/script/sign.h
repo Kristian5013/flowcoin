@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Transaction signing, ported from Bitcoin Core's script/sign.h. Tessera option
@@ -11,8 +11,8 @@
 // solves a scriptPubKey and assembles the scriptSig / scriptWitness — so callers
 // no longer hand-build a witness as the validation tests had to.
 
-#ifndef TESSERA_SCRIPT_SIGN_H
-#define TESSERA_SCRIPT_SIGN_H
+#ifndef FLOWCOIN_SCRIPT_SIGN_H
+#define FLOWCOIN_SCRIPT_SIGN_H
 
 #include <addresstype.h>
 #include <coins.h>
@@ -105,4 +105,4 @@ void UpdateInput(CTxIn& input, const SignatureData& data);
 /** Determine whether a script (or, for P2SH, its known redeemScript) is a SegWit output. */
 bool IsSegWitOutput(const SigningProvider& provider, const CScript& script);
 
-#endif // TESSERA_SCRIPT_SIGN_H
+#endif // FLOWCOIN_SCRIPT_SIGN_H

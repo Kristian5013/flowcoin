@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_BLOOM_H
-#define TESSERA_COMMON_BLOOM_H
+#ifndef FLOWCOIN_COMMON_BLOOM_H
+#define FLOWCOIN_COMMON_BLOOM_H
 
 #include <serialize.h>
 #include <span.h>
@@ -123,4 +123,4 @@ private:
     int nHashFuncs;
 };
 
-#endif // TESSERA_COMMON_BLOOM_H
+#endif // FLOWCOIN_COMMON_BLOOM_H

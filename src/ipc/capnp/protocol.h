@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_IPC_CAPNP_PROTOCOL_H
-#define TESSERA_IPC_CAPNP_PROTOCOL_H
+#ifndef FLOWCOIN_IPC_CAPNP_PROTOCOL_H
+#define FLOWCOIN_IPC_CAPNP_PROTOCOL_H
 
 #include <memory>
 
@@ -13,4 +13,4 @@ std::unique_ptr<Protocol> MakeCapnpProtocol();
 } // namespace capnp
 } // namespace ipc
 
-#endif // TESSERA_IPC_CAPNP_PROTOCOL_H
+#endif // FLOWCOIN_IPC_CAPNP_PROTOCOL_H

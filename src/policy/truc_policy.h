@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POLICY_TRUC_POLICY_H
-#define TESSERA_POLICY_TRUC_POLICY_H
+#ifndef FLOWCOIN_POLICY_TRUC_POLICY_H
+#define FLOWCOIN_POLICY_TRUC_POLICY_H
 
 #include <consensus/amount.h>
 #include <policy/packages.h>
@@ -92,4 +92,4 @@ std::optional<std::string> PackageTRUCChecks(const CTxMemPool& pool, const CTran
                                            const Package& package,
                                            const std::vector<CTxMemPoolEntry::CTxMemPoolEntryRef>& mempool_parents) EXCLUSIVE_LOCKS_REQUIRED(pool.cs);
 
-#endif // TESSERA_POLICY_TRUC_POLICY_H
+#endif // FLOWCOIN_POLICY_TRUC_POLICY_H

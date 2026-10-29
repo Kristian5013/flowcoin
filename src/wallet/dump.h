@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_DUMP_H
-#define TESSERA_WALLET_DUMP_H
+#ifndef FLOWCOIN_WALLET_DUMP_H
+#define FLOWCOIN_WALLET_DUMP_H
 
 #include <util/fs.h>
 
@@ -19,4 +19,4 @@ bool DumpWallet(const ArgsManager& args, WalletDatabase& db, bilingual_str& erro
 bool CreateFromDump(const ArgsManager& args, const std::string& name, const fs::path& wallet_path, bilingual_str& error, std::vector<bilingual_str>& warnings);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_DUMP_H
+#endif // FLOWCOIN_WALLET_DUMP_H

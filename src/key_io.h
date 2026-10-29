@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Address <-> destination encoding, modeled on Bitcoin Core's key_io.h. The
@@ -15,8 +15,8 @@
 //   - Taproot (WitnessV1Taproot).
 // Functions take the CChainParams explicitly (there is no global Params()).
 
-#ifndef TESSERA_KEY_IO_H
-#define TESSERA_KEY_IO_H
+#ifndef FLOWCOIN_KEY_IO_H
+#define FLOWCOIN_KEY_IO_H
 
 #include <addresstype.h>
 #include <kernel/chainparams.h>
@@ -38,4 +38,4 @@ CTxDestination DecodeDestination(const std::string& str, const CChainParams& par
 /** Whether `str` is a valid Tessera address for the given network. */
 bool IsValidDestinationString(const std::string& str, const CChainParams& params);
 
-#endif // TESSERA_KEY_IO_H
+#endif // FLOWCOIN_KEY_IO_H

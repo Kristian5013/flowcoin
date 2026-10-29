@@ -1,10 +1,10 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera — host <-> little/big-endian integer conversions.
 
-#ifndef TESSERA_COMPAT_ENDIAN_H
-#define TESSERA_COMPAT_ENDIAN_H
+#ifndef FLOWCOIN_COMPAT_ENDIAN_H
+#define FLOWCOIN_COMPAT_ENDIAN_H
 
 #include <compat/byteswap.h>
 
@@ -72,4 +72,4 @@ inline BSWAP_CONSTEXPR uint64_t le64toh_internal(uint64_t little_endian_64bits)
     else return little_endian_64bits;
 }
 
-#endif // TESSERA_COMPAT_ENDIAN_H
+#endif // FLOWCOIN_COMPAT_ENDIAN_H

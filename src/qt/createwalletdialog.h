@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 
-#ifndef TESSERA_QT_CREATEWALLETDIALOG_H
-#define TESSERA_QT_CREATEWALLETDIALOG_H
+#ifndef FLOWCOIN_QT_CREATEWALLETDIALOG_H
+#define FLOWCOIN_QT_CREATEWALLETDIALOG_H
 
 #include <QDialog>
 
@@ -42,4 +42,4 @@ private:
     bool m_has_signers = false;
 };
 
-#endif // TESSERA_QT_CREATEWALLETDIALOG_H
+#endif // FLOWCOIN_QT_CREATEWALLETDIALOG_H

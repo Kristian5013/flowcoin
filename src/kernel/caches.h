@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_CACHES_H
-#define TESSERA_KERNEL_CACHES_H
+#ifndef FLOWCOIN_KERNEL_CACHES_H
+#define FLOWCOIN_KERNEL_CACHES_H
 
 #include <util/byte_units.h>
 
@@ -35,4 +35,4 @@ struct CacheSizes {
 };
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_CACHES_H
+#endif // FLOWCOIN_KERNEL_CACHES_H

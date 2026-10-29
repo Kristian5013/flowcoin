@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_VALIDATION_H
-#define TESSERA_VALIDATION_H
+#ifndef FLOWCOIN_VALIDATION_H
+#define FLOWCOIN_VALIDATION_H
 
 #include <arith_uint256.h>
 #include <attributes.h>
@@ -1416,4 +1416,4 @@ bool IsBIP30Unspendable(const uint256& block_hash, int block_height);
 // Returns the script flags which should be checked for a given block
 script_verify_flags GetBlockScriptFlags(const CBlockIndex& block_index, const ChainstateManager& chainman);
 
-#endif // TESSERA_VALIDATION_H
+#endif // FLOWCOIN_VALIDATION_H

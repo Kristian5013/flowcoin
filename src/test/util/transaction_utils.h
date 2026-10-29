@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_TRANSACTION_UTILS_H
-#define TESSERA_TEST_UTIL_TRANSACTION_UTILS_H
+#ifndef FLOWCOIN_TEST_UTIL_TRANSACTION_UTILS_H
+#define FLOWCOIN_TEST_UTIL_TRANSACTION_UTILS_H
 
 #include <primitives/transaction.h>
 #include <script/sign.h>
@@ -45,4 +45,4 @@ void BulkTransaction(CMutableTransaction& tx, int32_t target_weight);
  * @return           True if the produced script is entirely satisfying `fromPubKey`.
  **/
 
-#endif // TESSERA_TEST_UTIL_TRANSACTION_UTILS_H
+#endif // FLOWCOIN_TEST_UTIL_TRANSACTION_UTILS_H

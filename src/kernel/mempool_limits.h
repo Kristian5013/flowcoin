@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_MEMPOOL_LIMITS_H
-#define TESSERA_KERNEL_MEMPOOL_LIMITS_H
+#ifndef FLOWCOIN_KERNEL_MEMPOOL_LIMITS_H
+#define FLOWCOIN_KERNEL_MEMPOOL_LIMITS_H
 
 #include <policy/policy.h>
 
@@ -36,4 +36,4 @@ struct MemPoolLimits {
 };
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_MEMPOOL_LIMITS_H
+#endif // FLOWCOIN_KERNEL_MEMPOOL_LIMITS_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_TASK_RUNNER_H
-#define TESSERA_UTIL_TASK_RUNNER_H
+#ifndef FLOWCOIN_UTIL_TASK_RUNNER_H
+#define FLOWCOIN_UTIL_TASK_RUNNER_H
 
 #include <cstddef>
 #include <functional>
@@ -48,4 +48,4 @@ public:
 
 } // namespace util
 
-#endif // TESSERA_UTIL_TASK_RUNNER_H
+#endif // FLOWCOIN_UTIL_TASK_RUNNER_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Keystores that can supply keys/scripts for signing, modeled on Bitcoin Core's
@@ -22,8 +22,8 @@
 // with Merge), HidingSigningProvider (a secret-hiding wrapper), and
 // MultiSigningProvider (a fan-out over several providers) round out the set.
 
-#ifndef TESSERA_SCRIPT_SIGNINGPROVIDER_H
-#define TESSERA_SCRIPT_SIGNINGPROVIDER_H
+#ifndef FLOWCOIN_SCRIPT_SIGNINGPROVIDER_H
+#define FLOWCOIN_SCRIPT_SIGNINGPROVIDER_H
 
 #include <addresstype.h>
 #include <attributes.h>
@@ -132,4 +132,4 @@ CKeyID GetKeyForDestination(const SigningProvider& store, const CTxDestination& 
 /** Checks if a script can be signed (i.e. solved) by the given SigningProvider. */
 bool IsSolvable(const SigningProvider& provider, const CScript& script);
 
-#endif // TESSERA_SCRIPT_SIGNINGPROVIDER_H
+#endif // FLOWCOIN_SCRIPT_SIGNINGPROVIDER_H

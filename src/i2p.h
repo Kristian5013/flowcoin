@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_I2P_H
-#define TESSERA_I2P_H
+#ifndef FLOWCOIN_I2P_H
+#define FLOWCOIN_I2P_H
 
 #include <compat/compat.h>
 #include <netaddress.h>
@@ -275,4 +275,4 @@ private:
 } // namespace sam
 } // namespace i2p
 
-#endif // TESSERA_I2P_H
+#endif // FLOWCOIN_I2P_H

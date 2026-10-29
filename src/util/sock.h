@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_SOCK_H
-#define TESSERA_UTIL_SOCK_H
+#ifndef FLOWCOIN_UTIL_SOCK_H
+#define FLOWCOIN_UTIL_SOCK_H
 
 #include <compat/compat.h>
 #include <util/time.h>
@@ -291,4 +291,4 @@ private:
 /** Return readable error string for a network error code */
 std::string NetworkErrorString(int err);
 
-#endif // TESSERA_UTIL_SOCK_H
+#endif // FLOWCOIN_UTIL_SOCK_H

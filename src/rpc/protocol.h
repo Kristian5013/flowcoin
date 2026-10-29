@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_PROTOCOL_H
-#define TESSERA_RPC_PROTOCOL_H
+#ifndef FLOWCOIN_RPC_PROTOCOL_H
+#define FLOWCOIN_RPC_PROTOCOL_H
 
 #include <string_view>
 
@@ -112,4 +112,4 @@ enum RPCErrorCode
     RPC_FORBIDDEN_BY_SAFE_MODE      = -2,  //!< Server is in safe mode, and command is not allowed in safe mode
 };
 
-#endif // TESSERA_RPC_PROTOCOL_H
+#endif // FLOWCOIN_RPC_PROTOCOL_H

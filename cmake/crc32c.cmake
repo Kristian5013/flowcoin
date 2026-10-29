@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Vendored google/crc32c (hardware-accelerated CRC32C for LevelDB's checksums),

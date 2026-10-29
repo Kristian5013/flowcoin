@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_HEX_BASE_H
-#define TESSERA_CRYPTO_HEX_BASE_H
+#ifndef FLOWCOIN_CRYPTO_HEX_BASE_H
+#define FLOWCOIN_CRYPTO_HEX_BASE_H
 
 #include <span.h>
 
@@ -20,4 +20,4 @@ inline std::string HexStr(std::span<const std::byte> s) { return HexStr(MakeUCha
 
 signed char HexDigit(char c);
 
-#endif // TESSERA_CRYPTO_HEX_BASE_H
+#endif // FLOWCOIN_CRYPTO_HEX_BASE_H

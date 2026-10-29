@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INTERFACES_RPC_H
-#define TESSERA_INTERFACES_RPC_H
+#ifndef FLOWCOIN_INTERFACES_RPC_H
+#define FLOWCOIN_INTERFACES_RPC_H
 
 #include <memory>
 #include <string>
@@ -27,4 +27,4 @@ std::unique_ptr<Rpc> MakeRpc(node::NodeContext& node);
 
 } // namespace interfaces
 
-#endif // TESSERA_INTERFACES_RPC_H
+#endif // FLOWCOIN_INTERFACES_RPC_H

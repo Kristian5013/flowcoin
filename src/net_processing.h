@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NET_PROCESSING_H
-#define TESSERA_NET_PROCESSING_H
+#ifndef FLOWCOIN_NET_PROCESSING_H
+#define FLOWCOIN_NET_PROCESSING_H
 
 #include <consensus/amount.h>
 #include <net.h>
@@ -190,4 +190,4 @@ public:
     virtual ServiceFlags GetDesirableServiceFlags(ServiceFlags services) const = 0;
 };
 
-#endif // TESSERA_NET_PROCESSING_H
+#endif // FLOWCOIN_NET_PROCESSING_H

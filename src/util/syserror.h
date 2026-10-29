@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_SYSERROR_H
-#define TESSERA_UTIL_SYSERROR_H
+#ifndef FLOWCOIN_UTIL_SYSERROR_H
+#define FLOWCOIN_UTIL_SYSERROR_H
 
 #include <string>
 
@@ -16,4 +16,4 @@ std::string SysErrorString(int err);
 std::string Win32ErrorString(int err);
 #endif
 
-#endif // TESSERA_UTIL_SYSERROR_H
+#endif // FLOWCOIN_UTIL_SYSERROR_H

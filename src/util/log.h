@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_LOG_H
-#define TESSERA_UTIL_LOG_H
+#ifndef FLOWCOIN_UTIL_LOG_H
+#define FLOWCOIN_UTIL_LOG_H
 
 // This header works in tandem with `logging/categories.h`
 // to expose the complete logging interface.
@@ -154,4 +154,4 @@ using Level = util::log::Level;
 #define LogDebug(category, ...) detail_LogIfCategoryAndLevelEnabled(category, util::log::ShouldDebugLog, util::log::Level::Debug, __VA_ARGS__)
 #define LogTrace(category, ...) detail_LogIfCategoryAndLevelEnabled(category, util::log::ShouldTraceLog, util::log::Level::Trace, __VA_ARGS__)
 
-#endif // TESSERA_UTIL_LOG_H
+#endif // FLOWCOIN_UTIL_LOG_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_FLATFILE_H
-#define TESSERA_FLATFILE_H
+#ifndef FLOWCOIN_FLATFILE_H
+#define FLOWCOIN_FLATFILE_H
 
 #include <string>
 
@@ -80,4 +80,4 @@ public:
     bool Flush(const FlatFilePos& pos, bool finalize = false) const;
 };
 
-#endif // TESSERA_FLATFILE_H
+#endif // FLOWCOIN_FLATFILE_H

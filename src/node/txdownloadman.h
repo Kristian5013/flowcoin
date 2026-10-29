@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_TXDOWNLOADMAN_H
-#define TESSERA_NODE_TXDOWNLOADMAN_H
+#ifndef FLOWCOIN_NODE_TXDOWNLOADMAN_H
+#define FLOWCOIN_NODE_TXDOWNLOADMAN_H
 
 #include <net.h>
 #include <node/txorphanage.h>
@@ -172,4 +172,4 @@ public:
     std::vector<TxOrphanage::OrphanInfo> GetOrphanTransactions() const;
 };
 } // namespace node
-#endif // TESSERA_NODE_TXDOWNLOADMAN_H
+#endif // FLOWCOIN_NODE_TXDOWNLOADMAN_H

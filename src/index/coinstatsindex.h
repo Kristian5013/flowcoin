@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_COINSTATSINDEX_H
-#define TESSERA_INDEX_COINSTATSINDEX_H
+#ifndef FLOWCOIN_INDEX_COINSTATSINDEX_H
+#define FLOWCOIN_INDEX_COINSTATSINDEX_H
 
 #include <arith_uint256.h>
 #include <consensus/amount.h>
@@ -74,4 +74,4 @@ public:
 /// The global UTXO set hash object.
 extern std::unique_ptr<CoinStatsIndex> g_coin_stats_index;
 
-#endif // TESSERA_INDEX_COINSTATSINDEX_H
+#endif // FLOWCOIN_INDEX_COINSTATSINDEX_H

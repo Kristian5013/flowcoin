@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_UTIL_INSERT_H
-#define TESSERA_UTIL_INSERT_H
+#ifndef FLOWCOIN_UTIL_INSERT_H
+#define FLOWCOIN_UTIL_INSERT_H
 
 #include <set>
 
@@ -24,4 +24,4 @@ inline void insert(std::set<TsetT, Compare>& dst, const Tsrc& src) {
 
 } // namespace util
 
-#endif // TESSERA_UTIL_INSERT_H
+#endif // FLOWCOIN_UTIL_INSERT_H

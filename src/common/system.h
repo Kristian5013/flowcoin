@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_SYSTEM_H
-#define TESSERA_COMMON_SYSTEM_H
+#ifndef FLOWCOIN_COMMON_SYSTEM_H
+#define FLOWCOIN_COMMON_SYSTEM_H
 
 #include <tessera-build-config.h> // IWYU pragma: keep
 #include <util/time.h>
@@ -35,4 +35,4 @@ int GetNumCores();
  */
 std::optional<size_t> GetTotalRAM();
 
-#endif // TESSERA_COMMON_SYSTEM_H
+#endif // FLOWCOIN_COMMON_SYSTEM_H

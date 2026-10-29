@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Thin C++ wrapper over the vendored PQClean ML-KEM-768 (FIPS 203) key encapsulation
@@ -7,8 +7,8 @@
 // secp256k1 ECDH, which Tessera cannot use). Size-checked spans front the raw
 // PQCLEAN_MLKEM768_CLEAN_* C API.
 
-#ifndef TESSERA_CRYPTO_MLKEM_H
-#define TESSERA_CRYPTO_MLKEM_H
+#ifndef FLOWCOIN_CRYPTO_MLKEM_H
+#define FLOWCOIN_CRYPTO_MLKEM_H
 
 #include <cstdint>
 #include <span>
@@ -34,4 +34,4 @@ inline constexpr size_t SHARED_SECRET_SIZE = 32;
 
 } // namespace mlkem
 
-#endif // TESSERA_CRYPTO_MLKEM_H
+#endif // FLOWCOIN_CRYPTO_MLKEM_H

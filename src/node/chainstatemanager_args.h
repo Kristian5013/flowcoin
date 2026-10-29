@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_CHAINSTATEMANAGER_ARGS_H
-#define TESSERA_NODE_CHAINSTATEMANAGER_ARGS_H
+#ifndef FLOWCOIN_NODE_CHAINSTATEMANAGER_ARGS_H
+#define FLOWCOIN_NODE_CHAINSTATEMANAGER_ARGS_H
 
 #include <util/result.h>
 #include <validation.h>
@@ -16,4 +16,4 @@ namespace node {
 [[nodiscard]] util::Result<void> ApplyArgsManOptions(const ArgsManager& args, ChainstateManager::Options& opts);
 } // namespace node
 
-#endif // TESSERA_NODE_CHAINSTATEMANAGER_ARGS_H
+#endif // FLOWCOIN_NODE_CHAINSTATEMANAGER_ARGS_H

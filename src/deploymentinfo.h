@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_DEPLOYMENTINFO_H
-#define TESSERA_DEPLOYMENTINFO_H
+#ifndef FLOWCOIN_DEPLOYMENTINFO_H
+#define FLOWCOIN_DEPLOYMENTINFO_H
 
 #include <consensus/params.h>
 
@@ -31,4 +31,4 @@ inline std::string DeploymentName(Consensus::DeploymentPos pos)
 
 std::optional<Consensus::BuriedDeployment> GetBuriedDeployment(std::string_view deployment_name);
 
-#endif // TESSERA_DEPLOYMENTINFO_H
+#endif // FLOWCOIN_DEPLOYMENTINFO_H

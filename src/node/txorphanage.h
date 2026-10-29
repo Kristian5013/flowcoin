@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_TXORPHANAGE_H
-#define TESSERA_NODE_TXORPHANAGE_H
+#ifndef FLOWCOIN_NODE_TXORPHANAGE_H
+#define FLOWCOIN_NODE_TXORPHANAGE_H
 
 #include <consensus/validation.h>
 #include <net.h>
@@ -147,4 +147,4 @@ public:
 std::unique_ptr<TxOrphanage> MakeTxOrphanage() noexcept;
 std::unique_ptr<TxOrphanage> MakeTxOrphanage(TxOrphanage::Count max_global_latency_score, TxOrphanage::Usage reserved_peer_usage) noexcept;
 } // namespace node
-#endif // TESSERA_NODE_TXORPHANAGE_H
+#endif // FLOWCOIN_NODE_TXORPHANAGE_H

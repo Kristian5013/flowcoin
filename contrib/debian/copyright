@@ -4,13 +4,13 @@ Upstream-Contact: tessera core
 Source: https://github.com/MarcoFalke/tessera
 
 Files: *
-Copyright: tessera core
+Copyright: Kristian Pilatovich
 License: Expat
 Comment: tessera core encompasses all contributors to the
          project, listed in the release notes or the git log.
 
 Files: debian/*
-Copyright: tessera core
+Copyright: Kristian Pilatovich
 License: Expat
 
 Files: src/qt/res/icons/add.png
@@ -68,7 +68,7 @@ Comment: Modifications of Stephen Hutchings' Typicons
 Files: src/qt/res/icons/tessera.*
        share/pixmaps/tessera*
        src/qt/res/src/tessera.svg
-Copyright: tessera core
+Copyright: Kristian Pilatovich
 License: public-domain
 Comment: The Tessera logo (orange disc with a tilted double-struck "F").
 

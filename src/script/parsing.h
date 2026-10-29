@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SCRIPT_PARSING_H
-#define TESSERA_SCRIPT_PARSING_H
+#ifndef FLOWCOIN_SCRIPT_PARSING_H
+#define FLOWCOIN_SCRIPT_PARSING_H
 
 #include <span>
 #include <string>
@@ -35,4 +35,4 @@ std::span<const char> Expr(std::span<const char>& sp);
 
 } // namespace script
 
-#endif // TESSERA_SCRIPT_PARSING_H
+#endif // FLOWCOIN_SCRIPT_PARSING_H

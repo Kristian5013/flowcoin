@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_MEMPOOL_OPTIONS_H
-#define TESSERA_KERNEL_MEMPOOL_OPTIONS_H
+#ifndef FLOWCOIN_KERNEL_MEMPOOL_OPTIONS_H
+#define FLOWCOIN_KERNEL_MEMPOOL_OPTIONS_H
 
 #include <kernel/mempool_limits.h>
 
@@ -60,4 +60,4 @@ struct MemPoolOptions {
 };
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_MEMPOOL_OPTIONS_H
+#endif // FLOWCOIN_KERNEL_MEMPOOL_OPTIONS_H

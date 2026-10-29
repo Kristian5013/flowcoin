@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_FEES_H
-#define TESSERA_WALLET_FEES_H
+#ifndef FLOWCOIN_WALLET_FEES_H
+#define FLOWCOIN_WALLET_FEES_H
 
 #include <consensus/amount.h>
 
@@ -43,4 +43,4 @@ CFeeRate GetMinimumFeeRate(const CWallet& wallet, const CCoinControl& coin_contr
 CFeeRate GetDiscardRate(const CWallet& wallet);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_FEES_H
+#endif // FLOWCOIN_WALLET_FEES_H

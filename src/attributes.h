@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ATTRIBUTES_H
-#define TESSERA_ATTRIBUTES_H
+#ifndef FLOWCOIN_ATTRIBUTES_H
+#define FLOWCOIN_ATTRIBUTES_H
 
 #if defined(__clang__)
 #  if __has_attribute(lifetimebound)
@@ -22,4 +22,4 @@
 #  error No known always_inline attribute for this platform.
 #endif
 
-#endif // TESSERA_ATTRIBUTES_H
+#endif // FLOWCOIN_ATTRIBUTES_H

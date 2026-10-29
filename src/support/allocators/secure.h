@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SUPPORT_ALLOCATORS_SECURE_H
-#define TESSERA_SUPPORT_ALLOCATORS_SECURE_H
+#ifndef FLOWCOIN_SUPPORT_ALLOCATORS_SECURE_H
+#define FLOWCOIN_SUPPORT_ALLOCATORS_SECURE_H
 
 #include <support/lockedpool.h>
 #include <support/cleanse.h>
@@ -74,4 +74,4 @@ secure_unique_ptr<T> make_secure_unique(Args&&... as)
     }
 }
 
-#endif // TESSERA_SUPPORT_ALLOCATORS_SECURE_H
+#endif // FLOWCOIN_SUPPORT_ALLOCATORS_SECURE_H

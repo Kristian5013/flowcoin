@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_EVICTION_H
-#define TESSERA_NODE_EVICTION_H
+#ifndef FLOWCOIN_NODE_EVICTION_H
+#define FLOWCOIN_NODE_EVICTION_H
 
 #include <node/connection_types.h>
 #include <net_permissions.h>
@@ -65,4 +65,4 @@ struct NodeEvictionCandidate {
  */
 void ProtectEvictionCandidatesByRatio(std::vector<NodeEvictionCandidate>& vEvictionCandidates);
 
-#endif // TESSERA_NODE_EVICTION_H
+#endif // FLOWCOIN_NODE_EVICTION_H

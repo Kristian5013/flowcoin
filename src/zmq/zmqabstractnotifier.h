@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ZMQ_ZMQABSTRACTNOTIFIER_H
-#define TESSERA_ZMQ_ZMQABSTRACTNOTIFIER_H
+#ifndef FLOWCOIN_ZMQ_ZMQABSTRACTNOTIFIER_H
+#define FLOWCOIN_ZMQ_ZMQABSTRACTNOTIFIER_H
 
 #include <cstdint>
 #include <functional>
@@ -62,4 +62,4 @@ protected:
     int outbound_message_high_water_mark{DEFAULT_ZMQ_SNDHWM}; // aka SNDHWM
 };
 
-#endif // TESSERA_ZMQ_ZMQABSTRACTNOTIFIER_H
+#endif // FLOWCOIN_ZMQ_ZMQABSTRACTNOTIFIER_H

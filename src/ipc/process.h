@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_IPC_PROCESS_H
-#define TESSERA_IPC_PROCESS_H
+#ifndef FLOWCOIN_IPC_PROCESS_H
+#define FLOWCOIN_IPC_PROCESS_H
 
 #include <util/fs.h>
 
@@ -50,4 +50,4 @@ public:
 std::unique_ptr<Process> MakeProcess();
 } // namespace ipc
 
-#endif // TESSERA_IPC_PROCESS_H
+#endif // FLOWCOIN_IPC_PROCESS_H

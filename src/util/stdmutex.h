@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_STDMUTEX_H
-#define TESSERA_UTIL_STDMUTEX_H
+#ifndef FLOWCOIN_UTIL_STDMUTEX_H
+#define FLOWCOIN_UTIL_STDMUTEX_H
 
 // This header declares threading primitives compatible with Clang
 // Thread Safety Analysis and provides appropriate annotation macros.
@@ -38,4 +38,4 @@ public:
 // Provide STDLOCK(..) wrapper around StdMutex::Guard that checks the lock is not already held
 #define STDLOCK(cs) StdMutex::Guard TESSERA_UNIQUE_NAME(criticalblock){StdMutex::CheckNotHeld(cs)}
 
-#endif // TESSERA_UTIL_STDMUTEX_H
+#endif // FLOWCOIN_UTIL_STDMUTEX_H

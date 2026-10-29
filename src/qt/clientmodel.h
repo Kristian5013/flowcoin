@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_CLIENTMODEL_H
-#define TESSERA_QT_CLIENTMODEL_H
+#ifndef FLOWCOIN_QT_CLIENTMODEL_H
+#define FLOWCOIN_QT_CLIENTMODEL_H
 
 #include <QObject>
 #include <QDateTime>
@@ -128,4 +128,4 @@ Q_SIGNALS:
     void showProgress(const QString &title, int nProgress);
 };
 
-#endif // TESSERA_QT_CLIENTMODEL_H
+#endif // FLOWCOIN_QT_CLIENTMODEL_H

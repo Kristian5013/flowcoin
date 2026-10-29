@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UINT256_H
-#define TESSERA_UINT256_H
+#ifndef FLOWCOIN_UINT256_H
+#define FLOWCOIN_UINT256_H
 
 #include <crypto/common.h>
 #include <crypto/hex_base.h>
@@ -203,4 +203,4 @@ public:
     static const uint256 ONE;
 };
 
-#endif // TESSERA_UINT256_H
+#endif // FLOWCOIN_UINT256_H

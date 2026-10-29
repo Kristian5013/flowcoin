@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_UI_CHANGE_TYPE_H
-#define TESSERA_UTIL_UI_CHANGE_TYPE_H
+#ifndef FLOWCOIN_UTIL_UI_CHANGE_TYPE_H
+#define FLOWCOIN_UTIL_UI_CHANGE_TYPE_H
 
 /** General change type (added, updated, removed). */
 enum ChangeType {
@@ -11,4 +11,4 @@ enum ChangeType {
     CT_DELETED
 };
 
-#endif // TESSERA_UTIL_UI_CHANGE_TYPE_H
+#endif // FLOWCOIN_UTIL_UI_CHANGE_TYPE_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_RPC_WALLET_H
-#define TESSERA_WALLET_RPC_WALLET_H
+#ifndef FLOWCOIN_WALLET_RPC_WALLET_H
+#define FLOWCOIN_WALLET_RPC_WALLET_H
 
 #include <span>
 
@@ -12,4 +12,4 @@ namespace wallet {
 std::span<const CRPCCommand> GetWalletRPCCommands();
 } // namespace wallet
 
-#endif // TESSERA_WALLET_RPC_WALLET_H
+#endif // FLOWCOIN_WALLET_RPC_WALLET_H

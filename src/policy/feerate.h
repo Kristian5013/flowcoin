@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POLICY_FEERATE_H
-#define TESSERA_POLICY_FEERATE_H
+#ifndef FLOWCOIN_POLICY_FEERATE_H
+#define FLOWCOIN_POLICY_FEERATE_H
 
 #include <consensus/amount.h>
 #include <serialize.h>
@@ -77,4 +77,4 @@ public:
     SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.m_feerate.fee, obj.m_feerate.size); }
 };
 
-#endif // TESSERA_POLICY_FEERATE_H
+#endif // FLOWCOIN_POLICY_FEERATE_H

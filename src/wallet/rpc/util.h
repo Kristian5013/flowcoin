@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_RPC_UTIL_H
-#define TESSERA_WALLET_RPC_UTIL_H
+#ifndef FLOWCOIN_WALLET_RPC_UTIL_H
+#define FLOWCOIN_WALLET_RPC_UTIL_H
 
 #include <rpc/util.h>
 #include <wallet/wallet.h>
@@ -53,4 +53,4 @@ void HandleWalletError(const std::shared_ptr<CWallet>& wallet, DatabaseStatus& s
 void AppendLastProcessedBlock(UniValue& entry, const CWallet& wallet) EXCLUSIVE_LOCKS_REQUIRED(wallet.cs_wallet);
 } //  namespace wallet
 
-#endif // TESSERA_WALLET_RPC_UTIL_H
+#endif // FLOWCOIN_WALLET_RPC_UTIL_H

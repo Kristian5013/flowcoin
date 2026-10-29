@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONSENSUS_VALIDATION_H
-#define TESSERA_CONSENSUS_VALIDATION_H
+#ifndef FLOWCOIN_CONSENSUS_VALIDATION_H
+#define FLOWCOIN_CONSENSUS_VALIDATION_H
 
 #include <string>
 #include <consensus/consensus.h>
@@ -162,4 +162,4 @@ inline int GetWitnessCommitmentIndex(const CBlock& block)
     return commitpos;
 }
 
-#endif // TESSERA_CONSENSUS_VALIDATION_H
+#endif // FLOWCOIN_CONSENSUS_VALIDATION_H

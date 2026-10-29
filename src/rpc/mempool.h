@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_MEMPOOL_H
-#define TESSERA_RPC_MEMPOOL_H
+#ifndef FLOWCOIN_RPC_MEMPOOL_H
+#define FLOWCOIN_RPC_MEMPOOL_H
 
 class CTxMemPool;
 class UniValue;
@@ -13,4 +13,4 @@ UniValue MempoolInfoToJSON(const CTxMemPool& pool);
 /** Mempool to JSON */
 UniValue MempoolToJSON(const CTxMemPool& pool, bool verbose = false, bool include_mempool_sequence = false);
 
-#endif // TESSERA_RPC_MEMPOOL_H
+#endif // FLOWCOIN_RPC_MEMPOOL_H

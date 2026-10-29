@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_BLOCKENCODINGS_H
-#define TESSERA_BLOCKENCODINGS_H
+#ifndef FLOWCOIN_BLOCKENCODINGS_H
+#define FLOWCOIN_BLOCKENCODINGS_H
 
 #include <crypto/siphash.h>
 #include <primitives/block.h>
@@ -150,4 +150,4 @@ public:
     ReadStatus FillBlock(CBlock& block, const std::vector<CTransactionRef>& vtx_missing, bool segwit_active);
 };
 
-#endif // TESSERA_BLOCKENCODINGS_H
+#endif // FLOWCOIN_BLOCKENCODINGS_H

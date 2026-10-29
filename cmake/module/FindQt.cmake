@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Finds Qt 6 for the GUI (tessera-qt), wrapping the upstream Qt6 package config

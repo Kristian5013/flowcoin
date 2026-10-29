@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_RESULT_H
-#define TESSERA_UTIL_RESULT_H
+#ifndef FLOWCOIN_UTIL_RESULT_H
+#define FLOWCOIN_UTIL_RESULT_H
 
 #include <attributes.h>
 #include <util/translation.h>
@@ -95,4 +95,4 @@ bilingual_str ErrorString(const Result<T>& result)
 }
 } // namespace util
 
-#endif // TESSERA_UTIL_RESULT_H
+#endif // FLOWCOIN_UTIL_RESULT_H

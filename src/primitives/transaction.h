@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_PRIMITIVES_TRANSACTION_H
-#define TESSERA_PRIMITIVES_TRANSACTION_H
+#ifndef FLOWCOIN_PRIMITIVES_TRANSACTION_H
+#define FLOWCOIN_PRIMITIVES_TRANSACTION_H
 
 #include <attributes.h>
 #include <consensus/amount.h>
@@ -413,4 +413,4 @@ struct hash<CTransactionRef> {
 };
 } // namespace std
 
-#endif // TESSERA_PRIMITIVES_TRANSACTION_H
+#endif // FLOWCOIN_PRIMITIVES_TRANSACTION_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CRYPTO_SIPHASH_H
-#define TESSERA_CRYPTO_SIPHASH_H
+#ifndef FLOWCOIN_CRYPTO_SIPHASH_H
+#define FLOWCOIN_CRYPTO_SIPHASH_H
 
 #include <array>
 #include <cstdint>
@@ -68,4 +68,4 @@ public:
     uint64_t operator()(const uint256& val, uint32_t extra) const noexcept;
 };
 
-#endif // TESSERA_CRYPTO_SIPHASH_H
+#endif // FLOWCOIN_CRYPTO_SIPHASH_H

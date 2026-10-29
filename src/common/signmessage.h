@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_SIGNMESSAGE_H
-#define TESSERA_COMMON_SIGNMESSAGE_H
+#ifndef FLOWCOIN_COMMON_SIGNMESSAGE_H
+#define FLOWCOIN_COMMON_SIGNMESSAGE_H
 
 #include <uint256.h>
 
@@ -72,4 +72,4 @@ uint256 MessageHash(const std::string& message);
 
 std::string SigningResultString(SigningResult res);
 
-#endif // TESSERA_COMMON_SIGNMESSAGE_H
+#endif // FLOWCOIN_COMMON_SIGNMESSAGE_H

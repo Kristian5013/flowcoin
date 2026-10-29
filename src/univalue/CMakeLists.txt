@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Vendored univalue — the JSON library used by every layer that speaks RPC/JSON.

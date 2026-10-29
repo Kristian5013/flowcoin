@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDIRECTMAP_H
-#define TESSERA_INDIRECTMAP_H
+#ifndef FLOWCOIN_INDIRECTMAP_H
+#define FLOWCOIN_INDIRECTMAP_H
 
 #include <map>
 
@@ -54,4 +54,4 @@ public:
     const_iterator cend() const     { return m.cend(); }
 };
 
-#endif // TESSERA_INDIRECTMAP_H
+#endif // FLOWCOIN_INDIRECTMAP_H

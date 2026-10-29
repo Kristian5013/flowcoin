@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_BLOCKFILTER_H
-#define TESSERA_BLOCKFILTER_H
+#ifndef FLOWCOIN_BLOCKFILTER_H
+#define FLOWCOIN_BLOCKFILTER_H
 
 #include <cstddef>
 #include <cstdint>
@@ -172,4 +172,4 @@ public:
     }
 };
 
-#endif // TESSERA_BLOCKFILTER_H
+#endif // FLOWCOIN_BLOCKFILTER_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POW_H
-#define TESSERA_POW_H
+#ifndef FLOWCOIN_POW_H
+#define FLOWCOIN_POW_H
 
 #include <consensus/params.h>
 
@@ -45,4 +45,4 @@ bool CheckProofOfWorkImpl(uint256 hash, unsigned int nBits, const Consensus::Par
  */
 bool PermittedDifficultyTransition(const Consensus::Params& params, int64_t height, uint32_t old_nbits, uint32_t new_nbits);
 
-#endif // TESSERA_POW_H
+#endif // FLOWCOIN_POW_H

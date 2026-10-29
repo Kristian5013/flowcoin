@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_COINS_H
-#define TESSERA_TEST_UTIL_COINS_H
+#ifndef FLOWCOIN_TEST_UTIL_COINS_H
+#define FLOWCOIN_TEST_UTIL_COINS_H
 
 #include <primitives/transaction.h>
 
@@ -16,4 +16,4 @@ class FastRandomContext;
  */
 COutPoint AddTestCoin(FastRandomContext& rng, CCoinsViewCache& coins_view);
 
-#endif // TESSERA_TEST_UTIL_COINS_H
+#endif // FLOWCOIN_TEST_UTIL_COINS_H

@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // End-to-end test of the V2Transport state machine over the post-quantum (ML-KEM) handshake.

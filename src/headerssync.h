@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_HEADERSSYNC_H
-#define TESSERA_HEADERSSYNC_H
+#ifndef FLOWCOIN_HEADERSSYNC_H
+#define FLOWCOIN_HEADERSSYNC_H
 
 #include <arith_uint256.h>
 #include <chain.h>
@@ -279,4 +279,4 @@ private:
     State m_download_state{State::PRESYNC};
 };
 
-#endif // TESSERA_HEADERSSYNC_H
+#endif // FLOWCOIN_HEADERSSYNC_H

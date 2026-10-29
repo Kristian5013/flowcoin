@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMPAT_CPUID_H
-#define TESSERA_COMPAT_CPUID_H
+#ifndef FLOWCOIN_COMPAT_CPUID_H
+#define FLOWCOIN_COMPAT_CPUID_H
 
 #if defined(__x86_64__) || defined(__amd64__) || defined(__i386__)
 #define HAVE_GETCPUID
@@ -22,4 +22,4 @@ void static inline GetCPUID(uint32_t leaf, uint32_t subleaf, uint32_t& a, uint32
 }
 
 #endif // defined(__x86_64__) || defined(__amd64__) || defined(__i386__)
-#endif // TESSERA_COMPAT_CPUID_H
+#endif // FLOWCOIN_COMPAT_CPUID_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SEMAPHORE_GRANT_H
-#define TESSERA_SEMAPHORE_GRANT_H
+#ifndef FLOWCOIN_SEMAPHORE_GRANT_H
+#define FLOWCOIN_SEMAPHORE_GRANT_H
 
 #include <semaphore>
 
@@ -88,4 +88,4 @@ public:
 
 using BinarySemaphoreGrant = CountingSemaphoreGrant<1>;
 
-#endif // TESSERA_SEMAPHORE_GRANT_H
+#endif // FLOWCOIN_SEMAPHORE_GRANT_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_NETWORKSTYLE_H
-#define TESSERA_QT_NETWORKSTYLE_H
+#ifndef FLOWCOIN_QT_NETWORKSTYLE_H
+#define FLOWCOIN_QT_NETWORKSTYLE_H
 
 #include <util/chaintype.h>
 
@@ -31,4 +31,4 @@ private:
     QString titleAddText;
 };
 
-#endif // TESSERA_QT_NETWORKSTYLE_H
+#endif // FLOWCOIN_QT_NETWORKSTYLE_H

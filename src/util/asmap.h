@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_ASMAP_H
-#define TESSERA_UTIL_ASMAP_H
+#ifndef FLOWCOIN_UTIL_ASMAP_H
+#define FLOWCOIN_UTIL_ASMAP_H
 
 #include <uint256.h>
 #include <util/fs.h>
@@ -23,4 +23,4 @@ std::vector<std::byte> DecodeAsmap(fs::path path);
 /** Calculate the asmap version, a checksum identifying the asmap being used. */
 uint256 AsmapVersion(std::span<const std::byte> data);
 
-#endif // TESSERA_UTIL_ASMAP_H
+#endif // FLOWCOIN_UTIL_ASMAP_H

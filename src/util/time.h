@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_TIME_H
-#define TESSERA_UTIL_TIME_H
+#ifndef FLOWCOIN_UTIL_TIME_H
+#define FLOWCOIN_UTIL_TIME_H
 
 // The `util/time.h` header is designed to be a drop-in replacement for `chrono`.
 #include <chrono> // IWYU pragma: export
@@ -165,4 +165,4 @@ struct timeval MillisToTimeval(int64_t nTimeout);
  */
 struct timeval MillisToTimeval(std::chrono::milliseconds ms);
 
-#endif // TESSERA_UTIL_TIME_H
+#endif // FLOWCOIN_UTIL_TIME_H

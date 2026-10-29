@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CONSENSUS_CONSENSUS_H
-#define TESSERA_CONSENSUS_CONSENSUS_H
+#ifndef FLOWCOIN_CONSENSUS_CONSENSUS_H
+#define FLOWCOIN_CONSENSUS_CONSENSUS_H
 
 #include <cstdint>
 #include <cstdlib>
@@ -44,4 +44,4 @@ static constexpr unsigned int LOCKTIME_VERIFY_SEQUENCE = (1 << 0);
  */
 static constexpr int64_t MAX_TIMEWARP = 600;
 
-#endif // TESSERA_CONSENSUS_CONSENSUS_H
+#endif // FLOWCOIN_CONSENSUS_CONSENSUS_H

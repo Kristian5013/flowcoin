@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_TRANSACTION_H
-#define TESSERA_NODE_TRANSACTION_H
+#ifndef FLOWCOIN_NODE_TRANSACTION_H
+#define FLOWCOIN_NODE_TRANSACTION_H
 
 #include <common/messages.h>
 #include <node/types.h>
@@ -72,4 +72,4 @@ static const CAmount DEFAULT_MAX_BURN_AMOUNT{0};
 CTransactionRef GetTransaction(const CBlockIndex* block_index, const CTxMemPool* mempool, const Txid& hash, const BlockManager& blockman, uint256& hashBlock);
 } // namespace node
 
-#endif // TESSERA_NODE_TRANSACTION_H
+#endif // FLOWCOIN_NODE_TRANSACTION_H

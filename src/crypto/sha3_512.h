@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // SHA3-512 (FIPS 202, Keccak-f[1600]) for Tessera's RNG entropy pool.
@@ -12,8 +12,8 @@
 // (64-byte output, pointer/length Write, void Finalize, Reset, Size, and a
 // copyable midstate) so the SHA3-adapted random.cpp uses it as a drop-in.
 
-#ifndef TESSERA_CRYPTO_SHA3_512_H
-#define TESSERA_CRYPTO_SHA3_512_H
+#ifndef FLOWCOIN_CRYPTO_SHA3_512_H
+#define FLOWCOIN_CRYPTO_SHA3_512_H
 
 #include <cstdint>
 #include <cstdlib>
@@ -43,4 +43,4 @@ public:
     uint64_t Size() const { return m_bytes; }
 };
 
-#endif // TESSERA_CRYPTO_SHA3_512_H
+#endif // FLOWCOIN_CRYPTO_SHA3_512_H

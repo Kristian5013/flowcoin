@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_COVERAGE_H
-#define TESSERA_TEST_UTIL_COVERAGE_H
+#ifndef FLOWCOIN_TEST_UTIL_COVERAGE_H
+#define FLOWCOIN_TEST_UTIL_COVERAGE_H
 
 void ResetCoverageCounters();
 
-#endif // TESSERA_TEST_UTIL_COVERAGE_H
+#endif // FLOWCOIN_TEST_UTIL_COVERAGE_H

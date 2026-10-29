@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Tessera — SHA3-256 (FIPS 202, Keccak-f[1600]).
@@ -7,8 +7,8 @@
 // proof of work all use it. One sponge primitive, length-extension safe. The
 // domain padding is SHA3's 0x06 (FIPS 202), NOT original Keccak's 0x01.
 
-#ifndef TESSERA_CRYPTO_SHA3_H
-#define TESSERA_CRYPTO_SHA3_H
+#ifndef FLOWCOIN_CRYPTO_SHA3_H
+#define FLOWCOIN_CRYPTO_SHA3_H
 
 #include <cstdint>
 #include <cstdlib>
@@ -43,4 +43,4 @@ public:
     SHA3_256& Reset();
 };
 
-#endif // TESSERA_CRYPTO_SHA3_H
+#endif // FLOWCOIN_CRYPTO_SHA3_H

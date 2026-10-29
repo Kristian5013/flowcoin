@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_SETTINGS_H
-#define TESSERA_COMMON_SETTINGS_H
+#ifndef FLOWCOIN_COMMON_SETTINGS_H
+#define FLOWCOIN_COMMON_SETTINGS_H
 
 #include <util/fs.h>
 
@@ -111,4 +111,4 @@ auto FindKey(Map&& map, Key&& key) -> decltype(&map.at(key))
 
 } // namespace common
 
-#endif // TESSERA_COMMON_SETTINGS_H
+#endif // FLOWCOIN_COMMON_SETTINGS_H

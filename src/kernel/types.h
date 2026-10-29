@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file kernel/types.h is a home for simple enum and struct type definitions
@@ -9,8 +9,8 @@
 //! dependencies. More complicated types should be defined in dedicated header
 //! files.
 
-#ifndef TESSERA_KERNEL_TYPES_H
-#define TESSERA_KERNEL_TYPES_H
+#ifndef FLOWCOIN_KERNEL_TYPES_H
+#define FLOWCOIN_KERNEL_TYPES_H
 
 namespace kernel {
 //! Information about chainstate that notifications are sent from.
@@ -26,4 +26,4 @@ struct ChainstateRole {
 };
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_TYPES_H
+#endif // FLOWCOIN_KERNEL_TYPES_H

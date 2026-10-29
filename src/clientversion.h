@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CLIENTVERSION_H
-#define TESSERA_CLIENTVERSION_H
+#ifndef FLOWCOIN_CLIENTVERSION_H
+#define FLOWCOIN_CLIENTVERSION_H
 
 #include <util/macros.h>
 
@@ -35,4 +35,4 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
 
 #endif // RC_INVOKED
 
-#endif // TESSERA_CLIENTVERSION_H
+#endif // FLOWCOIN_CLIENTVERSION_H

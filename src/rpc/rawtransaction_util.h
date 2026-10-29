@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_RAWTRANSACTION_UTIL_H
-#define TESSERA_RPC_RAWTRANSACTION_UTIL_H
+#ifndef FLOWCOIN_RPC_RAWTRANSACTION_UTIL_H
+#define FLOWCOIN_RPC_RAWTRANSACTION_UTIL_H
 
 #include <addresstype.h>
 #include <consensus/amount.h>
@@ -78,4 +78,4 @@ struct TxDocOptions {
 /** Explain the UniValue "decoded" transaction object, may include extra fields if processed by wallet **/
 std::vector<RPCResult> TxDoc(const TxDocOptions& opts = {});
 
-#endif // TESSERA_RPC_RAWTRANSACTION_UTIL_H
+#endif // FLOWCOIN_RPC_RAWTRANSACTION_UTIL_H

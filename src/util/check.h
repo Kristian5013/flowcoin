@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_CHECK_H
-#define TESSERA_UTIL_CHECK_H
+#ifndef FLOWCOIN_UTIL_CHECK_H
+#define FLOWCOIN_UTIL_CHECK_H
 
 #include <attributes.h>
 
@@ -143,4 +143,4 @@ constexpr T&& inline_assertion_check(LIFETIMEBOUND T&& val, [[maybe_unused]] con
 #   define ASAN_UNPOISON_MEMORY_REGION(addr, size) ((void)(addr), (void)(size))
 #endif
 
-#endif // TESSERA_UTIL_CHECK_H
+#endif // FLOWCOIN_UTIL_CHECK_H

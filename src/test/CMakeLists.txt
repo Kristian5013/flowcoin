@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Unit tests — each test_*.cpp is its own standalone executable (int main())
@@ -8,7 +8,7 @@ set(TESSERA_TESTS
   test_chainstate test_check test_clientversion test_coins test_crypter
   test_dbwrapper test_deployment test_engine_utils test_coinscache test_hash
   test_interpreter test_key test_key_io test_hdkey test_mlkem test_mempool
-  test_merkle test_mldsa44 test_moneystr test_policy test_pow test_pubkey
+  test_merkle test_slhdsa test_moneystr test_policy test_pow test_pubkey
   test_random test_retarget test_script test_serialize test_sigcache
   test_signingprovider test_sign test_spend test_sha256 test_signmessage
   test_sha3 test_sha3_512 test_strencodings test_transaction test_txdb

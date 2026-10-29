@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_DBWRAPPER_H
-#define TESSERA_DBWRAPPER_H
+#ifndef FLOWCOIN_DBWRAPPER_H
+#define FLOWCOIN_DBWRAPPER_H
 
 #include <attributes.h>
 #include <serialize.h>
@@ -282,4 +282,4 @@ public:
     }
 };
 
-#endif // TESSERA_DBWRAPPER_H
+#endif // FLOWCOIN_DBWRAPPER_H

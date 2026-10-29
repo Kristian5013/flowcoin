@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // Coin control: a parameter/override container for transaction creation, ported in
@@ -7,8 +7,8 @@
 // from util/fees.h (no block policy estimator). m_external_provider (a FlatSigningProvider
 // carrying pubkeys/scripts to size externally-supplied inputs) is kept as in Core.
 
-#ifndef TESSERA_WALLET_COINCONTROL_H
-#define TESSERA_WALLET_COINCONTROL_H
+#ifndef FLOWCOIN_WALLET_COINCONTROL_H
+#define FLOWCOIN_WALLET_COINCONTROL_H
 
 #include <addresstype.h>
 #include <outputtype.h>
@@ -176,4 +176,4 @@ private:
 };
 } // namespace wallet
 
-#endif // TESSERA_WALLET_COINCONTROL_H
+#endif // FLOWCOIN_WALLET_COINCONTROL_H

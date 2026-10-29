@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 
-#ifndef TESSERA_QT_TESSERAGUI_H
-#define TESSERA_QT_TESSERAGUI_H
+#ifndef FLOWCOIN_QT_TESSERAGUI_H
+#define FLOWCOIN_QT_TESSERAGUI_H
 
 #include <tessera-build-config.h> // IWYU pragma: keep
 
@@ -347,4 +347,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // TESSERA_QT_TESSERAGUI_H
+#endif // FLOWCOIN_QT_TESSERAGUI_H

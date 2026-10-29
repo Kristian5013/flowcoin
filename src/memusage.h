@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_MEMUSAGE_H
-#define TESSERA_MEMUSAGE_H
+#ifndef FLOWCOIN_MEMUSAGE_H
+#define FLOWCOIN_MEMUSAGE_H
 
 #include <indirectmap.h>
 #include <prevector.h>
@@ -216,4 +216,4 @@ static inline size_t DynamicUsage(const std::unordered_map<Key,
 
 } // namespace memusage
 
-#endif // TESSERA_MEMUSAGE_H
+#endif // FLOWCOIN_MEMUSAGE_H

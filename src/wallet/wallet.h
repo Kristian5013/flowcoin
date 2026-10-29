@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // CWallet for Tessera.
@@ -27,8 +27,8 @@
 // signers, legacy->descriptor migration, fee bumping, and the keypool
 // ReserveDestination (the ML-DSA keystore derives on demand).
 
-#ifndef TESSERA_WALLET_WALLET_H
-#define TESSERA_WALLET_WALLET_H
+#ifndef FLOWCOIN_WALLET_WALLET_H
+#define FLOWCOIN_WALLET_WALLET_H
 
 #include <addresstype.h>
 #include <consensus/amount.h>
@@ -653,4 +653,4 @@ bool RemoveWalletSetting(interfaces::Chain& chain, const std::string& wallet_nam
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_WALLET_H
+#endif // FLOWCOIN_WALLET_WALLET_H

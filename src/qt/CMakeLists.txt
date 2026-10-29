@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # The Qt Widgets GUI library (tessera-qt). Mirrors Bitcoin Core's src/qt: a

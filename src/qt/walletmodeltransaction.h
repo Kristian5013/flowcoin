@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_WALLETMODELTRANSACTION_H
-#define TESSERA_QT_WALLETMODELTRANSACTION_H
+#ifndef FLOWCOIN_QT_WALLETMODELTRANSACTION_H
+#define FLOWCOIN_QT_WALLETMODELTRANSACTION_H
 
 #include <primitives/transaction.h>
 #include <qt/sendcoinsrecipient.h>
@@ -43,4 +43,4 @@ private:
     CAmount fee{0};
 };
 
-#endif // TESSERA_QT_WALLETMODELTRANSACTION_H
+#endif // FLOWCOIN_QT_WALLETMODELTRANSACTION_H

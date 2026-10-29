@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_V2CIPHER_H
-#define TESSERA_V2CIPHER_H
+#ifndef FLOWCOIN_V2CIPHER_H
+#define FLOWCOIN_V2CIPHER_H
 
 #include <crypto/chacha20.h>
 #include <crypto/chacha20poly1305.h>
@@ -131,4 +131,4 @@ public:
     std::span<const std::byte> GetReceiveGarbageTerminator() const noexcept { return m_recv_garbage_terminator; }
 };
 
-#endif // TESSERA_V2CIPHER_H
+#endif // FLOWCOIN_V2CIPHER_H

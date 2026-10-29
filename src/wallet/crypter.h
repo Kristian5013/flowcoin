@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_CRYPTER_H
-#define TESSERA_WALLET_CRYPTER_H
+#ifndef FLOWCOIN_WALLET_CRYPTER_H
+#define FLOWCOIN_WALLET_CRYPTER_H
 
 #include <serialize.h>
 #include <support/allocators/secure.h>
@@ -109,4 +109,4 @@ bool DecryptSecret(const CKeyingMaterial& master_key, std::span<const unsigned c
 bool DecryptKey(const CKeyingMaterial& master_key, std::span<const unsigned char> crypted_secret, const CPubKey& pub_key, CKey& key);
 } // namespace wallet
 
-#endif // TESSERA_WALLET_CRYPTER_H
+#endif // FLOWCOIN_WALLET_CRYPTER_H

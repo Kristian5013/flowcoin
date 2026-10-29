@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_SCRIPT_KEYORIGIN_H
-#define TESSERA_SCRIPT_KEYORIGIN_H
+#ifndef FLOWCOIN_SCRIPT_KEYORIGIN_H
+#define FLOWCOIN_SCRIPT_KEYORIGIN_H
 
 #include <serialize.h>
 #include <vector>
@@ -44,4 +44,4 @@ struct KeyOriginInfo
     }
 };
 
-#endif // TESSERA_SCRIPT_KEYORIGIN_H
+#endif // FLOWCOIN_SCRIPT_KEYORIGIN_H

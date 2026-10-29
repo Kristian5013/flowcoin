@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_VALIDATION_H
-#define TESSERA_TEST_UTIL_VALIDATION_H
+#ifndef FLOWCOIN_TEST_UTIL_VALIDATION_H
+#define FLOWCOIN_TEST_UTIL_VALIDATION_H
 
 #include <validation.h>
 
@@ -40,4 +40,4 @@ public:
         const CBlockIndex* pindex);
 };
 
-#endif // TESSERA_TEST_UTIL_VALIDATION_H
+#endif // FLOWCOIN_TEST_UTIL_VALIDATION_H

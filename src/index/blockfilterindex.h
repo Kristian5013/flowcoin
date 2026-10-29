@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_BLOCKFILTERINDEX_H
-#define TESSERA_INDEX_BLOCKFILTERINDEX_H
+#ifndef FLOWCOIN_INDEX_BLOCKFILTERINDEX_H
+#define FLOWCOIN_INDEX_BLOCKFILTERINDEX_H
 
 #include <attributes.h>
 #include <flatfile.h>
@@ -122,4 +122,4 @@ bool DestroyBlockFilterIndex(BlockFilterType filter_type);
 /** Destroy all open block filter indexes. */
 void DestroyAllBlockFilterIndexes();
 
-#endif // TESSERA_INDEX_BLOCKFILTERINDEX_H
+#endif // FLOWCOIN_INDEX_BLOCKFILTERINDEX_H

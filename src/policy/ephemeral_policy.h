@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_POLICY_EPHEMERAL_POLICY_H
-#define TESSERA_POLICY_EPHEMERAL_POLICY_H
+#ifndef FLOWCOIN_POLICY_EPHEMERAL_POLICY_H
+#define FLOWCOIN_POLICY_EPHEMERAL_POLICY_H
 
 #include <consensus/amount.h>
 #include <policy/packages.h>
@@ -54,4 +54,4 @@ bool PreCheckEphemeralTx(const CTransaction& tx, CFeeRate dust_relay_rate, CAmou
  */
 bool CheckEphemeralSpends(const Package& package, CFeeRate dust_relay_rate, const CTxMemPool& tx_pool, TxValidationState& out_child_state, Wtxid& out_child_wtxid);
 
-#endif // TESSERA_POLICY_EPHEMERAL_POLICY_H
+#endif // FLOWCOIN_POLICY_EPHEMERAL_POLICY_H

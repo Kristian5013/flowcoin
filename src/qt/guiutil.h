@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_GUIUTIL_H
-#define TESSERA_QT_GUIUTIL_H
+#ifndef FLOWCOIN_QT_GUIUTIL_H
+#define FLOWCOIN_QT_GUIUTIL_H
 
 #include <consensus/amount.h>
 #include <net.h>
@@ -418,4 +418,4 @@ namespace GUIUtil
 
 } // namespace GUIUtil
 
-#endif // TESSERA_QT_GUIUTIL_H
+#endif // FLOWCOIN_QT_GUIUTIL_H

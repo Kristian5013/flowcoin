@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // pow (CheckProofOfWork) tests: structurally-certain rejections (target 0,

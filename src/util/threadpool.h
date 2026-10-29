@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_THREADPOOL_H
-#define TESSERA_UTIL_THREADPOOL_H
+#ifndef FLOWCOIN_UTIL_THREADPOOL_H
+#define FLOWCOIN_UTIL_THREADPOOL_H
 
 #include <sync.h>
 #include <tinyformat.h>
@@ -292,4 +292,4 @@ constexpr std::string_view SubmitErrorString(const ThreadPool::SubmitError err) 
     return "Unknown error";
 }
 
-#endif // TESSERA_UTIL_THREADPOOL_H
+#endif // FLOWCOIN_UTIL_THREADPOOL_H

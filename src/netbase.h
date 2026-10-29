@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NETBASE_H
-#define TESSERA_NETBASE_H
+#ifndef FLOWCOIN_NETBASE_H
+#define FLOWCOIN_NETBASE_H
 
 #include <compat/compat.h>
 #include <netaddress.h>
@@ -372,4 +372,4 @@ CService MaybeFlipIPv6toCJDNS(const CService& service);
 /** Get the bind address for a socket as CService. */
 CService GetBindAddress(const Sock& sock);
 
-#endif // TESSERA_NETBASE_H
+#endif // FLOWCOIN_NETBASE_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_QVALUECOMBOBOX_H
-#define TESSERA_QT_QVALUECOMBOBOX_H
+#ifndef FLOWCOIN_QT_QVALUECOMBOBOX_H
+#define FLOWCOIN_QT_QVALUECOMBOBOX_H
 
 #include <QComboBox>
 #include <QVariant>
@@ -33,4 +33,4 @@ private Q_SLOTS:
     void handleSelectionChanged(int idx);
 };
 
-#endif // TESSERA_QT_QVALUECOMBOBOX_H
+#endif // FLOWCOIN_QT_QVALUECOMBOBOX_H

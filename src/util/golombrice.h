@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_GOLOMBRICE_H
-#define TESSERA_UTIL_GOLOMBRICE_H
+#ifndef FLOWCOIN_UTIL_GOLOMBRICE_H
+#define FLOWCOIN_UTIL_GOLOMBRICE_H
 
 #include <util/fastrange.h>
 
@@ -41,4 +41,4 @@ uint64_t GolombRiceDecode(BitStreamReader<IStream>& bitreader, uint8_t P)
     return (q << P) + r;
 }
 
-#endif // TESSERA_UTIL_GOLOMBRICE_H
+#endif // FLOWCOIN_UTIL_GOLOMBRICE_H

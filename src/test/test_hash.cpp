@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // hash.h (HashWriter / Hash, SHA3-256 consensus hash) tests + cross-check CLI.

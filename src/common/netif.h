@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_COMMON_NETIF_H
-#define TESSERA_COMMON_NETIF_H
+#ifndef FLOWCOIN_COMMON_NETIF_H
+#define FLOWCOIN_COMMON_NETIF_H
 
 #include <netaddress.h>
 
@@ -15,4 +15,4 @@ std::optional<CNetAddr> QueryDefaultGateway(Network network);
 //! Return all local non-loopback IPv4 and IPv6 network addresses.
 std::vector<CNetAddr> GetLocalAddresses();
 
-#endif // TESSERA_COMMON_NETIF_H
+#endif // FLOWCOIN_COMMON_NETIF_H

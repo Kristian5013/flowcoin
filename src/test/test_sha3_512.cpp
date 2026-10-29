@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // SHA3-512 (FIPS 202) tests: NIST known answers + byte-for-byte cross-check

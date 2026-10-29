@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_FS_HELPERS_H
-#define TESSERA_UTIL_FS_HELPERS_H
+#ifndef FLOWCOIN_UTIL_FS_HELPERS_H
+#define FLOWCOIN_UTIL_FS_HELPERS_H
 
 #include <util/fs.h>
 
@@ -108,4 +108,4 @@ bool IsDirWritable(const fs::path& dir_path);
 fs::path GetSpecialFolderPath(int nFolder, bool fCreate = true);
 #endif
 
-#endif // TESSERA_UTIL_FS_HELPERS_H
+#endif // FLOWCOIN_UTIL_FS_HELPERS_H

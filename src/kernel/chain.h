@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_CHAIN_H
-#define TESSERA_KERNEL_CHAIN_H
+#ifndef FLOWCOIN_KERNEL_CHAIN_H
+#define FLOWCOIN_KERNEL_CHAIN_H
 
 #include <attributes.h>
 
@@ -38,4 +38,4 @@ interfaces::BlockInfo MakeBlockInfo(const CBlockIndex* block_index, const CBlock
 std::ostream& operator<<(std::ostream& os, const ChainstateRole& role);
 } // namespace kernel
 
-#endif // TESSERA_KERNEL_CHAIN_H
+#endif // FLOWCOIN_KERNEL_CHAIN_H

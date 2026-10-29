@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H
-#define TESSERA_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H
+#ifndef FLOWCOIN_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H
+#define FLOWCOIN_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H
 
 #include <consensus/amount.h>
 #include <policy/feerate.h>
@@ -341,4 +341,4 @@ private:
     FastRandomContext& insecure_rand GUARDED_BY(m_insecure_rand_mutex);
 };
 
-#endif // TESSERA_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H
+#endif // FLOWCOIN_POLICY_FEES_BLOCK_POLICY_ESTIMATOR_H

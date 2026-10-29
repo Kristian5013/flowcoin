@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NOUI_H
-#define TESSERA_NOUI_H
+#ifndef FLOWCOIN_NOUI_H
+#define FLOWCOIN_NOUI_H
 
 #include <string>
 
@@ -24,4 +24,4 @@ void noui_test_redirect();
 /** Reconnects the regular Non-GUI handlers after having used noui_test_redirect */
 void noui_reconnect();
 
-#endif // TESSERA_NOUI_H
+#endif // FLOWCOIN_NOUI_H

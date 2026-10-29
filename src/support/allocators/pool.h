@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SUPPORT_ALLOCATORS_POOL_H
-#define TESSERA_SUPPORT_ALLOCATORS_POOL_H
+#ifndef FLOWCOIN_SUPPORT_ALLOCATORS_POOL_H
+#define FLOWCOIN_SUPPORT_ALLOCATORS_POOL_H
 
 #include <array>
 #include <cassert>
@@ -352,4 +352,4 @@ bool operator==(const PoolAllocator<T1, MAX_BLOCK_SIZE_BYTES, ALIGN_BYTES>& a,
     return a.resource() == b.resource();
 }
 
-#endif // TESSERA_SUPPORT_ALLOCATORS_POOL_H
+#endif // FLOWCOIN_SUPPORT_ALLOCATORS_POOL_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_MINING_ARGS_H
-#define TESSERA_NODE_MINING_ARGS_H
+#ifndef FLOWCOIN_NODE_MINING_ARGS_H
+#define FLOWCOIN_NODE_MINING_ARGS_H
 
 #include <node/mining_types.h>
 #include <util/result.h>
@@ -33,4 +33,4 @@ static const bool DEFAULT_PRINT_MODIFIED_FEE = false;
 
 } // namespace node
 
-#endif // TESSERA_NODE_MINING_ARGS_H
+#endif // FLOWCOIN_NODE_MINING_ARGS_H

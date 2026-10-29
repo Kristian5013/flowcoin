@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_VECDEQUE_H
-#define TESSERA_UTIL_VECDEQUE_H
+#ifndef FLOWCOIN_UTIL_VECDEQUE_H
+#define FLOWCOIN_UTIL_VECDEQUE_H
 
 #include <util/check.h>
 
@@ -313,4 +313,4 @@ public:
     size_t capacity() const noexcept { return m_capacity; }
 };
 
-#endif // TESSERA_UTIL_VECDEQUE_H
+#endif // FLOWCOIN_UTIL_VECDEQUE_H

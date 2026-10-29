@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_BYTEVECTORHASH_H
-#define TESSERA_UTIL_BYTEVECTORHASH_H
+#ifndef FLOWCOIN_UTIL_BYTEVECTORHASH_H
+#define FLOWCOIN_UTIL_BYTEVECTORHASH_H
 
 #include <cstdint>
 #include <cstddef>
@@ -23,4 +23,4 @@ public:
     size_t operator()(const std::vector<unsigned char>& input) const;
 };
 
-#endif // TESSERA_UTIL_BYTEVECTORHASH_H
+#endif // FLOWCOIN_UTIL_BYTEVECTORHASH_H

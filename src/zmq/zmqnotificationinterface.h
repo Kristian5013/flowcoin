@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ZMQ_ZMQNOTIFICATIONINTERFACE_H
-#define TESSERA_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#ifndef FLOWCOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#define FLOWCOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
 
 #include <primitives/transaction.h>
 #include <validationinterface.h>
@@ -46,4 +46,4 @@ private:
 
 extern std::unique_ptr<CZMQNotificationInterface> g_zmq_notification_interface;
 
-#endif // TESSERA_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#endif // FLOWCOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H

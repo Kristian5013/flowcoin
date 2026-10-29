@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_DEPLOYMENTSTATUS_H
-#define TESSERA_DEPLOYMENTSTATUS_H
+#ifndef FLOWCOIN_DEPLOYMENTSTATUS_H
+#define FLOWCOIN_DEPLOYMENTSTATUS_H
 
 #include <chain.h>
 #include <versionbits.h>
@@ -48,4 +48,4 @@ inline bool DeploymentEnabled(const Consensus::Params& params, Consensus::Deploy
     return params.vDeployments[dep].nStartTime != Consensus::BIP9Deployment::NEVER_ACTIVE;
 }
 
-#endif // TESSERA_DEPLOYMENTSTATUS_H
+#endif // FLOWCOIN_DEPLOYMENTSTATUS_H

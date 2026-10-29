@@ -1,9 +1,9 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 
-#ifndef TESSERA_QT_INITEXECUTOR_H
-#define TESSERA_QT_INITEXECUTOR_H
+#ifndef FLOWCOIN_QT_INITEXECUTOR_H
+#define FLOWCOIN_QT_INITEXECUTOR_H
 
 #include <interfaces/node.h>
 
@@ -44,4 +44,4 @@ private:
     QThread m_thread;
 };
 
-#endif // TESSERA_QT_INITEXECUTOR_H
+#endif // FLOWCOIN_QT_INITEXECUTOR_H

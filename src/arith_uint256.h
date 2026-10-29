@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_ARITH_UINT256_H
-#define TESSERA_ARITH_UINT256_H
+#ifndef FLOWCOIN_ARITH_UINT256_H
+#define FLOWCOIN_ARITH_UINT256_H
 
 #include <compare>
 #include <cstdint>
@@ -267,4 +267,4 @@ arith_uint256 UintToArith256(const uint256 &);
 
 extern template class base_uint<256>;
 
-#endif // TESSERA_ARITH_UINT256_H
+#endif // FLOWCOIN_ARITH_UINT256_H

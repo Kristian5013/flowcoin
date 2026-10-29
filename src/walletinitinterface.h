@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLETINITINTERFACE_H
-#define TESSERA_WALLETINITINTERFACE_H
+#ifndef FLOWCOIN_WALLETINITINTERFACE_H
+#define FLOWCOIN_WALLETINITINTERFACE_H
 
 class ArgsManager;
 
@@ -26,4 +26,4 @@ public:
 
 extern const WalletInitInterface& g_wallet_init_interface;
 
-#endif // TESSERA_WALLETINITINTERFACE_H
+#endif // FLOWCOIN_WALLETINITINTERFACE_H

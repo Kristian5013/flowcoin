@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_NODE_CHAINSTATE_H
-#define TESSERA_NODE_CHAINSTATE_H
+#ifndef FLOWCOIN_NODE_CHAINSTATE_H
+#define FLOWCOIN_NODE_CHAINSTATE_H
 
 #include <util/translation.h>
 #include <validation.h>
@@ -70,4 +70,4 @@ ChainstateLoadResult LoadChainstate(ChainstateManager& chainman, const kernel::C
 ChainstateLoadResult VerifyLoadedChainstate(ChainstateManager& chainman, const ChainstateLoadOptions& options);
 } // namespace node
 
-#endif // TESSERA_NODE_CHAINSTATE_H
+#endif // FLOWCOIN_NODE_CHAINSTATE_H

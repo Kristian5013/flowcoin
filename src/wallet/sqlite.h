@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_SQLITE_H
-#define TESSERA_WALLET_SQLITE_H
+#ifndef FLOWCOIN_WALLET_SQLITE_H
+#define FLOWCOIN_WALLET_SQLITE_H
 
 #include <sync.h>
 #include <wallet/db.h>
@@ -175,4 +175,4 @@ std::unique_ptr<SQLiteDatabase> MakeSQLiteDatabase(const fs::path& path, const D
 std::string SQLiteDatabaseVersion();
 } // namespace wallet
 
-#endif // TESSERA_WALLET_SQLITE_H
+#endif // FLOWCOIN_WALLET_SQLITE_H

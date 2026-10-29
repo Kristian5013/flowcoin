@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_THREAD_H
-#define TESSERA_UTIL_THREAD_H
+#ifndef FLOWCOIN_UTIL_THREAD_H
+#define FLOWCOIN_UTIL_THREAD_H
 
 #include <functional>
 #include <string_view>
@@ -15,4 +15,4 @@ void TraceThread(std::string_view thread_name, std::function<void()> thread_func
 
 } // namespace util
 
-#endif // TESSERA_UTIL_THREAD_H
+#endif // FLOWCOIN_UTIL_THREAD_H

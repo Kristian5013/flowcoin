@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_VERSIONBITS_H
-#define TESSERA_VERSIONBITS_H
+#ifndef FLOWCOIN_VERSIONBITS_H
+#define FLOWCOIN_VERSIONBITS_H
 
 #include <chain.h>
 #include <sync.h>
@@ -99,4 +99,4 @@ public:
     void Clear() EXCLUSIVE_LOCKS_REQUIRED(!m_mutex);
 };
 
-#endif // TESSERA_VERSIONBITS_H
+#endif // FLOWCOIN_VERSIONBITS_H

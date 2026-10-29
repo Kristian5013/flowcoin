@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INTERFACES_WALLET_H
-#define TESSERA_INTERFACES_WALLET_H
+#ifndef FLOWCOIN_INTERFACES_WALLET_H
+#define FLOWCOIN_INTERFACES_WALLET_H
 
 #include <addresstype.h>
 #include <common/signmessage.h>
@@ -431,4 +431,4 @@ std::unique_ptr<WalletLoader> MakeWalletLoader(Chain& chain, ArgsManager& args);
 
 } // namespace interfaces
 
-#endif // TESSERA_INTERFACES_WALLET_H
+#endif // FLOWCOIN_INTERFACES_WALLET_H

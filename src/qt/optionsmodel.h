@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_OPTIONSMODEL_H
-#define TESSERA_QT_OPTIONSMODEL_H
+#ifndef FLOWCOIN_QT_OPTIONSMODEL_H
+#define FLOWCOIN_QT_OPTIONSMODEL_H
 
 #include <cstdint>
 #include <qt/tesseraunits.h>
@@ -156,4 +156,4 @@ Q_SIGNALS:
 
 Q_DECLARE_METATYPE(OptionsModel::FontChoice)
 
-#endif // TESSERA_QT_OPTIONSMODEL_H
+#endif // FLOWCOIN_QT_OPTIONSMODEL_H

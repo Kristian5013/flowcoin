@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_TRANSACTIONRECORD_H
-#define TESSERA_QT_TRANSACTIONRECORD_H
+#ifndef FLOWCOIN_QT_TRANSACTIONRECORD_H
+#define FLOWCOIN_QT_TRANSACTIONRECORD_H
 
 #include <consensus/amount.h>
 #include <primitives/transaction_identifier.h>
@@ -129,4 +129,4 @@ public:
     bool statusUpdateNeeded(const uint256& block_hash) const;
 };
 
-#endif // TESSERA_QT_TRANSACTIONRECORD_H
+#endif // FLOWCOIN_QT_TRANSACTIONRECORD_H

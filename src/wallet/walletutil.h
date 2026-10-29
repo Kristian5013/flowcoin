@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_WALLET_WALLETUTIL_H
-#define TESSERA_WALLET_WALLETUTIL_H
+#ifndef FLOWCOIN_WALLET_WALLETUTIL_H
+#define FLOWCOIN_WALLET_WALLETUTIL_H
 
 #include <util/fs.h>
 
@@ -70,4 +70,4 @@ enum WalletFlags : uint64_t {
 
 } // namespace wallet
 
-#endif // TESSERA_WALLET_WALLETUTIL_H
+#endif // FLOWCOIN_WALLET_WALLETUTIL_H

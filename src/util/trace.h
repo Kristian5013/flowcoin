@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_TRACE_H
-#define TESSERA_UTIL_TRACE_H
+#ifndef FLOWCOIN_UTIL_TRACE_H
+#define FLOWCOIN_UTIL_TRACE_H
 
 #include <tessera-build-config.h> // IWYU pragma: keep
 
@@ -57,4 +57,4 @@
 #endif // ENABLE_TRACING
 
 
-#endif // TESSERA_UTIL_TRACE_H
+#endif // FLOWCOIN_UTIL_TRACE_H

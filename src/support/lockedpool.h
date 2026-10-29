@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SUPPORT_LOCKEDPOOL_H
-#define TESSERA_SUPPORT_LOCKEDPOOL_H
+#ifndef FLOWCOIN_SUPPORT_LOCKEDPOOL_H
+#define FLOWCOIN_SUPPORT_LOCKEDPOOL_H
 
 #include <cstddef>
 #include <list>
@@ -231,4 +231,4 @@ private:
     static LockedPoolManager* _instance;
 };
 
-#endif // TESSERA_SUPPORT_LOCKEDPOOL_H
+#endif // FLOWCOIN_SUPPORT_LOCKEDPOOL_H

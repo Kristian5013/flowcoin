@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_SYNC_H
-#define TESSERA_SYNC_H
+#ifndef FLOWCOIN_SYNC_H
+#define FLOWCOIN_SYNC_H
 
 // This header declares threading primitives compatible with Clang
 // Thread Safety Analysis and provides appropriate annotation macros.
@@ -296,4 +296,4 @@ inline MutexType* MaybeCheckNotHeld(MutexType* m) LOCKS_EXCLUDED(m) LOCK_RETURNE
 //! gcc and the -Wreturn-stack-address flag in clang, both enabled by default.
 #define WITH_LOCK(cs, code) (MaybeCheckNotHeld(cs), [&]() -> decltype(auto) { LOCK(cs); code; }())
 
-#endif // TESSERA_SYNC_H
+#endif // FLOWCOIN_SYNC_H

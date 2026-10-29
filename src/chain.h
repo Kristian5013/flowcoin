@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CHAIN_H
-#define TESSERA_CHAIN_H
+#ifndef FLOWCOIN_CHAIN_H
+#define FLOWCOIN_CHAIN_H
 
 #include <arith_uint256.h>
 #include <consensus/params.h>
@@ -450,4 +450,4 @@ CBlockLocator GetLocator(const CBlockIndex* index);
 /** Construct a list of hash entries to put in a locator.  */
 std::vector<uint256> LocatorEntries(const CBlockIndex* index);
 
-#endif // TESSERA_CHAIN_H
+#endif // FLOWCOIN_CHAIN_H

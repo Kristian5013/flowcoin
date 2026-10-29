@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_TEST_UTIL_POOLRESOURCETESTER_H
-#define TESSERA_TEST_UTIL_POOLRESOURCETESTER_H
+#ifndef FLOWCOIN_TEST_UTIL_POOLRESOURCETESTER_H
+#define FLOWCOIN_TEST_UTIL_POOLRESOURCETESTER_H
 
 #include <support/allocators/pool.h>
 #include <util/check.h>
@@ -132,4 +132,4 @@ public:
     }
 };
 
-#endif // TESSERA_TEST_UTIL_POOLRESOURCETESTER_H
+#endif // FLOWCOIN_TEST_UTIL_POOLRESOURCETESTER_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_QT_BANTABLEMODEL_H
-#define TESSERA_QT_BANTABLEMODEL_H
+#ifndef FLOWCOIN_QT_BANTABLEMODEL_H
+#define FLOWCOIN_QT_BANTABLEMODEL_H
 
 #include <addrdb.h>
 #include <net.h>
@@ -78,4 +78,4 @@ private:
     std::unique_ptr<BanTablePriv> priv;
 };
 
-#endif // TESSERA_QT_BANTABLEMODEL_H
+#endif // FLOWCOIN_QT_BANTABLEMODEL_H

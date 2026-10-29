@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RANDOM_H
-#define TESSERA_RANDOM_H
+#ifndef FLOWCOIN_RANDOM_H
+#define FLOWCOIN_RANDOM_H
 
 #include <crypto/chacha20.h>
 #include <crypto/common.h>
@@ -472,4 +472,4 @@ inline uint256 GetRandHash() noexcept
  */
 bool Random_SanityCheck();
 
-#endif // TESSERA_RANDOM_H
+#endif // FLOWCOIN_RANDOM_H

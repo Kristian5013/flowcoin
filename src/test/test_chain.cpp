@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 //
 // End-to-end test of the interfaces::Chain adapter (interfaces/chain.cpp): stand

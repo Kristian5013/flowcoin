@@ -1,7 +1,7 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
-#ifndef TESSERA_NODE_TXDOWNLOADMAN_IMPL_H
-#define TESSERA_NODE_TXDOWNLOADMAN_IMPL_H
+#ifndef FLOWCOIN_NODE_TXDOWNLOADMAN_IMPL_H
+#define FLOWCOIN_NODE_TXDOWNLOADMAN_IMPL_H
 
 #include <node/txdownloadman.h>
 
@@ -200,4 +200,4 @@ protected:
     bool MaybeAddOrphanResolutionCandidate(const std::vector<Txid>& unique_parents, const Wtxid& wtxid, NodeId nodeid, std::chrono::microseconds now);
 };
 } // namespace node
-#endif // TESSERA_NODE_TXDOWNLOADMAN_IMPL_H
+#endif // FLOWCOIN_NODE_TXDOWNLOADMAN_IMPL_H

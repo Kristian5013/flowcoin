@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_HTTPRPC_H
-#define TESSERA_HTTPRPC_H
+#ifndef FLOWCOIN_HTTPRPC_H
+#define FLOWCOIN_HTTPRPC_H
 
 #include <any>
 
@@ -39,4 +39,4 @@ void InterruptREST();
  */
 void StopREST();
 
-#endif // TESSERA_HTTPRPC_H
+#endif // FLOWCOIN_HTTPRPC_H

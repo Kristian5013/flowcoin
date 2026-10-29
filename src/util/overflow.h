@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UTIL_OVERFLOW_H
-#define TESSERA_UTIL_OVERFLOW_H
+#ifndef FLOWCOIN_UTIL_OVERFLOW_H
+#define FLOWCOIN_UTIL_OVERFLOW_H
 
 #include <util/check.h>
 
@@ -106,4 +106,4 @@ constexpr T SaturatingLeftShift(T input, unsigned shift) noexcept
     return input < 0 ? std::numeric_limits<T>::min() : std::numeric_limits<T>::max();
 }
 
-#endif // TESSERA_UTIL_OVERFLOW_H
+#endif // FLOWCOIN_UTIL_OVERFLOW_H

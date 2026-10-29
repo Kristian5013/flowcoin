@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_IPC_CAPNP_COMMON_TYPES_H
-#define TESSERA_IPC_CAPNP_COMMON_TYPES_H
+#ifndef FLOWCOIN_IPC_CAPNP_COMMON_TYPES_H
+#define FLOWCOIN_IPC_CAPNP_COMMON_TYPES_H
 
 #include <clientversion.h>
 #include <interfaces/types.h>
@@ -128,4 +128,4 @@ decltype(auto) CustomReadField(TypeList<UniValue>, Priority<1>, InvokeContext& i
 
 } // namespace mp
 
-#endif // TESSERA_IPC_CAPNP_COMMON_TYPES_H
+#endif // FLOWCOIN_IPC_CAPNP_COMMON_TYPES_H

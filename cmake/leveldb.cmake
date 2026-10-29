@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 # Vendored LevelDB (the UTXO/block-index key-value store), like Bitcoin Core.

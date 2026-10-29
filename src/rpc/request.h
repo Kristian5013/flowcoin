@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_RPC_REQUEST_H
-#define TESSERA_RPC_REQUEST_H
+#ifndef FLOWCOIN_RPC_REQUEST_H
+#define FLOWCOIN_RPC_REQUEST_H
 
 #include <any>
 #include <optional>
@@ -64,4 +64,4 @@ public:
     [[nodiscard]] bool IsNotification() const { return !id.has_value() && m_json_version == JSONRPCVersion::V2; };
 };
 
-#endif // TESSERA_RPC_REQUEST_H
+#endif // FLOWCOIN_RPC_REQUEST_H

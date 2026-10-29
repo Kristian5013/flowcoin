@@ -1,4 +1,4 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
 //! @file node/types.h is a home for public enum and struct type definitions
@@ -9,8 +9,8 @@
 //! dependencies. More complicated types should be defined in dedicated header
 //! files.
 
-#ifndef TESSERA_NODE_TYPES_H
-#define TESSERA_NODE_TYPES_H
+#ifndef FLOWCOIN_NODE_TYPES_H
+#define FLOWCOIN_NODE_TYPES_H
 
 #include <cstdint>
 
@@ -42,4 +42,4 @@ enum class TxBroadcast : uint8_t {
 
 } // namespace node
 
-#endif // TESSERA_NODE_TYPES_H
+#endif // FLOWCOIN_NODE_TYPES_H

@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_INDEX_BASE_H
-#define TESSERA_INDEX_BASE_H
+#ifndef FLOWCOIN_INDEX_BASE_H
+#define FLOWCOIN_INDEX_BASE_H
 
 #include <attributes.h>
 #include <dbwrapper.h>
@@ -179,4 +179,4 @@ public:
     IndexSummary GetSummary() const;
 };
 
-#endif // TESSERA_INDEX_BASE_H
+#endif // FLOWCOIN_INDEX_BASE_H

@@ -1,12 +1,12 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_KERNEL_MESSAGESTARTCHARS_H
-#define TESSERA_KERNEL_MESSAGESTARTCHARS_H
+#ifndef FLOWCOIN_KERNEL_MESSAGESTARTCHARS_H
+#define FLOWCOIN_KERNEL_MESSAGESTARTCHARS_H
 
 #include <array>
 #include <cstdint>
 
 using MessageStartChars = std::array<uint8_t, 4>;
 
-#endif // TESSERA_KERNEL_MESSAGESTARTCHARS_H
+#endif // FLOWCOIN_KERNEL_MESSAGESTARTCHARS_H

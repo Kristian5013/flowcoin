@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_UNDO_H
-#define TESSERA_UNDO_H
+#ifndef FLOWCOIN_UNDO_H
+#define FLOWCOIN_UNDO_H
 
 #include <coins.h>
 #include <compressor.h>
@@ -66,4 +66,4 @@ public:
     SERIALIZE_METHODS(CBlockUndo, obj) { READWRITE(obj.vtxundo); }
 };
 
-#endif // TESSERA_UNDO_H
+#endif // FLOWCOIN_UNDO_H

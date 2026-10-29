@@ -1,8 +1,8 @@
-// Copyright (c) 2026 tessera core
+// Copyright (c) Kristian Pilatovich.
 // See COPYING for license.
 
-#ifndef TESSERA_CLUSTER_LINEARIZE_H
-#define TESSERA_CLUSTER_LINEARIZE_H
+#ifndef FLOWCOIN_CLUSTER_LINEARIZE_H
+#define FLOWCOIN_CLUSTER_LINEARIZE_H
 
 #include <algorithm>
 #include <cstdint>
@@ -2042,4 +2042,4 @@ void PostLinearize(const DepGraph<SetType>& depgraph, std::span<DepGraphIndex> l
 
 } // namespace cluster_linearize
 
-#endif // TESSERA_CLUSTER_LINEARIZE_H
+#endif // FLOWCOIN_CLUSTER_LINEARIZE_H

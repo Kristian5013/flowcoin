@@ -1,4 +1,4 @@
-# Copyright (c) 2026 tessera core
+# Copyright (c) Kristian Pilatovich.
 # See COPYING for license.
 
 cmake_minimum_required(VERSION 3.22)
@@ -87,7 +87,7 @@ file(GLOB ui_files
   "${PROJECT_SOURCE_DIR}/src/qt/forms/*.ui"
 )
 
-set(subtrees crc32c crypto/ctaes leveldb minisketch ML-DSA-44 ML-KEM-768)
+set(subtrees crc32c crypto/ctaes leveldb minisketch SLH-DSA-SHAKE-256s ML-KEM-1024)
 set(exclude_dirs bench compat crypto support test univalue)
 foreach(directory IN LISTS subtrees exclude_dirs)
   list(FILTER translatable_sources
